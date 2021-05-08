@@ -5,6 +5,7 @@
 #include "test_utilities.h"
 #include "../avl_tree.h"
 #include <iostream>
+#include <string>
 using std::string;
 using std::cout;
 using std::endl;
@@ -29,6 +30,14 @@ public:
         file << data << " ";
     }
 };
+
+template<class T>
+class PrintTree{
+    void operator()(T data){
+        std::cout << data << endl;
+    }
+};
+
 bool testAVLTreeCreateDestroy(){
     bool result = true;
     AVLTree<int> tree = AVLTree<int>();
@@ -37,10 +46,11 @@ bool testAVLTreeCreateDestroy(){
     return result;
 }
 
-bool testAVLIntInsert(){
+bool testAVLIntInsert1(){
     bool result = true;
     AVLTree<int> tree= AVLTree<int>();
-    tree.insert(5);
+    int num = 5;
+    tree.insert(num);
     string expected = "../tests/outputs/avl_int_print1.txt";
     string tested = "../tests/outputs/output.txt";
     PrintFile<int> printFile(tested);
@@ -51,6 +61,7 @@ bool testAVLIntInsert(){
     return result;
 }
 
+
 /* bool test(){
     bool result = true;
 
@@ -60,12 +71,12 @@ returnLabel:
 
 bool (*tests[]) (void) = {
         testAVLTreeCreateDestroy,
-        testAVLIntInsert
+        testAVLIntInsert1
 };
 
 const char* testNames[] = {
         "testAVLTreeCreateDestroy",
-        "testAVLIntInsert"
+        "testAVLIntInsert1"
 };
 
 int main(int argc, char *argv[]) {

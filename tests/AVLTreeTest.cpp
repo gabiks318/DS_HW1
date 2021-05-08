@@ -488,7 +488,7 @@ int main(){
 	 for (int i=1; i<=100; i++) vector.push_back(i);
 
 	 //Randomly insert and removes nodes
-	 for (int k = 0; k < 20; ++k) {
+	 for (int k = 0; k < 1; ++k) {
 		 unsigned seed = std::chrono::system_clock::now().time_since_epoch().count();
 		 shuffle (vector.begin(), vector.end(), std::default_random_engine(seed));
 		 for (std::vector<int>::iterator it = vector.begin() ; it != vector.end(); ++it){
@@ -496,11 +496,14 @@ int main(){
 
 		 }
 		 tree.printTree();
+		 int deleted = 1;
 		 shuffle (vector.begin(), vector.end(), std::default_random_engine(seed));
 		 for (std::vector<int>::iterator it = vector.begin() ; it != vector.end(); ++it){
 				tree.remove(*it);
+				std::cout << "delete no." << deleted << ":" << std::endl;
 				tree.printTree();
-
+                std::cout << std::endl << std::endl << std::endl;
+                deleted++;
 		 }
 		 tree.empty();
 		 tree.printTree();

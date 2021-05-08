@@ -10,7 +10,7 @@ using std::string;
 using std::cout;
 using std::endl;
 
-#define NUMBER_TESTS 2
+#define NUMBER_TESTS 3
 
 ostream& printInt(int num, ostream& os){
     return os << num << endl;
@@ -26,7 +26,7 @@ public:
         file.close();
     }
     ofstream file;
-    void operator()(T data){
+    void operator()(T& data){
         file << data << " ";
     }
 };
@@ -61,6 +61,34 @@ bool testAVLIntInsert1(){
     return result;
 }
 
+bool testAVLReverseInorder(){
+    bool result = true;
+    AVLTree<int> tree= AVLTree<int>();
+    tree.insert(9);
+    tree.insert(4);
+    tree.insert(22);
+    tree.insert(2);
+    tree.insert(6);
+    tree.insert(14);
+    tree.insert(50);
+    tree.insert(1);
+    tree.insert(3);
+    tree.insert(5);
+    tree.insert(8);
+    tree.insert(12);
+    tree.insert(16);
+    tree.insert(44);
+    tree.insert(53);
+    tree.insert(11);
+    tree.insert(13);
+    tree.insert(25);
+    tree.insert(56);
+
+    tree.reverseInorder();
+
+returnLabel:
+    return result;
+}
 
 /* bool test(){
     bool result = true;
@@ -71,12 +99,14 @@ returnLabel:
 
 bool (*tests[]) (void) = {
         testAVLTreeCreateDestroy,
-        testAVLIntInsert1
+        testAVLIntInsert1,
+        testAVLReverseInorder
 };
 
 const char* testNames[] = {
         "testAVLTreeCreateDestroy",
-        "testAVLIntInsert1"
+        "testAVLIntInsert1",
+        "testAVLReverseInorder"
 };
 
 int main(int argc, char *argv[]) {

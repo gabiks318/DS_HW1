@@ -20,6 +20,7 @@ private:
     };
     Node *root;
     Node *min;
+    int size;
 
     Node *insertNode(Node *node, Node *target, Node *father);
 
@@ -40,14 +41,16 @@ private:
     Node *getMin(Node *node) const;
 
     template<class Func>
-    void inorder_recursive(Node *node, Func& func);
+    void inorder_aux(Node *node, Func& func);
+
+    void reverseInorder_aux(Node* node,Node* last);
     int max(int num1, int num2);
     int height(const Node* node) const;
     void empty_aux(Node* node);
     void printTree_aux(Node* node) const;
 
 public:
-    AVLTree() : root(NULL), min(NULL) {};
+    AVLTree() : root(NULL), min(NULL), size(0) {};
 
     ~AVLTree(){
         empty();
@@ -64,8 +67,9 @@ public:
     template<class Func>
     void inorder(Func& func);
 
-    int getHeight() const;
+    void reverseInorder();
 
+    int getHeight() const;
     void empty();
     void printTree() const;
 };
@@ -125,6 +129,7 @@ void AVLTree<T>::insert(const T data) {
 
     root = insertNode(node, root, NULL);
     min = getMin(root);
+    size++;
 }
 
 template<class T>
@@ -174,7 +179,7 @@ AVLTree<T>::insertNode(AVLTree<T>::Node *node, AVLTree<T>::Node *target, AVLTree
 
 template<class T>
 void AVLTree<T>::remove(const T& data) {
-    if (&data == NULL) {
+    if (&data == NULL || size == 0) {
         return;
     }
     Node* node_to_remove = findNode(root, data);
@@ -185,6 +190,7 @@ void AVLTree<T>::remove(const T& data) {
 
     root = removeNode(node_to_remove, root);
     min = getMin(root);
+    size--;
 }
 
 
@@ -208,24 +214,21 @@ typename AVLTree<T>::Node* AVLTree<T>::removeNode(AVLTree<T>::Node *node, AVLTre
             delete target;
             return NULL;
         } else if (!target->right) {
-            // only right son
+            // Only right son
                 Node* temp = target;
-                target = node->right;
-                target->father = temp->father;
+                target = target->left;
                 delete temp;
                 return target;
 
         } else if (!target->left) {
-            // only left son
+            // Only left son
                 Node* temp = target;
-                target = node->left;
-                target->father = temp->father;
+                target = target->right;
                 delete temp;
                 return target;
         } else {
         // right and left son exist
-            Node *temp = target;
-            target = getMin(target->right);
+            Node *temp = getMin(target->right);
             target->data = temp->data;
             target->right = removeNode(target, target->right);
         }
@@ -310,18 +313,18 @@ int AVLTree<T>::balanceFactor(AVLTree<T>::Node *node) const {
 template<class T>
 template<class Func>
 void AVLTree<T>::inorder(Func& func) {
-    inorder_recursive(root, func);
+    inorder_aux(root, func);
 }
 
 template<class T>
 template<class Func>
-void AVLTree<T>::inorder_recursive(AVLTree<T>::Node *node, Func& func) {
+void AVLTree<T>::inorder_aux(AVLTree<T>::Node *node, Func& func) {
     if (node == NULL) {
         return;
     }
-    inorder_recursive(node->left, func);
+    inorder_aux(node->left, func);
     func(node->data);
-    inorder_recursive(node->right, func);
+    inorder_aux(node->right, func);
 }
 
 template<class T>
@@ -356,4 +359,21 @@ void AVLTree<T>::printTree_aux(AVLTree<T>::Node* node) const {
     printTree_aux(node->right);
 }
 
+template<class T>
+void AVLTree<T>::reverseInorder() {
+    reverseInorder_aux(min, NULL);
+}
+
+template<class T>
+void AVLTree<T>::reverseInorder_aux(AVLTree<T>::Node* node, AVLTree<T>::Node* last){
+    if(node == NULL)
+        return;
+    if(node->father == last)
+        reverseInorder_aux(node->left, node);
+    std::cout << node->data << " BF: " << balanceFactor(node) << " Height: " << height(node) << std::endl;
+    reverseInorder_aux(node->right, node);
+    if(node->father != last)
+        reverseInorder_aux(node->father, node);
+
+}
 #endif //DS_HW1_AVL_TREE_H

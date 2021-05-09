@@ -13,9 +13,20 @@ private:
     AVLTree<CarZeroPoints> zero_points;
     AVLTree<CarSells> sells;
     AVLTree<CarBestSells> best_sells;
+
+    class PrintPositive{
+    public:
+        bool operator()(CarPoints* car_points);
+    };
+
+    class PrintNegative{
+    public:
+        bool operator()(CarPoints* car_points);
+    };
+
 public:
     CarDealerShip();
-    StatusType AddCarType(int type_id, int num_of_models);
+    Statupe_id, int num_of_models);
     StatusType RemoveCarType(int type_id);
     StatusType sellCar(int typeID, int modelID);
     StatusType makeComplaint(int typeID, int modelID, int t);

@@ -16,8 +16,8 @@ StatusType RemoveCarType(void *DS, int typeID){
 }
 
 StatusType makeComplaint(void *DS, int typeID, int modelID, int t){
-
-    return ((CarDealerShip*)DS)-> makeComplaint(typeID);
+    if(DS == NULL) return INVALID_INPUT;
+    return ((CarDealerShip*)DS)-> makeComplaint(typeID, modelID, t);
 }
 
 StatusType GetBestSellerModelByType(void *DS, int typeID, int * modelID){

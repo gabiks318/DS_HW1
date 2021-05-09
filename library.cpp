@@ -15,3 +15,19 @@ StatusType RemoveCarType(void *DS, int typeID){
     return ((CarDealerShip*)DS)-> RemoveCarType(typeID);
 }
 
+StatusType makeComplaint(void *DS, int typeID, int modelID, int t){
+
+    return ((CarDealerShip*)DS)-> makeComplaint(typeID);
+}
+
+StatusType GetBestSellerModelByType(void *DS, int typeID, int * modelID){
+
+}
+
+StatusType GetWorstModels(void *DS, int numOfModels, int *types, int *models){
+
+}
+
+void Quit(void** DS){
+
+}

@@ -2,12 +2,26 @@
 
 CarPoints::CarPoints(int type_id, int model, int points): type_id(type_id), model(model), points(points) {
 }
+CarPoints::CarPoints(const CarPoints& car_points): type_id(car_points.type_id), model(car_points.model),
+    points(car_points.points){
 
-void CarPoints::updatePoints(int updated_points) {
-    points = updated_points;
 }
 
-int CarPoints::getPoint() const {
+CarPoints& CarPoints::operator=(const CarPoints& car_points){
+    if(this == &car_points){
+        return *this;
+    }
+    type_id = car_points.type_id;
+    model = car_points.model;
+    points = car_points.points;
+    return *this;
+}
+
+void CarPoints::updatePoints(int updated_points) {
+    points += updated_points;
+}
+
+int CarPoints::getPoints() const {
     return points;
 }
 
@@ -27,7 +41,7 @@ bool CarPoints::operator<(const CarPoints& car_points) const {
 }
 
 bool CarPoints::operator==(const CarPoints& car_points) const{
-    return type_id == car_points.getTypeId();
+    return type_id == car_points.type_id && model == car_points.model && points == car_points.model;
 }
 
 bool operator>(const CarPoints& car_points1, const CarPoints& car_points2){

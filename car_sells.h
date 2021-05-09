@@ -17,7 +17,7 @@ private:
 public:
     CarSells(int type_id, int num_of_models);
     CarSells(const CarSells&);
-    CarSells operator=(const CarSells&);
+    CarSells& operator=(const CarSells&);
     ~CarSells();
     bool operator<(const CarSells&) const;
     bool operator==(const CarSells&) const;
@@ -25,6 +25,9 @@ public:
     int getTypeId() const;
     int getBestSellerAmount() const;
     int getBestSellerModel() const;
+    CarBestSells* getBestSellsPtr() const;
+    CarPoints* getCarPointsModel(int model) const;
+    void updatePointsPtr(int model, CarPoints* car_points_ptr);
     void setBestSellsPtr(CarBestSells*);
     void remove(AVLTree<CarPoints>& points_tree, AVLTree<CarBestSells>& best_sells);
     void addSell(int model);

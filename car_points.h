@@ -10,9 +10,11 @@ private:
     int points;
 public:
     CarPoints(int type_id, int model, int points);
-
+    ~CarPoints() = default;
+    CarPoints(const CarPoints&);
+    CarPoints& operator=(const CarPoints&);
     void updatePoints(int points);
-    int getPoint() const;
+    int getPoints() const;
     int getModel() const;
     int getTypeId() const;
     bool operator<(const CarPoints&) const;

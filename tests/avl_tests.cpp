@@ -10,7 +10,7 @@ using std::string;
 using std::cout;
 using std::endl;
 
-#define NUMBER_TESTS 5
+#define NUMBER_TESTS 6
 
 ostream& printInt(int num, ostream& os){
     return os << num << endl;
@@ -139,6 +139,45 @@ bool testInorder(){
     returnLabel:
     return result;
 }
+
+bool testCopyAndAssignment(){
+    bool result = true;
+
+    //Correct output
+    //1 BF: 0 Height: 0
+    //5 BF: -1 Height: 2
+    //6 BF: -1 Height: 1
+    //7 BF: 0 Height: 0
+    //8 BF: 0 Height: 3
+    //12 BF: -1 Height: 1
+    //16 BF: 0 Height: 0
+    //22 BF: 1 Height: 2
+    //33 BF: 0 Height: 0
+
+    PrintTree<int> print = PrintTree<int>();
+    AVLTree<int> tree1 = AVLTree<int>();
+    tree1.insert(5);
+    tree1.insert(8);
+    tree1.insert(6);
+    tree1.insert(22);
+    tree1.insert(33);
+    tree1.insert(12);
+    tree1.insert(1);
+    tree1.insert(16);
+    tree1.insert(7);
+
+    AVLTree<int> tree2 = AVLTree<int>(tree1);
+    tree2.printTree();
+    AVLTree<int> tree3 = AVLTree<int>();
+    tree3.insert(3);
+    tree3.insert(6);
+    tree3.insert(9);
+
+    tree3 = tree2;
+    tree3.printTree();
+    returnLabel:
+    return result;
+}
 /* bool test(){
     bool result = true;
 
@@ -151,7 +190,8 @@ bool (*tests[]) (void) = {
         testAVLIntInsert1,
         testAVLReverseInorder,
         testAVLSortedArrayInit,
-        testInorder
+        testInorder,
+        testCopyAndAssignment
 };
 
 const char* testNames[] = {
@@ -159,7 +199,8 @@ const char* testNames[] = {
         "testAVLIntInsert1",
         "testAVLReverseInorder",
         "testAVLSortedArrayInit",
-        "testInorder"
+        "testInorder",
+        "testCopyAndAssignment"
 };
 
 int main(int argc, char *argv[]) {

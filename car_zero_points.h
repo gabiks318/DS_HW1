@@ -10,9 +10,13 @@ private:
 public:
     CarZeroPoints(int type_id, int num_of_models);//build tree with algorithm
     ~CarZeroPoints();
+    CarZeroPoints(const CarZeroPoints&);
+    CarZeroPoints& operator=(const CarZeroPoints&);
     bool operator<(const CarZeroPoints&) const;
     bool operator==(const CarZeroPoints&) const;
+    void removeModel(int model);
     int getTypeId() const;
+    bool emptyModels() const
     AVLTree<int>& getModels() const;
 };
 bool operator>(const CarZeroPoints& car_zero_points1, const CarZeroPoints& car_zero_points2);

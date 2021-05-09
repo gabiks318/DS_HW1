@@ -15,6 +15,8 @@ private:
 public:
     CarBestSells(int typeId);
     ~CarBestSells() = default;
+    CarBestSells(const CarBestSells&);
+    CarBestSells& operator=(const CarBestSells&);
     void updateBestSeller(int best_seller_amount, int best_seller_model);
     bool operator<(const CarBestSells&) const;
     bool operator==(const CarBestSells&) const;

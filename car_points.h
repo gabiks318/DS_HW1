@@ -10,6 +10,7 @@ private:
     int points;
 public:
     CarPoints(int type_id, int model, int points);
+
     void updatePoints(int points);
     int getPoint() const;
     int getModel() const;

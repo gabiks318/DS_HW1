@@ -3,16 +3,21 @@
 
 #include "avl_tree.h"
 #include "car_best_sells.h"
+#include "car_points.h"
 
 class CarSells{
 private:
     int* models;
+    CarPoints** model_ptr_arr;
+    CarBestSells* best_sells_ptr;
     int num_of_models;
     int type_id;
     int best_seller_amount;
     int best_seller_model;
 public:
-    CarSells(int type_id, int num_of_models, CarBestSells* best_sells_ptr);
+    CarSells(int type_id, int num_of_models);
+    CarSells(const CarSells&);
+    CarSells operator=(const CarSells&);
     ~CarSells();
     bool operator<(const CarSells&) const;
     bool operator==(const CarSells&) const;
@@ -20,6 +25,8 @@ public:
     int getTypeId() const;
     int getBestSellerAmount() const;
     int getBestSellerModel() const;
+    void setBestSellsPtr(CarBestSells*);
+    void remove(AVLTree<CarPoints>& points_tree, AVLTree<CarBestSells>& best_sells);
     void addSell(int model);
 };
 

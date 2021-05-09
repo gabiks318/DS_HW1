@@ -1,13 +1,34 @@
 #include "car_sells.h"
+#include "car_best_sells.h"
+#include "car_points.h"
 
-CarSells::CarSells(int type_id, int num_of_models, CarBestSells* best_sells_ptr):models(new int[num_of_models]),
-                                                                       num_of_models(num_of_models), type_id(type_id), best_seller_amount(0), best_seller_model(0){
-    for(int i=0; i<m; i++)
-        models[i] = i;
+CarSells::CarSells(int type_id, int num_of_models):
+    models(new int[num_of_models]), model_ptr_arr(new *CarBestSells[num_of_models]), best_sells_ptr(NULL),
+    num_of_models(num_of_models), type_id(type_id), best_seller_amount(0), best_seller_model(0){
+    for(int model=0; model<num_of_models; model++) {
+        models[model] = model;
+        model_ptr_arr[model] = NULL;
+    }
 }
 
+CarSells(const CarSells&);
+CarSells operator=(const CarSells&);
 CarSells::~CarSells(){
     delete [] models;
+    delete [] model_ptr_arr
+}
+
+void CarSells::setBestSellsPtr(CarBestSells* ptr){
+    best_sells_ptr = ptr;
+}
+
+void CarSells::remove(AVLTree<CarPoints>& points_tree, AVLTree<CarBestSells>& best_sells){
+    for(int model=0; model<num_of_models; model++){ //mlogM
+        if(model_ptr_arr[model] != NULL) {
+            points_tree.remove(*model_ptr_arr[model]);
+        }
+    }
+    best_sells.remove(*best_sells_ptr); //logn
 }
 
 void CarSells::addSell(int model){ //assume model<num_of_models

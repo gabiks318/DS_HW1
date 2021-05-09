@@ -6,6 +6,6 @@ set(CMAKE_CXX_STANDARD 14)
 include_directories(.)
 
 add_executable(DS_HW1
-        tests/AVLTreeTest.cpp)
+        tests/AVLTreeTest.cpp library.cpp)
 
 add_subdirectory("./tests")

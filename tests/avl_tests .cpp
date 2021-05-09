@@ -10,31 +10,36 @@ using std::string;
 using std::cout;
 using std::endl;
 
-#define NUMBER_TESTS 3
+#define NUMBER_TESTS 5
 
 ostream& printInt(int num, ostream& os){
     return os << num << endl;
 }
-template<class T>
-class PrintFile{
-public:
-    PrintFile(const string& file_name){
-        clearFile(file_name);
-        file = ofstream (file_name);
-    }
-    ~PrintFile(){
-        file.close();
-    }
-    ofstream file;
-    void operator()(T& data){
-        file << data << " ";
-    }
-};
+//template<class T>
+//class PrintFile{
+//public:
+//    PrintFile(const string& file_name){
+//        clearFile(file_name);
+//        file = ofstream (file_name);
+//    }
+//    ~PrintFile(){
+//        file.close();
+//    }
+//    ofstream file;
+//    void operator()(T& data){
+//        file << data << " ";
+//    }
+//};
 
 template<class T>
 class PrintTree{
-    void operator()(T data){
-        std::cout << data << endl;
+    int counter;
+public:
+    PrintTree(): counter(1){};
+    bool operator()(T *data){
+        std::cout << "iteration no:"<< counter << " data:" << *data << endl;
+        counter++;
+        return true;
     }
 };
 
@@ -53,11 +58,9 @@ bool testAVLIntInsert1(){
     tree.insert(num);
     string expected = "../tests/outputs/avl_int_print1.txt";
     string tested = "../tests/outputs/output.txt";
-    PrintFile<int> printFile(tested);
 //    clearFile(tested);
 //    ofstream output_file(tested);
 
-    tree.inorder(printFile);
     return result;
 }
 
@@ -83,13 +86,59 @@ bool testAVLReverseInorder(){
     tree.insert(13);
     tree.insert(25);
     tree.insert(56);
+    PrintTree<int> print = PrintTree<int>();
+    tree.reverseInorder(print);
 
-    tree.reverseInorder();
+    tree.reverseInorder(print, 3);
 
 returnLabel:
     return result;
 }
 
+bool testAVLSortedArrayInit() {
+    bool result = true;
+    int arr1[23] = {0};
+    for(int i = 0; i < 23; i++){
+        arr1[i] = i;
+    }
+    AVLTree<int> tree1 = AVLTree<int>();
+    tree1.sortedArrayInit(arr1, 23);
+    tree1.printTree();
+
+    returnLabel:
+    return result;
+}
+
+bool testInorder(){
+    bool result = true;
+    AVLTree<int> tree= AVLTree<int>();
+    tree.insert(9);
+    tree.insert(4);
+    tree.insert(22);
+    tree.insert(2);
+    tree.insert(6);
+    tree.insert(14);
+    tree.insert(50);
+    tree.insert(1);
+    tree.insert(3);
+    tree.insert(5);
+    tree.insert(8);
+    tree.insert(12);
+    tree.insert(16);
+    tree.insert(44);
+    tree.insert(53);
+    tree.insert(11);
+    tree.insert(13);
+    tree.insert(25);
+    tree.insert(56);
+    PrintTree<int> print = PrintTree<int>();
+    tree.inorder(print);
+
+    tree.inorder(print, 13);
+
+    returnLabel:
+    return result;
+}
 /* bool test(){
     bool result = true;
 
@@ -100,13 +149,17 @@ returnLabel:
 bool (*tests[]) (void) = {
         testAVLTreeCreateDestroy,
         testAVLIntInsert1,
-        testAVLReverseInorder
+        testAVLReverseInorder,
+        testAVLSortedArrayInit,
+        testInorder
 };
 
 const char* testNames[] = {
         "testAVLTreeCreateDestroy",
         "testAVLIntInsert1",
-        "testAVLReverseInorder"
+        "testAVLReverseInorder",
+        "testAVLSortedArrayInit",
+        "testInorder"
 };
 
 int main(int argc, char *argv[]) {

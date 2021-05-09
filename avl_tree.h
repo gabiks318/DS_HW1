@@ -16,7 +16,7 @@ private:
         Node *left;
         Node *father;
         int height;
-        T data;
+        T* data;
     };
     Node *root;
     Node *min;
@@ -41,17 +41,18 @@ private:
     Node *getMin(Node *node) const;
 
     template<class Func>
-    void inorder_aux(Node *node, Func& func);
+    void inorder_aux(Node *node, Func& func, int* limit);
 
-    void reverseInorder_aux(Node* node,Node* last);
+    template<class Func>
+    void reverseInorder_aux(Node* node, Func& func, Node* last, int* limit);
     int max(int num1, int num2);
     int height(const Node* node) const;
     void empty_aux(Node* node);
     void printTree_aux(Node* node) const;
-
+    Node* initNode(const T& data);
+    Node* sortedInit_aux(T data_arr[], int start, int end, AVLTree<T>::Node* father);
 public:
     AVLTree() : root(NULL), min(NULL), size(0) {};
-
     ~AVLTree(){
         empty();
     }
@@ -60,19 +61,31 @@ public:
 //
 //    AVLTree &operator=(const AVLTree &avl_tree);
 
-    void insert(const T data);
-
+    void insert(const T& data);
+    T* find(const T& data);
     void remove(const T& data);
 
     template<class Func>
-    void inorder(Func& func);
+    void inorder(Func& func, int limit=-1);
 
-    void reverseInorder();
+    template<class Func>
+    void reverseInorder(Func& func, int limit=-1);
 
     int getHeight() const;
     void empty();
     void printTree() const;
+    void sortedArrayInit(T data_arr[], int n);
 };
+template<class T>
+typename AVLTree<T>::Node* AVLTree<T>::initNode(const T& data){
+    Node* node = new Node;
+    node->data = new T(data);
+    node->height = 0;
+    node->left = NULL;
+    node->right = NULL;
+    node->father = NULL;
+    return node;
+}
 
 template<class T>
 void AVLTree<T>::empty() {
@@ -98,10 +111,10 @@ void AVLTree<T>::empty_aux(AVLTree<T>::Node* node) {
 template<class T>
 typename AVLTree<T>::Node* AVLTree<T>::findNode(AVLTree<T>::Node* node, const T& data){
     if (node != NULL) {
-        if (data == node->data) {
+        if (data == *node->data) {
             return node;
         } else {
-            if (data > node->data) {
+            if (data > *node->data) {
                 return findNode(node->right, data);
             } else {
                 return findNode(node->left, data);
@@ -112,7 +125,7 @@ typename AVLTree<T>::Node* AVLTree<T>::findNode(AVLTree<T>::Node* node, const T&
 }
 
 template<class T>
-void AVLTree<T>::insert(const T data) {
+void AVLTree<T>::insert(const T& data) {
     if (&data == NULL) {
         return;
     }
@@ -120,18 +133,19 @@ void AVLTree<T>::insert(const T data) {
         throw NodeExists();
     }
 
-    Node *node = new Node;
-    node->data = data;
-    node->height = 0;
-    node->left = NULL;
-    node->right = NULL;
-    node->father = NULL;
+    Node *node = initNode(data);
 
     root = insertNode(node, root, NULL);
     min = getMin(root);
     size++;
 }
-
+template<class T>
+T* AVLTree<T>::find(const T& data){
+    Node* node = findNode(root, data);
+    if(node == NULL)
+        throw NodeDoesntExist();
+    return node->data;
+}
 template<class T>
 typename AVLTree<T>::Node* AVLTree<T>::getMin(AVLTree<T>::Node* node) const{
     if (node == NULL) {
@@ -153,7 +167,7 @@ AVLTree<T>::insertNode(AVLTree<T>::Node *node, AVLTree<T>::Node *target, AVLTree
         return node;
     }
 
-    if (node->data < target->data) {
+    if (*node->data < *target->data) {
         target->left = insertNode(node, target->left, target);
     } else {
         target->right = insertNode(node, target->right, target);
@@ -200,39 +214,41 @@ typename AVLTree<T>::Node* AVLTree<T>::removeNode(AVLTree<T>::Node *node, AVLTre
     if (node == NULL) {
         return NULL;
     }
-
-    if (node->data < target->data) {
-        target->left = removeNode(node, target->left);
-    } else if (node->data > target->data) {
-        target->right = removeNode(node, target->right);
-    }
-
-// Delete the node
-    if (node->data == target->data) {
+    // Delete the node
+    if (*node->data == *target->data) {
         if (!target->right && !target->left) {
             // Leaf
+            delete target->data;
             delete target;
             return NULL;
         } else if (!target->right) {
             // Only right son
-                Node* temp = target;
-                target = target->left;
-                delete temp;
-                return target;
+            Node* temp = target;
+            target = target->left;
+            delete temp->data;
+            delete temp;
+            return target;
 
         } else if (!target->left) {
             // Only left son
-                Node* temp = target;
-                target = target->right;
-                delete temp;
-                return target;
+            Node* temp = target;
+            target = target->right;
+            delete temp->data;
+            delete temp;
+            return target;
         } else {
-        // right and left son exist
+            // right and left son exist
             Node *temp = getMin(target->right);
-            target->data = temp->data;
+            delete &target->data;
+            target->data = new T(*temp->data);
             target->right = removeNode(target, target->right);
         }
+    } else if (*node->data < *target->data) {
+        target->left = removeNode(node, target->left);
+    } else {
+        target->right = removeNode(node, target->right);
     }
+
 
     target->height = max(height(target->left), height(target->right)) + 1;
 
@@ -312,19 +328,28 @@ int AVLTree<T>::balanceFactor(AVLTree<T>::Node *node) const {
 
 template<class T>
 template<class Func>
-void AVLTree<T>::inorder(Func& func) {
-    inorder_aux(root, func);
+void AVLTree<T>::inorder(Func& func, int limit) {
+    int iterations = size;
+    if(limit >= 0){
+        iterations = limit;
+    }
+    inorder_aux(root, func, &iterations);
 }
 
 template<class T>
 template<class Func>
-void AVLTree<T>::inorder_aux(AVLTree<T>::Node *node, Func& func) {
-    if (node == NULL) {
+void AVLTree<T>::inorder_aux(AVLTree<T>::Node *node, Func& func, int* limit) {
+    if (node == NULL || (*limit) <= 0) {
         return;
     }
-    inorder_aux(node->left, func);
-    func(node->data);
-    inorder_aux(node->right, func);
+    inorder_aux(node->left, func, limit);
+    if((*limit) <= 0)
+        return;
+    if(func(node->data))
+        (*limit)--;
+    if((*limit) <= 0)
+        return;
+    inorder_aux(node->right, func, limit);
 }
 
 template<class T>
@@ -355,25 +380,60 @@ void AVLTree<T>::printTree_aux(AVLTree<T>::Node* node) const {
     if(node == NULL)
         return;
     printTree_aux(node->left);
-    std::cout << node->data << " BF: " << balanceFactor(node) << " Height: " << height(node) << std::endl;
+    std::cout << *node->data << " BF: " << balanceFactor(node) << " Height: " << height(node) << std::endl;
     printTree_aux(node->right);
 }
 
 template<class T>
-void AVLTree<T>::reverseInorder() {
-    reverseInorder_aux(min, NULL);
+template<class Func>
+void AVLTree<T>::reverseInorder(Func& func,int limit) {
+    int iterations = size;
+    if(limit >= 0){
+        iterations = limit;
+    }
+    reverseInorder_aux(min, func,NULL, &iterations);
 }
 
 template<class T>
-void AVLTree<T>::reverseInorder_aux(AVLTree<T>::Node* node, AVLTree<T>::Node* last){
-    if(node == NULL)
+template<class Func>
+void AVLTree<T>::reverseInorder_aux(AVLTree<T>::Node* node, Func& func, AVLTree<T>::Node* last, int* limit){
+    if(node == NULL || (*limit) <= 0)
         return;
     if(node->father == last)
-        reverseInorder_aux(node->left, node);
-    std::cout << node->data << " BF: " << balanceFactor(node) << " Height: " << height(node) << std::endl;
-    reverseInorder_aux(node->right, node);
+        reverseInorder_aux(node->left, func, node, limit);
+    if((*limit) <= 0)
+        return;
+    if(func(node->data))
+        (*limit)--;
+    if((*limit) <= 0)
+        return;
+    reverseInorder_aux(node->right, func, node, limit);
+    if((*limit) <= 0)
+        return;
     if(node->father != last)
-        reverseInorder_aux(node->father, node);
+        reverseInorder_aux(node->father, func, node, limit);
 
+}
+
+template<class T>
+void AVLTree<T>::sortedArrayInit(T data_arr[], int n) {
+    if(size > 0)
+        throw TreeHasData();
+    root = sortedInit_aux(data_arr, 0, n - 1, NULL);
+    size = n;
+}
+
+template<class T>
+typename AVLTree<T>::Node* AVLTree<T>::sortedInit_aux(T data_arr[], int start, int end, AVLTree<T>::Node* father){
+    if(start > end)
+        return NULL;
+
+    int mid = (start+end)/2;
+    Node *node = initNode(data_arr[mid]);
+    node->father = father;
+    node->left = sortedInit_aux(data_arr, start, mid -1, node);
+    node->right = sortedInit_aux(data_arr, mid + 1, end, node);
+    node->height = max(height(node->right), height(node->left)) + 1;
+    return node;
 }
 #endif //DS_HW1_AVL_TREE_H

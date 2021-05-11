@@ -16,7 +16,7 @@ public:
     bool operator==(const CarZeroPoints&) const;
     void removeModel(int model);
     int getTypeId() const;
-    bool emptyModels() const
+    bool emptyModels() const;
     AVLTree<int>& getModels() const;
 };
 bool operator>(const CarZeroPoints& car_zero_points1, const CarZeroPoints& car_zero_points2);

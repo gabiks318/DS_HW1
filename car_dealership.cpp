@@ -8,7 +8,7 @@
 #include "exceptions.h"
 
 
-CarDealerShip::CarDealerShip() : points(), zero_points(), sells(), best_sells() { // 1
+CarDealerShip::CarDealerShip() : points(), zero_points(), sells(), best_sells(), total_models(0) { // 1
 }
 
 StatusType CarDealerShip::AddCarType(int type_id, int num_of_models) { //5logn + 2m
@@ -32,6 +32,7 @@ StatusType CarDealerShip::AddCarType(int type_id, int num_of_models) { //5logn +
     } catch (NodeExists &e) {
         return FAILURE;
     }
+    total_models += num_of_models;
     return SUCCESS;
 }
 
@@ -69,35 +70,7 @@ StatusType CarDealerShip::sellCar(int typeID, int modelID) { //7log + 4logM(m<M)
         best_sells.remove(*best_sells_ptr); //logn
         best_sells.insert(updated_car_best); //logn
 
-        CarPoints *car_points = car_to_sell->getCarPointsModel(modelID);
-        CarZeroPoints *car_zero_ptr = zero_points.find(CarZeroPoints(typeID, 0));
-        if (car_points == NULL) {// the car is inside zeroes tree
-            car_zero_ptr->removeModel(modelID); //logm
-            if (car_zero_ptr->emptyModels()) { //no more models with zero rank from this type
-                zero_points.remove(*car_zero_ptr); //logn
-            }
-            CarPoints car_points = CarPoints(typeID, modelID, 10);
-            points.insert(car_points);//logM
-            car_to_sell->updatePointsPtr(modelID, car_points.find(
-                    car_points)); //logM update car pointers arr that this model moved to points tree
-        } else { //the car is inside points tree
-            car_points->updatePoints(10);
-            if (car_points->getPoints() == 0) {// put it back in zeroes tree
-                if (car_zero_ptr == NULL) { //this type isn't inside zeroes tree
-                    zero_points.insert(CarZeroPoints(typeID, 0));//logn
-                    car_zero_ptr = zero_points.find(CarZeroPoints(typeID, 0)); //logn
-                    car_zero_ptr->insertModel(modelID); //1
-                } else {
-                    car_zero_ptr->insertModel(modelID); //logn
-                }
-                car_to_sell->updatePointsPtr(modelID,
-                                             NULL); //update car pointers arr that this model moved to zeroes tree
-            } else {
-                CarPoints updated_points_car = CarPoints(*car_points);
-                car_points.remove(*car_points);
-                car_points.insert(updated_points_car)
-            }
-        }
+        this->updatePoints(typeID,modelID, 10);
     } catch (std::bad_alloc &e) {
         return ALLOCATION_ERROR;
     }
@@ -107,51 +80,67 @@ StatusType CarDealerShip::sellCar(int typeID, int modelID) { //7log + 4logM(m<M)
 StatusType CarDealerShip::makeComplaint(int typeID, int modelID, int t) {
     if (type_id <= 0 || num_of_models <= 0)
         return INVALID_INPUT;
-    try {
-        CarSells *car_to_complain = sells.find(CarSells(type_id, 0)); //logn
-        CarPoints *car_points = car_to_complain->getCarPointsModel(modelID);
-        CarZeroPoints *car_zero_ptr = zero_points.find(CarZeroPoints(typeID, 0));
-        if (car_points == NULL) {// the car is inside zeroes tree
-            car_zero_ptr->removeModel(modelID);//logm
-            if (car_zero_ptr->emptyModels()) { //no more models with zero rank from this type
-                zero_points.remove(*car_zero_ptr);//logn
-            }
-            CarPoints car_points = CarPoints(typeID, modelID, -(int) (100 / t));
-            points.insert(car_points);//logM
-            car_to_complain->updatePointsPtr(modelID, car_points.find(
-                    car_points)); //logM update car pointers arr that this model moved to points tree
-        } else { //the car is inside points tree
-            car_points->updatePoints(-(int) (100 / t));
-            if (car_points->getPoints() == 0) {// put it back in zeroes tree
-                if (car_zero_ptr == NULL) { //this type isn't inside zeroes tree
-                    zero_points.insert(CarZeroPoints(typeID, 0));//logn
-                    car_zero_ptr = zero_points.find(CarZeroPoints(typeID, 0)); //logn
-                    car_zero_ptr->insertModel(modelID); //1
-                } else {
-                    car_zero_ptr->insertModel(modelID); //logn
-                }
-                car_to_complain->updatePointsPtr(modelID,
-                                                 NULL); //update car pointers arr that this model moved to zeroes tree
-            } else {
-                CarPoints updated_points_car = CarPoints(*car_points);
-                car_points.remove(*car_points);
-                car_points.insert(updated_points_car);
-            }
-        }
+    try{
+        this->updatePoints(typeID,modelID, -(int)100/t);
     } catch (std::bad_alloc &e) {
         return ALLOCATION_ERROR;
     }
     return SUCCESS;
 }
 
-StatusType CarDealerShip::GetBestSellerModelByType(int typeID, int *modelID) {
-    if (typeID == 0) {
+void CarDealerShip::updatePoints(int typeID, int modelID, int points){
+    CarSells *car_to_update = sells.find(CarSells(type_id, 0)); //logn
+    CarPoints *car_points = car_to_update->getCarPointsModel(modelID);
+    CarZeroPoints *car_zero_ptr = zero_points.find(CarZeroPoints(typeID, 0));
+    if (car_points == NULL) {// the car is inside zeroes tree
+        car_zero_ptr->removeModel(modelID);//logm
+        if (car_zero_ptr->emptyModels()) { //no more models with zero rank from this type
+            zero_points.remove(*car_zero_ptr);//logn
+        }
+        CarPoints car_points = CarPoints(typeID, modelID, points);
+        points.insert(car_points);//logM
+        car_to_update->updatePointsPtr(modelID, car_points.find(
+                car_points)); //logM update car pointers arr that this model moved to points tree
+    } else { //the car is inside points tree
+        car_points->updatePoints(points);
+        if (car_points->getPoints() == 0) {// put it back in zeroes tree
+            if (car_zero_ptr == NULL) { //this type isn't inside zeroes tree
+                zero_points.insert(CarZeroPoints(typeID, 0));//logn
+                car_zero_ptr = zero_points.find(CarZeroPoints(typeID, 0)); //logn
+                car_zero_ptr->insertModel(modelID); //1
+            } else {
+                car_zero_ptr->insertModel(modelID); //logn
+            }
+            car_to_update->updatePointsPtr(modelID,
+                                             NULL); //update car pointers arr that this model moved to zeroes tree
+        } else {
+            CarPoints updated_points_car = CarPoints(*car_points);
+            car_points.remove(*car_points);
+            car_points.insert(updated_points_car);
+        }
+    }
+}
+
+
+StatusType CarDealerShip::GetBestSellerModelByType(int typeID, int *modelID) {//typeid=0 1, else logn
+    if (typeID < 0) {
         return INVALID_INPUT;
     }
     try {
-
+        if(modelID == 0){
+            if(sells.isEmpty()){ //1
+                return FAILURE;
+            }
+            *modelID = best_sells.getMaxData()->getBestSellerModel(); //1
+        } else {
+            CarBestSells best_sell_copy = CarBestSells(typeID);
+            CarBestSells* best_sell_ptr = best_sells.find(best_sell_copy);//logn
+            *modelID = best_sell_ptr->getBestSellerModel();
+        }
     } catch (std::bad_alloc &e) {
         return ALLOCATION_ERROR;
+    } catch (NodeDoesntExists &e) {
+        return FAILURE;
     }
     return SUCCESS;
 }
@@ -160,9 +149,23 @@ StatusType CarDealerShip::GetWorstModels(int numOfModels, int *types, int *model
     if (numOfModels <= 0) {
         return INVALID_INPUT;
     }
+    if(numOfModels> total_models){
+        return FAILURE;
+    }
     try {
-
-
+    // Initiate predicate, set to negative points
+    int index = 0;
+    PrintWorst predicate = PrintWorst(types, models, numOfModels, &index);
+    PrintWorstZero predicate_zero = PrintWorstZero(types, models, numOfModels, &index);
+    predicate.setNegative();
+    points.iterate(predicate);
+    if(!predicate.isFinished()){
+        zero_points.iterate(predicate_zero);
+        if(!predicate.isFinished()){
+            predicate.setPositive();
+            points.iterate_continue(predicate);
+        }
+    }
     } catch (std::bad_alloc &e) {
         return ALLOCATION_ERROR;
     }
@@ -171,19 +174,64 @@ StatusType CarDealerShip::GetWorstModels(int numOfModels, int *types, int *model
 }
 
 void CarDealerShip::Quit() {
-
+    points.empty();
+    zero_points.empty();
+    sells.empty();
+    best_sells.empty();
 }
 
-bool CarDealership::PrintPositive::operator()(CarPoints *car_points) {
-    if (car_points->getPoints() < 0)
+bool CarDealership::PrintWorst::operator()(CarPoints *car_points) {
+    // Check if limit was reached
+    if(*index == limit)
         return false;
-    std::cout << car_points->getModel() << "  |  " << car_points->getTypeId() << std::endl;
+    // If positive mode, check if points are positive
+    if(mode > 0){
+        if(car_points->getPoints() <= 0)
+            return false;
+    } else if(mode < 0){
+        // If negative mode, check if points are negative
+        if(car_points->getPoints() >= 0)
+            return false;
+    }
+
+    // If all checks passed, add model and type to array
+    types[*index] = car_points->getTypeId();
+    models[*index] = car_points->getModel();
+    (*index)++;
     return true;
 }
 
-bool CarDealership::PrintNegative::operator()(CarPoints *car_points) {
-    if (car_points->getPoints() > 0)
+void CarDealership::PrintWorst::setNegative(){
+    mode = -1;
+}
+
+void CarDealership::PrintWorst::setPositive(){
+    mode = 1;
+}
+
+bool CarDealership::PrintWorst::isFinished(){
+    return index == limit;
+}
+bool CarDealership::PrintWorstZero::operator()(CarZeroPoints *car_points) {
+    // Check if limit was reached
+    if(*index == limit)
         return false;
-    std::cout << car_points->getModel() << "  |  " << car_points->getTypeId() << std::endl;
+    PrintZeroAux predicate_helper = PrintZeroAux(types, models, limit, index, car_points->getTypeId());
+    AVLTree<int> model_tree = car_points->getModels();
+    model_tree.iterate(predicate_helper);
+    // Check again, iteration might have stopped before all tree was traversed
+    if(*index == limit)
+        return false;
     return true;
+}
+
+bool CarDealership::PrintWorstZero::PrintZeroAux::operator()(int *model_num){
+    // Check if limit was reached
+    if(*index == limit)
+        return false;
+
+    types[*index] = car_type;
+    models[*index] = *model_num;
+    (*index)++;
+    return true
 }

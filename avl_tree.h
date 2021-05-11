@@ -94,7 +94,7 @@ public:
         AvlIterator& operator=(const AvlIterator& avl_iterator);
         AvlIterator(const AvlIterator& avl_iterator);
 
-        Node& operator*();
+        T& operator*();
         AvlIterator& operator++();
         bool operator==(const AvlIterator& avl_iterator)const;
         bool operator!=(const AvlIterator& avl_iterator)const;
@@ -553,8 +553,8 @@ AVLTree<T>::AvlIterator::AvlIterator(const AvlIterator& avl_iterator): node(avl_
 }
 
 template<class T>
-typename AVLTree<T>::Node& AVLTree<T>::AvlIterator::operator*(){
-    return *node;
+T& AVLTree<T>::AvlIterator::operator*(){
+    return node->data;
 }
 
 template<class T>

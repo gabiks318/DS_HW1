@@ -8,7 +8,7 @@ private:
     AVLTree<int> models;
     int type_id;
 public:
-    CarZeroPoints(int type_id, int num_of_models);//build tree with algorithm
+    CarZeroPoints(int type_id, int num_of_models);
     ~CarZeroPoints();
     CarZeroPoints(const CarZeroPoints&);
     CarZeroPoints& operator=(const CarZeroPoints&);

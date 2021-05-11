@@ -154,20 +154,39 @@ StatusType CarDealerShip::GetWorstModels(int numOfModels, int *types, int *model
     }
     bool zero_done = false;
     int i = 0;
-    for(AVLTree<CarPoints>::AvlIterator points_iterator = points.begin(); points_iterator != points.end(); ++points_iterator){
-        CarPoints& curr = *points_iterator;
-        if(i < numOfModels) {
-            if(!zero_done && curr.getPoints() > 0){
-                for(AVLTree<CarZeroPoints> zero_iterator = zero_points.begin(); )
-            }
-            else{
+    try {
+        for (AVLTree<CarPoints>::AvlIterator points_iterator = points.begin();
+                        points_iterator != points.end(); ++points_iterator) {
+            CarPoints &curr_points = *points_iterator;
+            if (i >= numOfModels) break;
+            if (!zero_done && curr.getPoints() > 0) { //done negative go to zeroes
+                for (AVLTree<CarZeroPoints>::AvlIterator zero_iterator = zero_points.begin();
+                                        zero_iterator != zero_points.end(); ++zero_iterator) {
+                    CarZeroPoints &curr_zero_points = *zero_iterator;
+                    AVLTree<int> &curr_zero_models = curr_zero_points.getModels();
+                    for (AVLTree<int>::AvlIterator zero_model_iterator = curr_zero_models.begin();
+                                    zero_model_iterator != curr_zero_models.end(); ++zero_model_iterator) {
+                        if (i >= numOfModels) break;
+                        types[i] = curr_zero_points.getTypeId();
+                        models[i] = *zero_model_iterator;
+                        i++;
+                    }
+                    if (i >= numOfModels) break;
+                }
+                zero_done = true;
+            } else {
                 types[i] = curr.getTypeId();
                 models[i] = curr.getModel();
             }
+            i++;
         }
-        i++;
+    } catch (std::bad_alloc &e) {
+        return ALLOCATION_ERROR;
     }
+    return SUCCESS;
 }
+
+
 /*
 StatusType CarDealerShip::GetWorstModels(int numOfModels, int *types, int *models) {
     if (numOfModels <= 0) {

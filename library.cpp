@@ -21,13 +21,15 @@ StatusType makeComplaint(void *DS, int typeID, int modelID, int t){
 }
 
 StatusType GetBestSellerModelByType(void *DS, int typeID, int * modelID){
-
+    if(DS == NULL) return INVALID_INPUT;
+    return ((CarDealerShip*)DS)-> GetBestSellerModelByType(typeID,modelID));
 }
 
 StatusType GetWorstModels(void *DS, int numOfModels, int *types, int *models){
-
+    if(DS == NULL) return INVALID_INPUT;
+    return ((CarDealerShip*)DS)-> GetWorstModels(numOfModels,types,models);
 }
 
 void Quit(void** DS){
-
+    return ((CarDealerShip*)DS)-> Quit();
 }

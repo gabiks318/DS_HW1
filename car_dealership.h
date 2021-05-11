@@ -14,7 +14,7 @@ private:
     AVLTree<CarSells> sells; // Car Type tree
     AVLTree<CarBestSells> best_sells; // Sales tree
     int total_models;
-    class PrintWorst{
+ /*   class PrintWorst{
         int* types;
         int* models;
         int* index;
@@ -49,7 +49,7 @@ private:
             PrintZeroAux(int* types, int* models, int limit, int* index. int car_type):types(types), models(models), index(index), limit(limit), car_type(car_type){};
         };
     };
-
+*/
 public:
     CarDealerShip();
     ~CarDealerShip() = default;

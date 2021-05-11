@@ -24,9 +24,6 @@ private:
     Node* max;
     int size;
 
-    Node* iterator;
-    Node* iterator_last;
-
     // Node Functions
     Node* initNode(const T& data);
     Node* insertNode(Node *node, Node *target, Node *father);
@@ -44,10 +41,6 @@ private:
     Node *rollRightLeft(Node *node);
     Node *rollRightRight(Node *node);
 
-
-    // Tree Traversals
-    void init_iterator(Node* node);
-    void iterator_get_next();
     template<class Func>
     void inorder_aux(Node *node, Func& func, int* limit);
     template<class Func>
@@ -64,7 +57,7 @@ private:
 
 
     // Aux functions
-    int max(int num1, int num2);
+
 public:
     // Constructors, Destructor, Assignment
     AVLTree() : root(NULL), min(NULL), size(0) {};
@@ -91,13 +84,28 @@ public:
     template<class Func>
     void reverseInorder(Func& func, int limit=-1);
 
-    template<class Func>
-    void iterate(Func& func);
+    //------------Iterator--------//
+    class AvlIterator{
+        Node* node;
+        Node* max;
+    public:
+        AvlIterator(Node* node, Node* max);
+        ~AvlIterator() = default;
+        AvlIterator& operator=(const AvlIterator& avl_iterator);
+        AvlIterator(const AvlIterator& avl_iterator);
 
-    template<class Func>
-    void continue_iteration(Func& func);
+        Node& operator*();
+        AvlIterator& operator++();
+        bool operator==(const AvlIterator& avl_iterator)const;
+        bool operator!=(const AvlIterator& avl_iterator)const;
+
+        friend class AVLTree<T>;
+    };
+    AvlIterator begin() const;
+    AvlIterator end() const;
+    //---------------------------//
 };
-
+int max(int num1, int num2);
 // Constructors, Destructor, Assignment ---------------------
 
 template<class T>
@@ -217,23 +225,6 @@ bool AVLTree<T>::isEmpty() const{
 template<class T>
 T* AVLTree<T>::getMaxData() const{
     return getNodeData(max);
-}
-
-template<class T>
-template<class Func>
-void AVLTree<T>::iterate(Func& func){
-    initIterator(min);
-    while(iterator != NULL && func(iterator)){
-        iterator_get_next();
-    }
-}
-
-template<class T>
-template<class Func>
-void AVLTree<T>::continue_iteration(Func& func){
-    while(iterator != NULL && func(iterator)){
-        iterator_get_next();
-    }
 }
 
 // Node Functions ---------------------------------------------
@@ -491,43 +482,6 @@ void AVLTree<T>::printTree_aux(AVLTree<T>::Node* node) const {
 }
 
 
-template<class T>
-void AVLTree<T>::init_iterator(Node* node){
-    iterator = node;
-    iterator_last = NULL;
-}
-
-template<class T>
-void AVLTree<T>::iterator_get_next(){
-    if(iterator->left == iterator_last){
-        if(iterator->right != NULL){
-            iterator_last = iterator;
-            iterator = iterator->right;
-        } else {
-            iterator_last = iterator;
-            iterator = iterator->father;
-        }
-    } else if(iterator->father == iterator_last){
-        if(iterator->left != NULL){
-            iterator_last = iterator;
-            iterator = iterator->left;
-        } else{
-            if(iterator->right != NULL){
-                iterator_last = iterator;
-                iterator = iterator->right;
-            } else {
-                iterator_last = iterator;
-                iterator = iterator->father;
-            }
-        }
-    } else {
-        iterator_last = iterator;
-        iterator = iterator->father;
-    }
-
-
-}
-
 // Constructor, Destructor helper functions--------------------------------------------
 
 template<class T>
@@ -577,11 +531,73 @@ void AVLTree<T>::empty_aux(AVLTree<T>::Node* node) {
     delete node;
 }
 
-// Aux functions---------------------------------------------------
+int max(int num1, int num2){
+    return num1 > num2 ? num1 : num2;
+}
+//---------------Iterator Implementation-----------//
+template<class T>
+AVLTree<T>::AvlIterator::AvlIterator(Node* node, Node* max): node(node), max(max){
+}
 
 template<class T>
-int AVLTree<T>::max(int num1, int num2){
-    return num1 > num2 ? num1 : num2;
+typename AVLTree<T>::AvlIterator& AVLTree<T>::AvlIterator::operator=(const AvlIterator& avl_iterator){
+    if(this == avl_iterator){
+        return *this;
+    }
+    node = avl_iterator.node;
+    max = avl_iterator.max;
+}
+
+template<class T>
+AVLTree<T>::AvlIterator::AvlIterator(const AvlIterator& avl_iterator): node(avl_iterator.node), max(avl_iterator.max){
+}
+
+template<class T>
+typename AVLTree<T>::Node& AVLTree<T>::AvlIterator::operator*(){
+    return *node;
+}
+
+template<class T>
+typename AVLTree<T>::AvlIterator& AVLTree<T>::AvlIterator::operator++(){
+    if(node == max){
+        node = NULL;
+    }
+    else {
+        if (node->right != NULL) {
+            node = node->right;
+            while (node->left != NULL) {
+                node = node->left;
+            }
+        } else {
+            Node *temp = node;
+            node = node->father;
+            while (node->father != NULL && node->right == temp) { //climbed from right son so continue
+                temp = node;
+                node = node->father;
+            }
+        }
+    }
+    return *this;
+}
+
+template<class T>
+bool AVLTree<T>::AvlIterator::operator==(const AvlIterator& avl_iterator)const{
+    return node == avl_iterator.node;
+}
+
+template<class T>
+bool AVLTree<T>::AvlIterator::operator!=(const AvlIterator& avl_iterator)const{
+    return !(*this == avl_iterator);
+}
+
+template<class T>
+typename AVLTree<T>::AvlIterator AVLTree<T>::begin() const{
+    return AvlIterator(min, max);
+}
+
+template<class T>
+typename AVLTree<T>::AvlIterator AVLTree<T>::end() const{
+    return AvlIterator(NULL,NULL);
 }
 
 #endif //DS_HW1_AVL_TREE_H

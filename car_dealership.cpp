@@ -152,6 +152,30 @@ StatusType CarDealerShip::GetWorstModels(int numOfModels, int *types, int *model
     if(numOfModels> total_models){
         return FAILURE;
     }
+    bool zero_done = false;
+    int i = 0;
+    for(AVLTree<CarPoints>::AvlIterator points_iterator = points.begin(); points_iterator != points.end(); ++points_iterator){
+        CarPoints& curr = *points_iterator;
+        if(i < numOfModels) {
+            if(!zero_done && curr.getPoints() > 0){
+                for(AVLTree<CarZeroPoints> zero_iterator = zero_points.begin(); )
+            }
+            else{
+                types[i] = curr.getTypeId();
+                models[i] = curr.getModel();
+            }
+        }
+        i++;
+    }
+}
+/*
+StatusType CarDealerShip::GetWorstModels(int numOfModels, int *types, int *models) {
+    if (numOfModels <= 0) {
+        return INVALID_INPUT;
+    }
+    if(numOfModels> total_models){
+        return FAILURE;
+    }
     try {
     // Initiate predicate, set to negative points
     int index = 0;
@@ -172,14 +196,14 @@ StatusType CarDealerShip::GetWorstModels(int numOfModels, int *types, int *model
 
     return SUCCESS;
 }
-
+*/
 void CarDealerShip::Quit() {
     points.empty();
     zero_points.empty();
     sells.empty();
     best_sells.empty();
 }
-
+/*
 bool CarDealership::PrintWorst::operator()(CarPoints *car_points) {
     // Check if limit was reached
     if(*index == limit)
@@ -234,4 +258,4 @@ bool CarDealership::PrintWorstZero::PrintZeroAux::operator()(int *model_num){
     models[*index] = *model_num;
     (*index)++;
     return true
-}
+}*/

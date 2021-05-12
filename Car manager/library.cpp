@@ -31,5 +31,8 @@ StatusType GetWorstModels(void *DS, int numOfModels, int *types, int *models){
 }
 
 void Quit(void** DS){
-    *DS = ((CarDealerShip*)DS)-> Quit();
+    CarDealerShip *to_destroy = (CarDealerShip*)*DS;
+    to_destroy-> Quit();
+    delete to_destroy;
+    *DS = NULL;
 }

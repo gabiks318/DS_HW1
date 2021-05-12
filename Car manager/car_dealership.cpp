@@ -1,11 +1,11 @@
 #include <iostream>
-#include "car_dealership.h"
-#include "avl_tree.h"
-#include "car_points.h"
-#include "car_zero_points.h"
-#include "car_best_sells.h"
-#include "car_sells.h"
-#include "exceptions.h"
+#include "../Car Classes/car_dealership.h"
+#include "../AVL Tree/avl_tree.h"
+#include "../Car Classes/car_points.h"
+#include "../Car Classes/car_zero_points.h"
+#include "../Car Classes/car_best_sells.h"
+#include "../Car Classes/car_sells.h"
+#include "../AVL Tree/exceptions.h"
 
 
 CarDealerShip::CarDealerShip() : points(), zero_points(), sells(), best_sells(), total_models(0) { // 1
@@ -186,95 +186,9 @@ StatusType CarDealerShip::GetWorstModels(int numOfModels, int *types, int *model
     return SUCCESS;
 }
 
-
-/*
-StatusType CarDealerShip::GetWorstModels(int numOfModels, int *types, int *models) {
-    if (numOfModels <= 0) {
-        return INVALID_INPUT;
-    }
-    if(numOfModels> total_models){
-        return FAILURE;
-    }
-    try {
-    // Initiate predicate, set to negative points
-    int index = 0;
-    PrintWorst predicate = PrintWorst(types, models, numOfModels, &index);
-    PrintWorstZero predicate_zero = PrintWorstZero(types, models, numOfModels, &index);
-    predicate.setNegative();
-    points.iterate(predicate);
-    if(!predicate.isFinished()){
-        zero_points.iterate(predicate_zero);
-        if(!predicate.isFinished()){
-            predicate.setPositive();
-            points.iterate_continue(predicate);
-        }
-    }
-    } catch (std::bad_alloc &e) {
-        return ALLOCATION_ERROR;
-    }
-
-    return SUCCESS;
-}
-*/
 void CarDealerShip::Quit() {
     points.empty();
     zero_points.empty();
     sells.empty();
     best_sells.empty();
 }
-/*
-bool CarDealership::PrintWorst::operator()(CarPoints *car_points) {
-    // Check if limit was reached
-    if(*index == limit)
-        return false;
-    // If positive mode, check if points are positive
-    if(mode > 0){
-        if(car_points->getPoints() <= 0)
-            return false;
-    } else if(mode < 0){
-        // If negative mode, check if points are negative
-        if(car_points->getPoints() >= 0)
-            return false;
-    }
-
-    // If all checks passed, add model and type to array
-    types[*index] = car_points->getTypeId();
-    models[*index] = car_points->getModel();
-    (*index)++;
-    return true;
-}
-
-void CarDealership::PrintWorst::setNegative(){
-    mode = -1;
-}
-
-void CarDealership::PrintWorst::setPositive(){
-    mode = 1;
-}
-
-bool CarDealership::PrintWorst::isFinished(){
-    return index == limit;
-}
-bool CarDealership::PrintWorstZero::operator()(CarZeroPoints *car_points) {
-    // Check if limit was reached
-    if(*index == limit)
-        return false;
-    PrintZeroAux predicate_helper = PrintZeroAux(types, models, limit, index, car_points->getTypeId());
-    AVLTree<int> model_tree = car_points->getModels();
-    model_tree.iterate(predicate_helper);
-    // Check again, iteration might have stopped before all tree was traversed
-    if(*index == limit)
-        return false;
-    return true;
-}
-
-bool CarDealership::PrintWorstZero::PrintZeroAux::operator()(int *model_num){
-    // Check if limit was reached
-    if(*index == limit)
-        return false;
-
-    types[*index] = car_type;
-    models[*index] = *model_num;
-    (*index)++;
-    return true
-}*/

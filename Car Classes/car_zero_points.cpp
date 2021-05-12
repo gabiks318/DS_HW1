@@ -5,7 +5,7 @@ CarZeroPoints::CarZeroPoints(int type_id, int num_of_models): models(), type_id(
     int* models_arr = new int[num_of_models];
     for(int model = 0; model < num_of_models; model++)
         models_arr[model] = model;
-    models.SortedArrayInit(models_arr, num_of_models);
+    models.sortedArrayInit(models_arr, num_of_models);
     delete [] models_arr;
 }
 
@@ -23,6 +23,7 @@ CarZeroPoints& CarZeroPoints::operator=(const CarZeroPoints& car_zero_points){
     }
     models = car_zero_points.models;
     type_id = car_zero_points.type_id;
+    return *this;
 }
 
 bool CarZeroPoints::operator<(const CarZeroPoints& car_zero_points) const {
@@ -44,7 +45,7 @@ void CarZeroPoints::removeModel(int model){
 void CarZeroPoints::insertModel(int model){
     models.insert(model);
 }
-bool emptyModels() const{
+bool CarZeroPoints::emptyModels() const{
     return models.isEmpty();
 }
 
@@ -52,7 +53,7 @@ int CarZeroPoints::getTypeId() const{
     return type_id;
 }
 
-AVLTree<int>& CarZeroPoints::getModels() const{
+AVLTree<int>& CarZeroPoints::getModels(){
     return models;
 }
 

@@ -96,7 +96,7 @@ public:
     //---------------------------//
 };
 
-int max(int num1, int num2);
+static int maxInt(int num1, int num2);
 // Constructors, Destructor, Assignment ---------------------
 
 template<class T>
@@ -241,7 +241,7 @@ AVLTree<T>::insertNode(AVLTree<T>::Node *node, AVLTree<T>::Node *target, AVLTree
             return rollRightRight(target); //RR
         }
     }
-    target->height = max(height(target->right), height(target->left)) + 1;
+    target->height = maxInt(height(target->right), height(target->left)) + 1;
     return target;
 }
 
@@ -286,7 +286,7 @@ typename AVLTree<T>::Node* AVLTree<T>::removeNode(AVLTree<T>::Node *node, AVLTre
     }
 
 
-    target->height = max(height(target->left), height(target->right)) + 1;
+    target->height = maxInt(height(target->left), height(target->right)) + 1;
 
     // Balancing the tree
     if (balanceFactor(target) > 1) {
@@ -307,18 +307,17 @@ typename AVLTree<T>::Node* AVLTree<T>::removeNode(AVLTree<T>::Node *node, AVLTre
 
 template<class T>
 typename AVLTree<T>::Node* AVLTree<T>::findNode(AVLTree<T>::Node* node, const T& data){
-    if (node != NULL) {
-        if (data == *node->data) {
-            return node;
+    if(node == NULL)
+        return NULL;
+    if (data == *node->data) {
+        return node;
+    } else {
+        if (data > *node->data) {
+            return findNode(node->right, data);
         } else {
-            if (data > *node->data) {
-                return findNode(node->right, data);
-            } else {
-                return findNode(node->left, data);
-            }
+            return findNode(node->left, data);
         }
     }
-    return NULL;
 }
 
 template<class T>
@@ -345,7 +344,7 @@ typename AVLTree<T>::Node* AVLTree<T>::getMin(AVLTree<T>::Node* node) const{
 }
 
 template<class T>
-typename AVLTree<T>::Node* getMax(AVLTree<T>::Node *node) const{
+typename AVLTree<T>::Node* AVLTree<T>::getMax(Node *node) const{
     if (node == NULL) {
         return NULL;
     }
@@ -371,9 +370,9 @@ typename AVLTree<T>::Node *AVLTree<T>::rollLeftLeft(AVLTree<T>::Node *node) {
     node->left = node->father->right;
     node->father->right = node;
 
-    node->height = max(height(node->right), height(node->left)) + 1;
+    node->height = maxInt(height(node->right), height(node->left)) + 1;
     if(node->father) {
-        node->father->height = max(height(node->father->right), height(node->father->left)) + 1;
+        node->father->height = maxInt(height(node->father->right), height(node->father->left)) + 1;
     }
     return node->father;
 }
@@ -386,9 +385,9 @@ typename AVLTree<T>::Node *AVLTree<T>::rollRightRight(AVLTree<T>::Node *node) {
     node->right = node->father->left;
     node->father->left = node;
 
-    node->height = max(height(node->right), height(node->left)) + 1;
+    node->height = maxInt(height(node->right), height(node->left)) + 1;
     if(node->father){
-        node->father->height = max(height(node->father->right), height(node->father->left)) + 1;
+        node->father->height = maxInt(height(node->father->right), height(node->father->left)) + 1;
     }
 
     return node->father;
@@ -431,7 +430,7 @@ typename AVLTree<T>::Node* AVLTree<T>::sortedInit_aux(T data_arr[], int start, i
     node->father = father;
     node->left = sortedInit_aux(data_arr, start, mid -1, node);
     node->right = sortedInit_aux(data_arr, mid + 1, end, node);
-    node->height = max(height(node->right), height(node->left)) + 1;
+    node->height = maxInt(height(node->right), height(node->left)) + 1;
     return node;
 }
 
@@ -447,7 +446,7 @@ typename AVLTree<T>::Node* AVLTree<T>::copyNode(AVLTree<T>::Node* node){
     new_node->father = node->father;
     new_node->left = left;
     new_node->right = right;
-    new_node->height = max(height(new_node->right), height(new_node->left)) + 1;
+    new_node->height = maxInt(height(new_node->right), height(new_node->left)) + 1;
     return new_node;
 }
 
@@ -468,7 +467,7 @@ void AVLTree<T>::empty_aux(AVLTree<T>::Node* node) {
     delete node;
 }
 
-int max(int num1, int num2){
+static int maxInt(int num1, int num2){
     return num1 > num2 ? num1 : num2;
 }
 //---------------Iterator Implementation-----------//

@@ -3,7 +3,7 @@
 #include "car_points.h"
 
 CarSells::CarSells(int type_id, int num_of_models):
-    models(new int[num_of_models]), model_ptr_arr(new *CarBestSells[num_of_models]), best_sells_ptr(NULL),
+    models(new int[num_of_models]), model_ptr_arr(new CarPoints*[num_of_models]), best_sells_ptr(NULL),
     num_of_models(num_of_models), type_id(type_id), best_seller_amount(0), best_seller_model(0){
     for(int model=0; model<num_of_models; model++) {
         models[model] = 0;
@@ -12,7 +12,7 @@ CarSells::CarSells(int type_id, int num_of_models):
 }
 
 CarSells::CarSells(const CarSells& car_sells):
-    models(new int[car_sells.num_of_models]), model_ptr_arr(new *CarBestSells[car_sells.num_of_models]),
+    models(new int[car_sells.num_of_models]), model_ptr_arr(new CarPoints*[car_sells.num_of_models]),
     best_sells_ptr(car_sells.best_sells_ptr), num_of_models(car_sells.num_of_models), type_id(car_sells.type_id),
     best_seller_amount(car_sells.best_seller_amount), best_seller_model(car_sells.best_seller_model){
     for(int model=0; model<num_of_models; model++) {
@@ -39,7 +39,7 @@ CarSells::CarSells(const CarSells& car_sells):
 
 CarSells::~CarSells(){
     delete [] models;
-    delete [] model_ptr_arr
+    delete [] model_ptr_arr;
 }
 
 void CarSells::setBestSellsPtr(CarBestSells* ptr){

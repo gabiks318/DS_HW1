@@ -3,14 +3,15 @@
 //
 
 #include "test_utilities.h"
-#include "../avl_tree.h"
+#include "../AVL Tree//avl_tree.h"
+#include "../AVL Tree/exceptions.h"
 #include <iostream>
 #include <string>
 using std::string;
 using std::cout;
 using std::endl;
 
-#define NUMBER_TESTS 6
+#define NUMBER_TESTS 7
 
 ostream& printInt(int num, ostream& os){
     return os << num << endl;
@@ -87,9 +88,9 @@ bool testAVLReverseInorder(){
     tree.insert(25);
     tree.insert(56);
     PrintTree<int> print = PrintTree<int>();
-    tree.reverseInorder(print);
-
-    tree.reverseInorder(print, 3);
+//    tree.reverseInorder(print);
+//
+//    tree.reverseInorder(print, 3);
 
 returnLabel:
     return result;
@@ -132,9 +133,9 @@ bool testInorder(){
     tree.insert(25);
     tree.insert(56);
     PrintTree<int> print = PrintTree<int>();
-    tree.inorder(print);
-
-    tree.inorder(print, 13);
+//    tree.inorder(print);
+//
+//    tree.inorder(print, 13);
 
     returnLabel:
     return result;
@@ -178,6 +179,51 @@ bool testCopyAndAssignment(){
     returnLabel:
     return result;
 }
+
+bool testAVLFind(){
+    bool result = true;
+    bool passed = true;
+
+    AVLTree<int> tree1 = AVLTree<int>();
+    tree1.insert(5);
+    tree1.insert(8);
+    tree1.insert(6);
+    tree1.insert(22);
+    tree1.insert(33);
+    tree1.insert(12);
+    tree1.insert(1);
+    tree1.insert(16);
+    tree1.insert(7);
+
+    tree1.remove(16);
+    tree1.remove(33);
+
+    try{
+        passed = false;
+        tree1.find(70);
+    } catch(NodeDoesntExist& e){
+        passed = true;
+    }
+    ASSERT_TEST(passed, returnLabel);
+
+    try{
+        passed = false;
+        tree1.find(16);
+    } catch(NodeDoesntExist& e){
+        passed = true;
+    }
+    ASSERT_TEST(passed, returnLabel);
+
+    try{
+        passed = false;
+        tree1.find(33);
+    } catch(NodeDoesntExist& e){
+        passed = true;
+    }
+    ASSERT_TEST(passed, returnLabel);
+    returnLabel:
+    return result;
+}
 /* bool test(){
     bool result = true;
 
@@ -191,7 +237,8 @@ bool (*tests[]) (void) = {
         testAVLReverseInorder,
         testAVLSortedArrayInit,
         testInorder,
-        testCopyAndAssignment
+        testCopyAndAssignment,
+        testAVLFind
 };
 
 const char* testNames[] = {
@@ -200,7 +247,8 @@ const char* testNames[] = {
         "testAVLReverseInorder",
         "testAVLSortedArrayInit",
         "testInorder",
-        "testCopyAndAssignment"
+        "testCopyAndAssignment",
+        "testAVLFind"
 };
 
 int main(int argc, char *argv[]) {

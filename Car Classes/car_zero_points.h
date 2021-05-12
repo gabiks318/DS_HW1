@@ -14,10 +14,11 @@ public:
     CarZeroPoints& operator=(const CarZeroPoints&);
     bool operator<(const CarZeroPoints&) const;
     bool operator==(const CarZeroPoints&) const;
+    void insertModel(int model);
     void removeModel(int model);
     int getTypeId() const;
     bool emptyModels() const;
-    AVLTree<int>& getModels() const;
+    AVLTree<int>& getModels();
 };
 bool operator>(const CarZeroPoints& car_zero_points1, const CarZeroPoints& car_zero_points2);
 

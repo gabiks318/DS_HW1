@@ -33,19 +33,19 @@ int CarPoints::getTypeId() const {
 }
 
 bool CarPoints::operator<(const CarPoints& car_points) const {
-    if(points != car_points.getpoints())
-        return !(points < car_points.getpoints());
-    if(type_id != car_best_sells.getTypeId())
-        return type_id < car_sells.getTypeId();
+    if(points != car_points.getPoints())
+        return points < car_points.getPoints();
+    if(type_id != car_points.getTypeId())
+        return type_id < car_points.getTypeId();
     return model < car_points.getModel();
 }
 
 bool CarPoints::operator==(const CarPoints& car_points) const{
-    return type_id == car_points.type_id && model == car_points.model && points == car_points.model;
+    return type_id == car_points.type_id && model == car_points.model && points == car_points.points;
 }
 
 bool operator>(const CarPoints& car_points1, const CarPoints& car_points2){
-    car_points2 < car_points1;
+    return car_points2 < car_points1;
 }
 
 

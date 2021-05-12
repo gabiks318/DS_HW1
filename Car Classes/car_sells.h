@@ -23,12 +23,13 @@ public:
     bool operator==(const CarSells&) const;
     int getNumOfModels() const;
     int getTypeId() const;
+
     int getBestSellerAmount() const;
     int getBestSellerModel() const;
-    CarBestSells* getBestSellsPtr() const;
+    void setBestSellsPtr(CarBestSells*);
+    CarBestSells* getBestSellsPtr() const; // pointer to best sells tree node
     CarPoints* getCarPointsModel(int model) const;
     void updatePointsPtr(int model, CarPoints* car_points_ptr);
-    void setBestSellsPtr(CarBestSells*);
     void remove(AVLTree<CarPoints>& points_tree, AVLTree<CarBestSells>& best_sells);
     void addSell(int model);
 };

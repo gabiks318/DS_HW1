@@ -25,10 +25,10 @@ void CarBestSells::updateBestSeller(int updated_best_seller_amount, int updated_
 
 bool CarBestSells::operator<(const CarBestSells& car_best_sells) const {
     if(best_seller_amount != car_best_sells.best_seller_amount)
-        return !(best_seller_amount < car_best_sells.best_seller_amount);
+        return best_seller_amount < car_best_sells.best_seller_amount;
     if(type_id != car_best_sells.type_id)
-        return type_id < car_best_sells.getTypeId();
-    return best_seller_model < car_best_sells.best_seller_model();
+        return type_id > car_best_sells.getTypeId();
+    return best_seller_model > car_best_sells.best_seller_model;
 
 }
 

@@ -3,7 +3,7 @@
 //
 
 #include "test_utilities.h"
-#include "../AVL Tree//avl_tree.h"
+#include "../AVL Tree/avl_tree.h"
 #include "../AVL Tree/exceptions.h"
 #include <iostream>
 #include <string>

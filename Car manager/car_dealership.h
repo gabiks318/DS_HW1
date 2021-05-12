@@ -24,9 +24,9 @@ public:
     StatusType makeComplaint(int typeID, int modelID, int t);
     StatusType GetBestSellerModelByType(int typeID, int * modelID);
     StatusType GetWorstModels(int numOfModels, int *types, int *models);
-    void updatePoints(int typeID, int modelID, int points);
+    void updatePoints(int typeID, int modelID, int add_points);
     void Quit();
-    }
-};
+    };
+
 
 #endif //DS_HW1_CAR_DEALERSHIP_H

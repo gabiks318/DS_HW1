@@ -10,7 +10,7 @@ private:
     int* models;
     int* models_points; // Keeps track of how many points the model has
 //    CarPoints** model_ptr_arr;
-    CarBestSells* best_sells_ptr;
+//    CarBestSells* best_sells_ptr;
     int num_of_models;
     int type_id;
     int best_seller_amount;
@@ -27,8 +27,9 @@ public:
 
     int getBestSellerAmount() const;
     int getBestSellerModel() const;
-    void setBestSellsPtr(CarBestSells*);
-    CarBestSells* getBestSellsPtr() const; // pointer to best sells tree node
+    CarBestSells getBestSellsCopy() const;
+//    void setBestSellsPtr(CarBestSells*);
+//    CarBestSells* getBestSellsPtr() const;
     void setPoints(int model, int points);
     int getPoints(int model) const;
 //    CarPoints* getCarPointsModel(int model) const;

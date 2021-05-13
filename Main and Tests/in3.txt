@@ -16,11 +16,12 @@ SellCar 3 2
 SellCar 3 2
 MakeComplaint 2 0 1
 MakeComplaint 1 0 12
-MakeComplaint 2 0 4
+MakeComplaint 2 1 4
 SellCar 3 2
 SellCar 3 2
 SellCar 3 2
 GetBestSellerModelByType 0
 RemoveCarType 3
-GetWorstModels 10
+GetWorstModels 6
+GetBestSellerModelByType 0
 Quit

@@ -22,9 +22,9 @@ StatusType CarDealerShip::AddCarType(int type_id, int num_of_models) { //5logn +
         CarBestSells car_best_sells = CarBestSells(type_id);
         best_sells.insert(car_best_sells); //logn
         //saving the pointer of best sells
-        CarSells *car_sells_ptr = sells.find(car_sells); //logn
-        CarBestSells *car_best_sells_ptr = best_sells.find(car_best_sells); //logn
-        car_sells_ptr->setBestSellsPtr(car_best_sells_ptr);
+//        CarSells *car_sells_ptr = sells.find(car_sells); //logn
+//        CarBestSells *car_best_sells_ptr = best_sells.find(car_best_sells); //logn
+//        car_sells_ptr->setBestSellsPtr(car_best_sells_ptr);
 
         zero_points.insert(CarZeroPoints(type_id, num_of_models)); //logn + m
 
@@ -67,13 +67,11 @@ StatusType CarDealerShip::sellCar(int typeID, int modelID) { //7log + 4logM(m<M)
             return INVALID_INPUT;
         }
         //Update Best Seller Tree
+        CarBestSells best_sells_copy = car_to_sell->getBestSellsCopy();
         car_to_sell->addSell(modelID);
-        CarBestSells *best_sells_ptr = car_to_sell->getBestSellsPtr();
-        best_sells_ptr->updateBestSeller(car_to_sell->getBestSellerAmount(), car_to_sell->getBestSellerModel());
-        CarBestSells updated_car_best = CarBestSells(*best_sells_ptr);
-        best_sells.remove(*best_sells_ptr); //logn
+        CarBestSells updated_car_best = car_to_sell->getBestSellsCopy();
+        best_sells.remove(best_sells_copy); //logn
         best_sells.insert(updated_car_best); //logn
-        car_to_sell->setBestSellsPtr(best_sells.find(updated_car_best));
 
         this->updatePoints(typeID,modelID, 10);
     } catch (std::bad_alloc &e) {

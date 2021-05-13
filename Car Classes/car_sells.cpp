@@ -3,7 +3,7 @@
 #include "car_points.h"
 
 CarSells::CarSells(int type_id, int num_of_models):
-        models(new int[num_of_models]), models_points(new int[num_of_models]), best_sells_ptr(NULL),
+        models(new int[num_of_models]), models_points(new int[num_of_models]),
         num_of_models(num_of_models), type_id(type_id), best_seller_amount(0), best_seller_model(0){
     for(int model=0; model<num_of_models; model++) {
         models[model] = 0;
@@ -13,7 +13,7 @@ CarSells::CarSells(int type_id, int num_of_models):
 
 CarSells::CarSells(const CarSells& car_sells):
         models(new int[car_sells.num_of_models]), models_points(new int[car_sells.num_of_models]),
-        best_sells_ptr(car_sells.best_sells_ptr), num_of_models(car_sells.num_of_models), type_id(car_sells.type_id),
+        num_of_models(car_sells.num_of_models), type_id(car_sells.type_id),
         best_seller_amount(car_sells.best_seller_amount), best_seller_model(car_sells.best_seller_model){
     for(int model=0; model<num_of_models; model++) {
         models[model] = car_sells.models[model];
@@ -29,7 +29,6 @@ CarSells& CarSells::operator=(const CarSells& car_sells){
         models[model] = car_sells.models[model];
         models_points[model] = car_sells.models_points[model];
     }
-    best_sells_ptr = car_sells.best_sells_ptr;
     num_of_models = car_sells.num_of_models;
     type_id = car_sells.type_id;
     best_seller_amount = car_sells.best_seller_amount;
@@ -40,10 +39,6 @@ CarSells& CarSells::operator=(const CarSells& car_sells){
 CarSells::~CarSells(){
     delete [] models;
     delete [] models_points;
-}
-
-void CarSells::setBestSellsPtr(CarBestSells* ptr){
-    best_sells_ptr = ptr;
 }
 
 void CarSells::setPoints(int model, int points){
@@ -59,7 +54,13 @@ void CarSells::removeCarType(AVLTree<CarPoints>& points_tree, AVLTree<CarBestSel
             points_tree.remove(CarPoints(type_id, model, models_points[model]));
         }
     }
-    best_sells.remove(*best_sells_ptr); //logn
+    CarBestSells best_sells_copy = getBestSellsCopy();
+    best_sells.remove(best_sells_copy); //logn
+}
+CarBestSells CarSells::getBestSellsCopy() const {
+    CarBestSells best_sells_copy = CarBestSells(type_id);
+    best_sells_copy.updateBestSeller(best_seller_amount, best_seller_model);
+    return best_sells_copy;
 }
 
 void CarSells::addSell(int model){ //assume model<num_of_models
@@ -97,9 +98,9 @@ int CarSells::getBestSellerAmount() const{
 int CarSells::getBestSellerModel() const{
     return best_seller_model;
 }
-CarBestSells* CarSells::getBestSellsPtr() const{
-    return best_sells_ptr;
-}
+//CarBestSells* CarSells::getBestSellsPtr() const{
+//    return best_sells_ptr;
+//}
 
 
 //CarSells::CarSells(int type_id, int num_of_models):

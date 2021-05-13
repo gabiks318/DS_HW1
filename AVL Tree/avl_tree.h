@@ -492,6 +492,7 @@ typename AVLTree<T>::AvlIterator& AVLTree<T>::AvlIterator::operator=(const AvlIt
     }
     node = avl_iterator.node;
     max = avl_iterator.max;
+    return *this;
 }
 
 template<class T>

@@ -17,7 +17,7 @@ CarSells::CarSells(const CarSells& car_sells):
     best_seller_amount(car_sells.best_seller_amount), best_seller_model(car_sells.best_seller_model){
     for(int model=0; model<num_of_models; model++) {
         models[model] = car_sells.models[model];
-        model_ptr_arr[model] = model_ptr_arr[model];
+        model_ptr_arr[model] = car_sells.model_ptr_arr[model];
     }
 }
 
@@ -50,7 +50,7 @@ void CarSells::updatePointsPtr(int model, CarPoints* car_points_ptr){
     model_ptr_arr[model] = car_points_ptr;
 }
 
-void CarSells::remove(AVLTree<CarPoints>& points_tree, AVLTree<CarBestSells>& best_sells){
+void CarSells::removeCarType(AVLTree<CarPoints>& points_tree, AVLTree<CarBestSells>& best_sells){
     for(int model=0; model<num_of_models; model++){ //mlogM
         if(model_ptr_arr[model] != NULL) {
             points_tree.remove(*model_ptr_arr[model]);

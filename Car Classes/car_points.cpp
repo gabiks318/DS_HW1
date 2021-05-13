@@ -41,7 +41,7 @@ bool CarPoints::operator<(const CarPoints& car_points) const {
 }
 
 bool CarPoints::operator==(const CarPoints& car_points) const{
-    return type_id == car_points.type_id && model == car_points.model && points == car_points.points;
+    return type_id == car_points.type_id && model == car_points.model;
 }
 
 bool operator>(const CarPoints& car_points1, const CarPoints& car_points2){

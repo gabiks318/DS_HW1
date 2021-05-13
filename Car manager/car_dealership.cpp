@@ -43,10 +43,11 @@ StatusType CarDealerShip::RemoveCarType(int type_id) { // 2mlogM + 3logn
     try {
         CarSells *car_to_remove = sells.find(CarSells(type_id, 0));//logn
         total_models -= car_to_remove->getNumOfModels();
-        car_to_remove->remove(points, best_sells);//mlogM + logn
+        car_to_remove->removeCarType(points, best_sells);//mlogM + logn
 
-        sells.remove(*car_to_remove);
+
         CarZeroPoints zero_points_copy = CarZeroPoints(car_to_remove->getTypeId(), 0);
+        sells.remove(*car_to_remove);
         zero_points.remove(zero_points_copy);//logn + mlogM
 
     } catch (std::bad_alloc &e) {
@@ -72,6 +73,7 @@ StatusType CarDealerShip::sellCar(int typeID, int modelID) { //7log + 4logM(m<M)
         CarBestSells updated_car_best = CarBestSells(*best_sells_ptr);
         best_sells.remove(*best_sells_ptr); //logn
         best_sells.insert(updated_car_best); //logn
+        car_to_sell->setBestSellsPtr(best_sells.find(updated_car_best));
 
         this->updatePoints(typeID,modelID, 10);
     } catch (std::bad_alloc &e) {
@@ -117,9 +119,10 @@ void CarDealerShip::updatePoints(int typeID, int modelID, int add_points){
     } else {
         // Car is inside points tree
 
-        car_points_ptr->updatePoints(add_points);
+
         CarPoints car_points_copy(*car_points_ptr);
         points.remove(*car_points_ptr);
+        car_points_copy.updatePoints(add_points);
 
         // If new score is 0, insert to zero tree
         if (car_points_copy.getPoints() == 0) {
@@ -146,7 +149,7 @@ StatusType CarDealerShip::GetBestSellerModelByType(int typeID, int *modelID) {//
         return INVALID_INPUT;
     }
     try {
-        if(modelID == 0){
+        if(typeID == 0){
             if(sells.isEmpty()){ //1
                 return FAILURE;
             }

@@ -171,8 +171,14 @@ void AVLTree<T>::remove(const T& data) {
 
 template<class T>
 void AVLTree<T>::empty() {
-    empty_aux(root);
-    root = NULL;
+    if(size > 0){
+        empty_aux(root);
+        root = NULL;
+        size = 0;
+        min = NULL;
+        max = NULL;
+    }
+
 }
 
 template<class T>
@@ -259,19 +265,17 @@ typename AVLTree<T>::Node* AVLTree<T>::removeNode(AVLTree<T>::Node *node, AVLTre
             return NULL;
         } else if (!target->right) {
             // Only right son
-            Node* temp = target;
-            target = target->left;
-            delete temp->data;
-            delete temp;
-            return target;
+            Node* temp = target->left;
+            delete target->data;
+            target->data = new T(*temp->data);
+            target->left = removeNode(target, target->left);
 
         } else if (!target->left) {
             // Only left son
-            Node* temp = target;
-            target = target->right;
-            delete temp->data;
-            delete temp;
-            return target;
+            Node* temp = target->right;
+            delete target->data;
+            target->data = new T(*temp->data);
+            target->right = removeNode(target, target->right);
         } else {
             // right and left son exist
             Node *temp = getMin(target->right);
@@ -443,9 +447,13 @@ typename AVLTree<T>::Node* AVLTree<T>::copyNode(AVLTree<T>::Node* node){
     Node* right = copyNode(node->right);
 
     Node* new_node = initNode(*node->data);
-    new_node->father = node->father;
+//    new_node->father = node->father;
     new_node->left = left;
+    if(new_node->left)
+        new_node->left->father = new_node;
     new_node->right = right;
+    if(new_node->right)
+        new_node->right->father = new_node;
     new_node->height = maxInt(height(new_node->right), height(new_node->left)) + 1;
     return new_node;
 }

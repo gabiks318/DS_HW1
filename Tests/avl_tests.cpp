@@ -98,12 +98,19 @@ returnLabel:
 
 bool testAVLSortedArrayInit() {
     bool result = true;
-    int arr1[23] = {0};
+    int arr1[10] = {0};
     for(int i = 0; i < 23; i++){
         arr1[i] = i;
     }
     AVLTree<int> tree1 = AVLTree<int>();
-    tree1.sortedArrayInit(arr1, 23);
+    tree1.sortedArrayInit(arr1, 10);
+    tree1.remove(1);
+    tree1.printTree();
+    tree1.remove(9);
+    tree1.printTree();
+    tree1.remove(6);
+    tree1.printTree();
+    tree1.remove(8);
     tree1.printTree();
 
     returnLabel:
@@ -235,20 +242,20 @@ bool (*tests[]) (void) = {
         testAVLTreeCreateDestroy,
         testAVLIntInsert1,
         testAVLReverseInorder,
-        testAVLSortedArrayInit,
         testInorder,
         testCopyAndAssignment,
-        testAVLFind
+        testAVLFind,
+        testAVLSortedArrayInit,
 };
 
 const char* testNames[] = {
         "testAVLTreeCreateDestroy",
         "testAVLIntInsert1",
         "testAVLReverseInorder",
-        "testAVLSortedArrayInit",
         "testInorder",
         "testCopyAndAssignment",
-        "testAVLFind"
+        "testAVLFind",
+        "testAVLSortedArrayInit",
 };
 
 int main(int argc, char *argv[]) {

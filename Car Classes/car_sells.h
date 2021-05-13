@@ -30,7 +30,7 @@ public:
     CarBestSells* getBestSellsPtr() const; // pointer to best sells tree node
     CarPoints* getCarPointsModel(int model) const;
     void updatePointsPtr(int model, CarPoints* car_points_ptr);
-    void remove(AVLTree<CarPoints>& points_tree, AVLTree<CarBestSells>& best_sells);
+    void removeCarType(AVLTree<CarPoints>& points_tree, AVLTree<CarBestSells>& best_sells);
     void addSell(int model);
 };
 

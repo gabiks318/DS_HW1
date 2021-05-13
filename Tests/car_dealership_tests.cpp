@@ -10,7 +10,7 @@ using std::string;
 using std::cout;
 using std::endl;
 
-#define NUMBER_TESTS 2
+#define NUMBER_TESTS 3
 
 void print_worst_models(int* type, int* model, int n){
     for(int i = 0; i < n; i++){
@@ -28,6 +28,34 @@ bool testDSInit(){
     Quit(ds_ptr);
     ASSERT_TEST(ds == NULL ,returnLabel);
     returnLabel:
+    return result;
+}
+
+bool testDSBasic1(){
+    bool result = true;
+    void* ds = Init();
+    void** ds_ptr = &ds;
+    int best_model_id = -1;
+    int worst_num = 5;
+    int worst_model_types[worst_num];
+    int worst_model_ids[worst_num];
+
+    ASSERT_TEST(AddCarType(ds, 1, 5) == SUCCESS ,returnLabel);
+    for(int i = 0; i < 4; i++){
+        ASSERT_TEST(sellCar(ds, 1, 1) == SUCCESS ,returnLabel);
+    }
+    ASSERT_TEST(sellCar(ds, 1, 4) == SUCCESS ,returnLabel);
+    ASSERT_TEST(sellCar(ds, 1, 3) == SUCCESS ,returnLabel);
+    ASSERT_TEST(sellCar(ds, 1, 3) == SUCCESS ,returnLabel);
+    ASSERT_TEST(sellCar(ds, 1, 2) == SUCCESS ,returnLabel);
+    ASSERT_TEST(sellCar(ds, 1, 0) == SUCCESS ,returnLabel);
+    ASSERT_TEST(makeComplaint(ds, 1, 0, 10) == SUCCESS ,returnLabel);
+    ASSERT_TEST(makeComplaint(ds, 1, 2, 5) == SUCCESS ,returnLabel);
+    ASSERT_TEST( GetWorstModels(ds, worst_num, worst_model_types, worst_model_ids)== SUCCESS ,returnLabel);
+    print_worst_models(worst_model_types, worst_model_ids, worst_num);
+
+    returnLabel:
+    Quit(ds_ptr);
     return result;
 }
 
@@ -95,8 +123,9 @@ bool testDSRating1(){
     ASSERT_TEST( GetWorstModels(ds, worst_num, worst_model_types, worst_model_ids)== SUCCESS ,returnLabel);
     print_worst_models(worst_model_types, worst_model_ids, worst_num);
 
-    Quit(ds_ptr);
+
     returnLabel:
+    Quit(ds_ptr);
     return result;
 }
 
@@ -109,12 +138,14 @@ returnLabel:
 
 bool (*tests[]) (void) = {
         testDSInit,
+        testDSBasic1,
         testDSRating1
 
 };
 
 const char* testNames[] = {
         "testDSInit",
+        "testDSBasic1",
         "testDSRating1"
 };
 

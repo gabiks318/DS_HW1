@@ -86,8 +86,8 @@ public:
 
         T* operator*();
         AvlIterator& operator++();
-        bool operator==(const AvlIterator& avl_iterator)const;
-        bool operator!=(const AvlIterator& avl_iterator)const;
+        bool operator==(const AvlIterator& avl_iterator) const;
+        bool operator!=(const AvlIterator& avl_iterator) const;
 
         friend class AVLTree<T>;
     };
@@ -487,7 +487,7 @@ AVLTree<T>::AvlIterator::AvlIterator(Node* node, Node* max): node(node), max(max
 
 template<class T>
 typename AVLTree<T>::AvlIterator& AVLTree<T>::AvlIterator::operator=(const AvlIterator& avl_iterator){
-    if(this == avl_iterator){
+    if(*this == avl_iterator){
         return *this;
     }
     node = avl_iterator.node;

@@ -8,7 +8,8 @@
 class CarSells{
 private:
     int* models;
-    CarPoints** model_ptr_arr;
+    int* models_points; // Keeps track of how many points the model has
+//    CarPoints** model_ptr_arr;
     CarBestSells* best_sells_ptr;
     int num_of_models;
     int type_id;
@@ -28,8 +29,10 @@ public:
     int getBestSellerModel() const;
     void setBestSellsPtr(CarBestSells*);
     CarBestSells* getBestSellsPtr() const; // pointer to best sells tree node
-    CarPoints* getCarPointsModel(int model) const;
-    void updatePointsPtr(int model, CarPoints* car_points_ptr);
+    void setPoints(int model, int points);
+    int getPoints(int model) const;
+//    CarPoints* getCarPointsModel(int model) const;
+//    void updatePointsPtr(int model, CarPoints* car_points_ptr);
     void removeCarType(AVLTree<CarPoints>& points_tree, AVLTree<CarBestSells>& best_sells);
     void addSell(int model);
 };

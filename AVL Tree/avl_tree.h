@@ -21,7 +21,7 @@ private:
     };
     Node *root;
     Node *min;
-    Node* max;
+    Node *max;
     int size;
 
     // Node Functions
@@ -56,7 +56,7 @@ private:
 
 public:
     // Constructors, Destructor, Assignment
-    AVLTree() : root(NULL), min(NULL), size(0) {};
+    AVLTree() : root(NULL), min(NULL), max(NULL), size(0) {};
     AVLTree(const AVLTree<T>& tree);
     AVLTree &operator=(const AVLTree<T> &tree);
     void sortedArrayInit(T data_arr[], int n);
@@ -123,6 +123,8 @@ void AVLTree<T>::sortedArrayInit(T data_arr[], int n) {
         throw TreeHasData();
     root = sortedInit_aux(data_arr, 0, n - 1, NULL);
     size = n;
+    min = getMin(root);
+    max = getMax(root);
 }
 
 // Interface Functions -------------------------------

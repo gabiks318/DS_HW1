@@ -85,6 +85,10 @@ StatusType CarDealerShip::sellCar(int typeID, int modelID) { //7log + 4logM(m<M)
 StatusType CarDealerShip::makeComplaint(int typeID, int modelID, int t) {
     if (typeID <= 0 || modelID <= 0)
         return INVALID_INPUT;
+    CarSells *car_to_complain = sells.find(CarSells(typeID, 0)); //logn
+    if (car_to_complain->getNumOfModels() <= modelID) {
+        return INVALID_INPUT;
+    }
     // TODO: check if modelID is in range(not more than max num)
     try{
         this->updatePoints(typeID,modelID, -(int)100/t);
@@ -113,14 +117,14 @@ void CarDealerShip::updatePoints(int typeID, int modelID, int add_points){
         points.insert(new_car_points);//logM
 
         // Update car pointers array with pointer to points tree (logM)
-        car_to_update->updatePointsPtr(modelID, points.find(new_car_points));
-
+        CarPoints* new_ptr = points.find(new_car_points);
+        car_to_update->updatePointsPtr(modelID, new_ptr);
 
     } else {
         // Car is inside points tree
 
 
-        CarPoints car_points_copy(*car_points_ptr);
+        CarPoints car_points_copy = *car_points_ptr;
         points.remove(*car_points_ptr);
         car_points_copy.updatePoints(add_points);
 

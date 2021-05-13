@@ -42,8 +42,8 @@ static const char *commandStr[] = {
         "Init",
         "AddCarType",
         "RemoveCarType",
-        "sellCar",
-		"makeComplaint",
+        "SellCar",
+		"MakeComplaint",
         "GetBestSellerModelByType",
         "GetWorstModels",
         "Quit" };
@@ -203,7 +203,7 @@ static errorType OnInit(void** DS, const char* const command) {
 
 static errorType OnAddCarType(void* DS, const char* const command) {
     int typeID, numOfModels;
-    ValidateRead(sscanf(command, "%d %d", &typeID, &numOfModels), 2, "%s failed.\n", commandStr[ADDMODEL_CMD]);
+    ValidateRead(sscanf(command, "%d %d", &typeID, &numOfModels), 2, "%s failed.\n", commandStr[ADDCARTYPE_CMD]);
     StatusType res = AddCarType(DS, typeID, numOfModels);
 
     if (res != SUCCESS) {

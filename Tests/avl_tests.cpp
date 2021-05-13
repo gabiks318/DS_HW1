@@ -99,11 +99,15 @@ returnLabel:
 bool testAVLSortedArrayInit() {
     bool result = true;
     int arr1[10] = {0};
-    for(int i = 0; i < 23; i++){
+    for(int i = 0; i < 10; i++){
         arr1[i] = i;
     }
     AVLTree<int> tree1 = AVLTree<int>();
     tree1.sortedArrayInit(arr1, 10);
+    for(AVLTree<int>::AvlIterator it = tree1.begin(); it!= tree1.end(); ++it){
+        int* curr =*it;
+        std::cout<< *curr <<std::endl;
+    }
     tree1.remove(1);
     tree1.printTree();
     tree1.remove(9);

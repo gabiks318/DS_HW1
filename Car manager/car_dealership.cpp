@@ -121,7 +121,6 @@ void CarDealerShip::updatePoints(int typeID, int modelID, int add_points){
         points.insert(new_car_points);//logM
 
         // Update car pointers array with pointer to points tree (logM)
-        CarPoints* new_ptr = points.find(new_car_points);
         car_to_update->setPoints(modelID, new_car_points.getPoints());
 
     } else {
@@ -145,7 +144,7 @@ void CarDealerShip::updatePoints(int typeID, int modelID, int add_points){
             car_to_update->setPoints(modelID, 0);
         } else {
             points.insert(car_points_copy);
-            CarPoints* new_ptr = points.find(car_points_copy);
+
             car_to_update->setPoints(modelID, car_points_copy.getPoints());
         }
     }
@@ -212,7 +211,8 @@ StatusType CarDealerShip::GetBestSellerModelByType(int typeID, int *modelID) {//
             }
             *modelID = best_sells.getMaxData()->getBestSellerModel(); //1
         } else {
-            CarBestSells best_sell_copy = CarBestSells(typeID);
+            CarSells *car_sells = sells.find(CarSells(typeID, 0));
+            CarBestSells best_sell_copy = car_sells->getBestSellsCopy();
             CarBestSells* best_sell_ptr = best_sells.find(best_sell_copy);//logn
             *modelID = best_sell_ptr->getBestSellerModel();
         }

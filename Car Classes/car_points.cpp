@@ -4,7 +4,6 @@ CarPoints::CarPoints(int type_id, int model, int points): type_id(type_id), mode
 }
 CarPoints::CarPoints(const CarPoints& car_points): type_id(car_points.type_id), model(car_points.model),
     points(car_points.points){
-
 }
 
 CarPoints& CarPoints::operator=(const CarPoints& car_points){

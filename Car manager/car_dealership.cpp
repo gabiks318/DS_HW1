@@ -79,11 +79,12 @@ StatusType CarDealerShip::sellCar(int typeID, int modelID) { //7log + 4logM(m<M)
 StatusType CarDealerShip::makeComplaint(int typeID, int modelID, int t) {
     if (typeID <= 0 || modelID < 0)
         return INVALID_INPUT;
+    try{
     CarSells *car_to_complain = sells.find(CarSells(typeID, 0)); //logn
     if (car_to_complain->getNumOfModels() <= modelID) {
         return FAILURE;
     }
-    try{
+
         this->updatePoints(typeID,modelID, -(int)100/t);
     } catch (std::bad_alloc &e) {
         return ALLOCATION_ERROR;

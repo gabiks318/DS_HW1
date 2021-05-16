@@ -1,7 +1,7 @@
 init done.
 AddCarType: SUCCESS
 SellCar: SUCCESS
-SellCar: INVALID_INPUT
+SellCar: FAILURE
 SellCar: SUCCESS
 SellCar: SUCCESS
 SellCar: SUCCESS
@@ -22,7 +22,7 @@ SellCar: SUCCESS
 SellCar: SUCCESS
 GetBestSellerModelByType: 2
 RemoveCarType: SUCCESS
-GetWorstModels: SUCCESS
+--Start of worst models--
 CarType	|	Model
 2	|	0
 2	|	1
@@ -30,6 +30,7 @@ CarType	|	Model
 1	|	1
 2	|	2
 1	|	2
---End of worst types--
+--End of worst models--
+GetWorstModels: SUCCESS
 GetBestSellerModelByType: 4
 quit done.

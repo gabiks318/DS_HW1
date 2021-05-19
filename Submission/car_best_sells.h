@@ -1,7 +1,7 @@
 #ifndef DS_HW1_CAR_BEST_SELLS_H
 #define DS_HW1_CAR_BEST_SELLS_H
 
-#include "../AVL Tree/avl_tree.h"
+#include "avl_tree.h"
 
 class CarBestSells {
 private:

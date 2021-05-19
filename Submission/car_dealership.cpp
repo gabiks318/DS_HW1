@@ -1,11 +1,11 @@
 #include <iostream>
 #include "car_dealership.h"
-#include "../AVL Tree/avl_tree.h"
-#include "../Car Classes/car_points.h"
-#include "../Car Classes/car_zero_points.h"
-#include "../Car Classes/car_best_sells.h"
-#include "../Car Classes/car_sells.h"
-#include "../AVL Tree/exceptions.h"
+#include "avl_tree.h"
+#include "car_points.h"
+#include "car_zero_points.h"
+#include "car_best_sells.h"
+#include "car_sells.h"
+#include "exceptions.h"
 
 
 

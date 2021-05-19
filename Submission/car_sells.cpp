@@ -1,6 +1,4 @@
 #include "car_sells.h"
-#include "car_best_sells.h"
-#include "car_points.h"
 
 CarSells::CarSells(int type_id, int num_of_models):
         models(new int[num_of_models]), models_points(new int[num_of_models]),

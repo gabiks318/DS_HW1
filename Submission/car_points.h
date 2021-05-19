@@ -1,7 +1,7 @@
 #ifndef DS_HW1_CAR_POINTS_H
 #define DS_HW1_CAR_POINTS_H
 
-#include "../AVL Tree/avl_tree.h"
+#include "avl_tree.h"
 
 class CarPoints{
 private:

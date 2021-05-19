@@ -1,10 +1,10 @@
 #ifndef DS_HW1_CAR_DEALERSHIP_H
 #define DS_HW1_CAR_DEALERSHIP_H
 
-#include "../Car Classes/car_points.h"
-#include "../Car Classes/car_zero_points.h"
-#include "../Car Classes/car_best_sells.h"
-#include "../Car Classes/car_sells.h"
+#include "car_points.h"
+#include "car_zero_points.h"
+#include "car_best_sells.h"
+#include "car_sells.h"
 #include "library.h"
 
 class CarDealerShip{

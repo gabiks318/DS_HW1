@@ -1,4 +1,3 @@
-// Generic AVL Tree //
 
 #ifndef AVL_TREE_H
 #define AVL_TREE_H
@@ -7,6 +6,7 @@
 #include <iostream>
 using namespace std;
 
+//----------------------- Generic AVL Tree -----------------------//
 
 template<class T>
 class AVLTree {
@@ -41,8 +41,6 @@ private:
     Node *rollRightLeft(Node *node);
     Node *rollRightRight(Node *node);
 
-    void printTree_aux(Node* node) const;
-
     // Constructor, Destructor helper functions
     Node* sortedInit_aux(T data_arr[], int start, int end, AVLTree<T>::Node* father);
     Node* copyNode(Node* node);
@@ -52,13 +50,11 @@ private:
 
 public:
     // Constructors, Destructor, Assignment
-    AVLTree() : root(NULL), min(NULL), max(NULL), size(0) {};
+    AVLTree();
     AVLTree(const AVLTree<T>& tree);
     AVLTree &operator=(const AVLTree<T> &tree);
     void sortedArrayInit(T data_arr[], int n);
-    ~AVLTree(){
-        empty();
-    }
+    ~AVLTree();
 
     // Interface Functions
     void insert(const T& data);
@@ -66,11 +62,10 @@ public:
     void remove(const T& data);
     int getHeight() const;
     void empty();
-    void printTree() const;
     bool isEmpty() const;
     T* getMaxData() const;
 
-    //------------Iterator--------//
+    //------------ Iterator ------------//
     class AvlIterator{
         Node* node;
         Node* max;
@@ -93,7 +88,17 @@ public:
 };
 
 static int maxInt(int num1, int num2);
+
 // Constructors, Destructor, Assignment ---------------------
+
+template<class T>
+AVLTree<T>::AVLTree() : root(NULL), min(NULL), max(NULL), size(0) {
+}
+
+template<class T>
+AVLTree<T>::~AVLTree(){
+    empty();
+}
 
 template<class T>
 AVLTree<T>::AVLTree(const AVLTree<T>& tree):root(NULL), min(NULL), max(NULL), size(0){
@@ -186,12 +191,6 @@ int AVLTree<T>::getHeight()const{
     }
     return root->height;
 }
-
-template<class T>
-void AVLTree<T>::printTree() const {
-    printTree_aux(root);
-}
-
 
 template<class T>
 bool AVLTree<T>::isEmpty() const{
@@ -410,19 +409,6 @@ typename AVLTree<T>::Node *AVLTree<T>::rollRightLeft(AVLTree<T>::Node *node) {
     return rollRightRight(node);
 }
 
-// Tree Traversals----------------------------------------------------
-
-
-template<class T>
-void AVLTree<T>::printTree_aux(AVLTree<T>::Node* node) const {
-    if(node == NULL)
-        return;
-    printTree_aux(node->left);
-  //std::cout << *node->data << " BF: " << balanceFactor(node) << " Height: " << height(node) << std::endl;
-    printTree_aux(node->right);
-}
-
-
 // Constructor, Destructor helper functions--------------------------------------------
 
 template<class T>
@@ -479,7 +465,9 @@ void AVLTree<T>::empty_aux(AVLTree<T>::Node* node) {
 static int maxInt(int num1, int num2){
     return num1 > num2 ? num1 : num2;
 }
+
 //---------------Iterator Implementation-----------//
+
 template<class T>
 AVLTree<T>::AvlIterator::AvlIterator(Node* node, Node* max): node(node), max(max){
 }

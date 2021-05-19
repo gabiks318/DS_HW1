@@ -1,5 +1,5 @@
 #include "car_zero_points.h"
-#include "avl_tree.h"
+
 
 CarZeroPoints::CarZeroPoints(int type_id, int num_of_models): models(), type_id(type_id) {
     int* models_arr = new int[num_of_models];

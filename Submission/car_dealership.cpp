@@ -180,7 +180,6 @@ StatusType CarDealerShip::GetWorstModels(int numOfModels, int *types, int *model
         return FAILURE;
     }
     try {
-        points.printTree();
         bool iterate_zero = false;
         bool negative_done = false;
         AVLTree<CarPoints>::AvlIterator points_iterator = points.begin();

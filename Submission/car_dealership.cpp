@@ -189,12 +189,13 @@ StatusType CarDealerShip::GetWorstModels(int numOfModels, int *types, int *model
         if(!zero_points.isEmpty()){
             zero_model_iterator = (*zero_tree_iterator)->getModels().begin();
         }
-
-        if((*points_iterator)->getPoints() > 0){
+        if(points.isEmpty()) {
+            iterate_zero = true;
+            negative_done = true;
+        }else if((*points_iterator)->getPoints() > 0){
             iterate_zero = true;
             negative_done = true;
         }
-
 
         for(int i = 0; i < numOfModels; i++){
             if(iterate_zero){

@@ -488,6 +488,9 @@ AVLTree<T>::AvlIterator::AvlIterator(const AvlIterator& avl_iterator): node(avl_
 
 template<class T>
 T* AVLTree<T>::AvlIterator::operator*(){
+    if(node == NULL){
+        return NULL;
+    }
     return node->data;
 }
 

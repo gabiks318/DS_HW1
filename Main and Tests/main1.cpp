@@ -86,12 +86,13 @@ static bool isInit = false;
 int main(int argc, const char**argv) {
 
     char buffer[MAX_STRING_INPUT_SIZE];
-
+    int i = 0;
     // Reading commands
     while (fgets(buffer, MAX_STRING_INPUT_SIZE, stdin) != NULL) {
         fflush(stdout);
         if (parser(buffer) == error)
             break;
+        i++;
     };
     return 0;
 }

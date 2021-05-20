@@ -5,7 +5,7 @@
  *      Author: shirel
  */
 
-#include "../AVL Tree/avl_tree.h"
+#include "../Submission//avl_tree.h"
 #include <vector>
 #include <ostream>
 #include <random>
@@ -556,7 +556,7 @@ int main(){
 
 
 	std::vector<int> vector;
-	 for (int i=1; i<=100; i++) vector.push_back(i);
+	 for (int i=1; i<=10000; i++) vector.push_back(i);
 
 	 //Randomly insert and removes nodes
 	 for (int k = 0; k < 1; ++k) {
@@ -565,41 +565,45 @@ int main(){
 		 for (std::vector<int>::iterator it = vector.begin() ; it != vector.end(); ++it){
 				tree.insert(*it);
 		 }
-         tree.printTree();
+         //tree.printTree();
 
 		for(AVLTree<int>::AvlIterator avl_it=tree.begin(); avl_it != tree.end(); ++avl_it){
              std::cout << *(*avl_it) << std::endl;
 		 }
-         std::cout << "done insert" << std::endl;
 
-         //tree.printTree();
-		 int deleted = 1, i = 1;
-		 shuffle (vector.begin(), vector.end(), std::default_random_engine(seed));
-         for (std::vector<int>::iterator it = vector.begin() ; i<=50; ++it){
-             tree.remove(*it);
-             i++;
-         }
-         for(AVLTree<int>::AvlIterator avl_it=tree.begin(); avl_it!= tree.end(); ++avl_it){
+	//	int deleted = 1, i = 1;
+		//shuffle (vector.begin(), vector.end(), std::default_random_engine(seed));
+      //   for (std::vector<int>::iterator it = vector.begin() ; i<=50; ++it){
+      //       tree.remove(*it);
+     //        i++;
+     //    }
+        // for(AVLTree<int>::AvlIterator avl_it=tree.begin(); avl_it!= tree.end(); ++avl_it){
+        //     std::cout << *(*avl_it) << std::endl;
+        // }
+        tree.remove(650);
+		tree.remove(750);
+		tree.remove(1900);
+		tree.remove(2780);
+         tree.remove(3450);
+         tree.remove(5439);
+         tree.remove(6780);
+         tree.remove(7780);
+         tree.remove(9999);
+         for(AVLTree<int>::AvlIterator avl_it=tree.begin(); avl_it != tree.end(); ++avl_it){
              std::cout << *(*avl_it) << std::endl;
          }
-         i=1;
-         for (std::vector<int>::iterator it = vector.begin() ; i<=50; ++it){
-             tree.insert(*it);
-             i++;
-         }
-
-         for (std::vector<int>::iterator it = vector.begin() ; it != vector.end(); ++it){
-				tree.remove(*it);
+         //for (std::vector<int>::iterator it = vector.begin() ; it != vector.end(); ++it){
+		//		tree.remove(*it);
 				//std::cout << "delete no." << deleted << ":" << std::endl;
 				//tree.printTree();
                 //std::cout << std::endl << std::endl << std::endl;
-                deleted++;
-		 }
+               // deleted++;
+		// }
 		 tree.empty();
       /*   for(AVLTree<int>::AvlIterator avl_it=tree.begin(); avl_it!= avl_it.end(); ++avl_it){
              std::cout << *avl_it << std::endl;
          }*/
-		 std::cout << '\n';
+		 //std::cout << '\n';
 	}
 
 	return 0;

@@ -39,11 +39,12 @@ StatusType CarDealerShip::RemoveCarType(int type_id) { // 2mlogM + 3logn
         CarSells *car_to_remove = sells.find(CarSells(type_id, 0));//logn
         total_models -= car_to_remove->getNumOfModels();
         car_to_remove->removeCarType(points, best_sells);//mlogM + logn
-
-        CarZeroPoints zero_points_copy = CarZeroPoints(car_to_remove->getTypeId(), 0);
+        try {
+            CarZeroPoints *zero_points_to_remove = zero_points.find(CarZeroPoints(car_to_remove->getTypeId(), 0));
+            zero_points.remove(*zero_points_to_remove);//logn + mlogM
+        }catch (NodeDoesntExist &e){
+        }
         sells.remove(*car_to_remove);
-        zero_points.remove(zero_points_copy);//logn + mlogM
-
     } catch (std::bad_alloc &e) {
         return ALLOCATION_ERROR;
     } catch (NodeDoesntExist &e) {
@@ -51,8 +52,9 @@ StatusType CarDealerShip::RemoveCarType(int type_id) { // 2mlogM + 3logn
     }
     return SUCCESS;
 }
-
+int sell_check = 0;////
 StatusType CarDealerShip::sellCar(int typeID, int modelID) { //7log + 4logM(m<M)
+    sell_check++;///////
     if (typeID <= 0 || modelID < 0)
         return INVALID_INPUT;
     try {
@@ -75,8 +77,10 @@ StatusType CarDealerShip::sellCar(int typeID, int modelID) { //7log + 4logM(m<M)
     }
     return SUCCESS;
 }
+int check = 0;/////////
 
 StatusType CarDealerShip::makeComplaint(int typeID, int modelID, int t) {
+    check++;/////////
     if (typeID <= 0 || modelID < 0)
         return INVALID_INPUT;
     try{
@@ -93,11 +97,17 @@ StatusType CarDealerShip::makeComplaint(int typeID, int modelID, int t) {
     }
     return SUCCESS;
 }
-
 void CarDealerShip::updatePoints(int typeID, int modelID, int add_points){
+   // if(check == 26){/////////
+    //    CarPoints *temp = points.find(CarPoints(5223,6,4));
+  //  }///////
+   // if(sell_check == 42) {
+     //   CarPoints *temp = points.find(CarPoints(5223, 6, 4));
+   // }///////////
+
     CarSells *car_to_update = sells.find(CarSells(typeID, 0)); //logn
-//    CarPoints *car_points_ptr = car_to_update->getCarPointsModel(modelID);
     CarZeroPoints *car_zero_ptr;
+
     try{
         car_zero_ptr = zero_points.find(CarZeroPoints(typeID, 0));
     } catch (NodeDoesntExist &e){
@@ -125,7 +135,12 @@ void CarDealerShip::updatePoints(int typeID, int modelID, int add_points){
     } else {
         // Car is inside points tree
         CarPoints car_points_copy(typeID, modelID, car_to_update->getPoints(modelID));
+
+
         points.remove(car_points_copy);
+        //if(check == 26){/////////
+         //   CarPoints *temp = points.find(CarPoints(5223,6,4));
+       // }///////
         car_points_copy.updatePoints(add_points);
 
         // If new score is 0, insert to zero tree
@@ -141,10 +156,15 @@ void CarDealerShip::updatePoints(int typeID, int modelID, int add_points){
             car_to_update->setPoints(modelID, 0);
         } else {
             points.insert(car_points_copy);
-
             car_to_update->setPoints(modelID, car_points_copy.getPoints());
         }
     }
+   // if(check == 26){/////////
+  //      CarPoints *temp = points.find(CarPoints(5223,6,4));
+ //   }///////
+ //   if(sell_check == 42) {
+ //       CarPoints *temp = points.find(CarPoints(5223, 6, 4));
+ //   }///////////
 }
 
 

@@ -261,14 +261,14 @@ typename AVLTree<T>::Node* AVLTree<T>::removeNode(AVLTree<T>::Node *node, AVLTre
             delete target;
             return NULL;
         } else if (!target->right) {
-            // Only right son
+            // Only left son
             Node* temp = target->left;
             delete target->data;
             target->data = new T(*temp->data);
             target->left = removeNode(target, target->left);
 
         } else if (!target->left) {
-            // Only left son
+            // Only right son
             Node* temp = target->right;
             delete target->data;
             target->data = new T(*temp->data);
@@ -373,7 +373,6 @@ typename AVLTree<T>::Node *AVLTree<T>::rollLeftLeft(AVLTree<T>::Node *node) {
     }
     node->left = node->father->right;
     node->father->right = node;
-
     node->height = maxInt(height(node->right), height(node->left)) + 1;
     if(node->father) {
         node->father->height = maxInt(height(node->father->right), height(node->father->left)) + 1;

@@ -1,37 +1,37 @@
 [
 {
-  "directory": "/home/kogabriel/ds/DS_HW1/build",
-  "command": "/usr/bin/x86_64-redhat-linux-g++   -I/home/kogabriel/ds/DS_HW1/.  -g   -std=gnu++1y -o CMakeFiles/DS_HW1.dir/Main_and_Tests/main1.cpp.o -c \"/home/kogabriel/ds/DS_HW1/Main and Tests/main1.cpp\"",
-  "file": "/home/kogabriel/ds/DS_HW1/Main and Tests/main1.cpp"
+  "directory": "/home/yant/ds/Final_hw1/DS_HW1/build",
+  "command": "/usr/bin/x86_64-redhat-linux-g++   -I/home/yant/ds/Final_hw1/DS_HW1/.  -g   -std=gnu++1y -o CMakeFiles/DS_HW1.dir/Main_and_Tests/main1.cpp.o -c \"/home/yant/ds/Final_hw1/DS_HW1/Main and Tests/main1.cpp\"",
+  "file": "/home/yant/ds/Final_hw1/DS_HW1/Main and Tests/main1.cpp"
 },
 {
-  "directory": "/home/kogabriel/ds/DS_HW1/build",
-  "command": "/usr/bin/x86_64-redhat-linux-g++   -I/home/kogabriel/ds/DS_HW1/.  -g   -std=gnu++1y -o CMakeFiles/DS_HW1.dir/Car_manager/car_dealership.cpp.o -c \"/home/kogabriel/ds/DS_HW1/Car manager/car_dealership.cpp\"",
-  "file": "/home/kogabriel/ds/DS_HW1/Car manager/car_dealership.cpp"
+  "directory": "/home/yant/ds/Final_hw1/DS_HW1/build",
+  "command": "/usr/bin/x86_64-redhat-linux-g++   -I/home/yant/ds/Final_hw1/DS_HW1/.  -g   -std=gnu++1y -o CMakeFiles/DS_HW1.dir/Submission/car_dealership.cpp.o -c /home/yant/ds/Final_hw1/DS_HW1/Submission/car_dealership.cpp",
+  "file": "/home/yant/ds/Final_hw1/DS_HW1/Submission/car_dealership.cpp"
 },
 {
-  "directory": "/home/kogabriel/ds/DS_HW1/build",
-  "command": "/usr/bin/x86_64-redhat-linux-g++   -I/home/kogabriel/ds/DS_HW1/.  -g   -std=gnu++1y -o CMakeFiles/DS_HW1.dir/Car_manager/library.cpp.o -c \"/home/kogabriel/ds/DS_HW1/Car manager/library.cpp\"",
-  "file": "/home/kogabriel/ds/DS_HW1/Car manager/library.cpp"
+  "directory": "/home/yant/ds/Final_hw1/DS_HW1/build",
+  "command": "/usr/bin/x86_64-redhat-linux-g++   -I/home/yant/ds/Final_hw1/DS_HW1/.  -g   -std=gnu++1y -o CMakeFiles/DS_HW1.dir/Submission/library.cpp.o -c /home/yant/ds/Final_hw1/DS_HW1/Submission/library.cpp",
+  "file": "/home/yant/ds/Final_hw1/DS_HW1/Submission/library.cpp"
 },
 {
-  "directory": "/home/kogabriel/ds/DS_HW1/build",
-  "command": "/usr/bin/x86_64-redhat-linux-g++   -I/home/kogabriel/ds/DS_HW1/.  -g   -std=gnu++1y -o CMakeFiles/DS_HW1.dir/Car_Classes/car_best_sells.cpp.o -c \"/home/kogabriel/ds/DS_HW1/Car Classes/car_best_sells.cpp\"",
-  "file": "/home/kogabriel/ds/DS_HW1/Car Classes/car_best_sells.cpp"
+  "directory": "/home/yant/ds/Final_hw1/DS_HW1/build",
+  "command": "/usr/bin/x86_64-redhat-linux-g++   -I/home/yant/ds/Final_hw1/DS_HW1/.  -g   -std=gnu++1y -o CMakeFiles/DS_HW1.dir/Submission/car_best_sells.cpp.o -c /home/yant/ds/Final_hw1/DS_HW1/Submission/car_best_sells.cpp",
+  "file": "/home/yant/ds/Final_hw1/DS_HW1/Submission/car_best_sells.cpp"
 },
 {
-  "directory": "/home/kogabriel/ds/DS_HW1/build",
-  "command": "/usr/bin/x86_64-redhat-linux-g++   -I/home/kogabriel/ds/DS_HW1/.  -g   -std=gnu++1y -o CMakeFiles/DS_HW1.dir/Car_Classes/car_points.cpp.o -c \"/home/kogabriel/ds/DS_HW1/Car Classes/car_points.cpp\"",
-  "file": "/home/kogabriel/ds/DS_HW1/Car Classes/car_points.cpp"
+  "directory": "/home/yant/ds/Final_hw1/DS_HW1/build",
+  "command": "/usr/bin/x86_64-redhat-linux-g++   -I/home/yant/ds/Final_hw1/DS_HW1/.  -g   -std=gnu++1y -o CMakeFiles/DS_HW1.dir/Submission/car_points.cpp.o -c /home/yant/ds/Final_hw1/DS_HW1/Submission/car_points.cpp",
+  "file": "/home/yant/ds/Final_hw1/DS_HW1/Submission/car_points.cpp"
 },
 {
-  "directory": "/home/kogabriel/ds/DS_HW1/build",
-  "command": "/usr/bin/x86_64-redhat-linux-g++   -I/home/kogabriel/ds/DS_HW1/.  -g   -std=gnu++1y -o CMakeFiles/DS_HW1.dir/Car_Classes/car_sells.cpp.o -c \"/home/kogabriel/ds/DS_HW1/Car Classes/car_sells.cpp\"",
-  "file": "/home/kogabriel/ds/DS_HW1/Car Classes/car_sells.cpp"
+  "directory": "/home/yant/ds/Final_hw1/DS_HW1/build",
+  "command": "/usr/bin/x86_64-redhat-linux-g++   -I/home/yant/ds/Final_hw1/DS_HW1/.  -g   -std=gnu++1y -o CMakeFiles/DS_HW1.dir/Submission/car_sells.cpp.o -c /home/yant/ds/Final_hw1/DS_HW1/Submission/car_sells.cpp",
+  "file": "/home/yant/ds/Final_hw1/DS_HW1/Submission/car_sells.cpp"
 },
 {
-  "directory": "/home/kogabriel/ds/DS_HW1/build",
-  "command": "/usr/bin/x86_64-redhat-linux-g++   -I/home/kogabriel/ds/DS_HW1/.  -g   -std=gnu++1y -o CMakeFiles/DS_HW1.dir/Car_Classes/car_zero_points.cpp.o -c \"/home/kogabriel/ds/DS_HW1/Car Classes/car_zero_points.cpp\"",
-  "file": "/home/kogabriel/ds/DS_HW1/Car Classes/car_zero_points.cpp"
+  "directory": "/home/yant/ds/Final_hw1/DS_HW1/build",
+  "command": "/usr/bin/x86_64-redhat-linux-g++   -I/home/yant/ds/Final_hw1/DS_HW1/.  -g   -std=gnu++1y -o CMakeFiles/DS_HW1.dir/Submission/car_zero_points.cpp.o -c /home/yant/ds/Final_hw1/DS_HW1/Submission/car_zero_points.cpp",
+  "file": "/home/yant/ds/Final_hw1/DS_HW1/Submission/car_zero_points.cpp"
 }
 ]

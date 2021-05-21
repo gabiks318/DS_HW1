@@ -6,69 +6,101 @@
 
 #IncludeRegexTransform: 
 
-/home/kogabriel/ds/DS_HW1/avl_tree.h
+/home/yant/ds/Final_hw1/DS_HW1/Car manager/library.h
+
+/home/yant/ds/Final_hw1/DS_HW1/Main and Tests/main1.cpp
+assert.h
+-
+stdio.h
+-
+stdlib.h
+-
+string.h
+-
+../Car manager/library.h
+/home/yant/ds/Final_hw1/DS_HW1/Car manager/library.h
+
+/home/yant/ds/Final_hw1/DS_HW1/Submission/avl_tree.h
 exceptions.h
-/home/kogabriel/ds/DS_HW1/exceptions.h
+/home/yant/ds/Final_hw1/DS_HW1/Submission/exceptions.h
 iostream
 -
 
-/home/kogabriel/ds/DS_HW1/car_best_sells.h
-avl_tree.h
-/home/kogabriel/ds/DS_HW1/avl_tree.h
+/home/yant/ds/Final_hw1/DS_HW1/Submission/car_best_sells.cpp
+car_best_sells.h
+/home/yant/ds/Final_hw1/DS_HW1/Submission/car_best_sells.h
 
-/home/kogabriel/ds/DS_HW1/car_dealership.h
+/home/yant/ds/Final_hw1/DS_HW1/Submission/car_best_sells.h
+avl_tree.h
+/home/yant/ds/Final_hw1/DS_HW1/Submission/avl_tree.h
+
+/home/yant/ds/Final_hw1/DS_HW1/Submission/car_dealership.cpp
+iostream
+-
+car_dealership.h
+/home/yant/ds/Final_hw1/DS_HW1/Submission/car_dealership.h
+avl_tree.h
+/home/yant/ds/Final_hw1/DS_HW1/Submission/avl_tree.h
 car_points.h
-/home/kogabriel/ds/DS_HW1/car_points.h
+/home/yant/ds/Final_hw1/DS_HW1/Submission/car_points.h
 car_zero_points.h
-/home/kogabriel/ds/DS_HW1/car_zero_points.h
+/home/yant/ds/Final_hw1/DS_HW1/Submission/car_zero_points.h
 car_best_sells.h
-/home/kogabriel/ds/DS_HW1/car_best_sells.h
+/home/yant/ds/Final_hw1/DS_HW1/Submission/car_best_sells.h
 car_sells.h
-/home/kogabriel/ds/DS_HW1/car_sells.h
-library.h
-/home/kogabriel/ds/DS_HW1/library.h
+/home/yant/ds/Final_hw1/DS_HW1/Submission/car_sells.h
+exceptions.h
+/home/yant/ds/Final_hw1/DS_HW1/Submission/exceptions.h
 
-/home/kogabriel/ds/DS_HW1/car_points.h
-avl_tree.h
-/home/kogabriel/ds/DS_HW1/avl_tree.h
-
-/home/kogabriel/ds/DS_HW1/car_sells.h
-avl_tree.h
-/home/kogabriel/ds/DS_HW1/avl_tree.h
-car_best_sells.h
-/home/kogabriel/ds/DS_HW1/car_best_sells.h
+/home/yant/ds/Final_hw1/DS_HW1/Submission/car_dealership.h
 car_points.h
-/home/kogabriel/ds/DS_HW1/car_points.h
+/home/yant/ds/Final_hw1/DS_HW1/Submission/car_points.h
+car_zero_points.h
+/home/yant/ds/Final_hw1/DS_HW1/Submission/car_zero_points.h
+car_best_sells.h
+/home/yant/ds/Final_hw1/DS_HW1/Submission/car_best_sells.h
+car_sells.h
+/home/yant/ds/Final_hw1/DS_HW1/Submission/car_sells.h
+../Car manager/library.h
+/home/yant/ds/Final_hw1/DS_HW1/Car manager/library.h
 
-/home/kogabriel/ds/DS_HW1/car_zero_points.h
+/home/yant/ds/Final_hw1/DS_HW1/Submission/car_points.cpp
+car_points.h
+/home/yant/ds/Final_hw1/DS_HW1/Submission/car_points.h
+
+/home/yant/ds/Final_hw1/DS_HW1/Submission/car_points.h
 avl_tree.h
-/home/kogabriel/ds/DS_HW1/avl_tree.h
+/home/yant/ds/Final_hw1/DS_HW1/Submission/avl_tree.h
 
-/home/kogabriel/ds/DS_HW1/exceptions.h
+/home/yant/ds/Final_hw1/DS_HW1/Submission/car_sells.cpp
+car_sells.h
+/home/yant/ds/Final_hw1/DS_HW1/Submission/car_sells.h
+
+/home/yant/ds/Final_hw1/DS_HW1/Submission/car_sells.h
+avl_tree.h
+/home/yant/ds/Final_hw1/DS_HW1/Submission/avl_tree.h
+car_best_sells.h
+/home/yant/ds/Final_hw1/DS_HW1/Submission/car_best_sells.h
+car_points.h
+/home/yant/ds/Final_hw1/DS_HW1/Submission/car_points.h
+
+/home/yant/ds/Final_hw1/DS_HW1/Submission/car_zero_points.cpp
+car_zero_points.h
+/home/yant/ds/Final_hw1/DS_HW1/Submission/car_zero_points.h
+
+/home/yant/ds/Final_hw1/DS_HW1/Submission/car_zero_points.h
+avl_tree.h
+/home/yant/ds/Final_hw1/DS_HW1/Submission/avl_tree.h
+
+/home/yant/ds/Final_hw1/DS_HW1/Submission/exceptions.h
 exception
 -
 new
 -
 
-/home/kogabriel/ds/DS_HW1/library.cpp
-library.h
-/home/kogabriel/ds/DS_HW1/library.h
+/home/yant/ds/Final_hw1/DS_HW1/Submission/library.cpp
+../Car manager/library.h
+/home/yant/ds/Final_hw1/DS_HW1/Car manager/library.h
 car_dealership.h
-/home/kogabriel/ds/DS_HW1/car_dealership.h
-
-/home/kogabriel/ds/DS_HW1/library.h
-
-/home/kogabriel/ds/DS_HW1/tests/AVLTreeTest.cpp
-../avl_tree.h
-/home/kogabriel/ds/DS_HW1/avl_tree.h
-vector
--
-ostream
--
-random
--
-chrono
--
-algorithm
--
+/home/yant/ds/Final_hw1/DS_HW1/Submission/car_dealership.h
 

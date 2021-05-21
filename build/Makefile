@@ -65,10 +65,10 @@ RM = /home/mtm/cmake-3.17.0-Linux-x86_64/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/kogabriel/ds/DS_HW1
+CMAKE_SOURCE_DIR = /home/yant/ds/Final_hw1/DS_HW1
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/kogabriel/ds/DS_HW1/build
+CMAKE_BINARY_DIR = /home/yant/ds/Final_hw1/DS_HW1/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -97,9 +97,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/kogabriel/ds/DS_HW1/build/CMakeFiles /home/kogabriel/ds/DS_HW1/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/yant/ds/Final_hw1/DS_HW1/build/CMakeFiles /home/yant/ds/Final_hw1/DS_HW1/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/kogabriel/ds/DS_HW1/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/yant/ds/Final_hw1/DS_HW1/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -140,168 +140,6 @@ DS_HW1/fast:
 	$(MAKE) -f CMakeFiles/DS_HW1.dir/build.make CMakeFiles/DS_HW1.dir/build
 .PHONY : DS_HW1/fast
 
-Car_Classes/car_best_sells.o: Car_Classes/car_best_sells.cpp.o
-
-.PHONY : Car_Classes/car_best_sells.o
-
-# target to build an object file
-Car_Classes/car_best_sells.cpp.o:
-	$(MAKE) -f CMakeFiles/DS_HW1.dir/build.make CMakeFiles/DS_HW1.dir/Car_Classes/car_best_sells.cpp.o
-.PHONY : Car_Classes/car_best_sells.cpp.o
-
-Car_Classes/car_best_sells.i: Car_Classes/car_best_sells.cpp.i
-
-.PHONY : Car_Classes/car_best_sells.i
-
-# target to preprocess a source file
-Car_Classes/car_best_sells.cpp.i:
-	$(MAKE) -f CMakeFiles/DS_HW1.dir/build.make CMakeFiles/DS_HW1.dir/Car_Classes/car_best_sells.cpp.i
-.PHONY : Car_Classes/car_best_sells.cpp.i
-
-Car_Classes/car_best_sells.s: Car_Classes/car_best_sells.cpp.s
-
-.PHONY : Car_Classes/car_best_sells.s
-
-# target to generate assembly for a file
-Car_Classes/car_best_sells.cpp.s:
-	$(MAKE) -f CMakeFiles/DS_HW1.dir/build.make CMakeFiles/DS_HW1.dir/Car_Classes/car_best_sells.cpp.s
-.PHONY : Car_Classes/car_best_sells.cpp.s
-
-Car_Classes/car_points.o: Car_Classes/car_points.cpp.o
-
-.PHONY : Car_Classes/car_points.o
-
-# target to build an object file
-Car_Classes/car_points.cpp.o:
-	$(MAKE) -f CMakeFiles/DS_HW1.dir/build.make CMakeFiles/DS_HW1.dir/Car_Classes/car_points.cpp.o
-.PHONY : Car_Classes/car_points.cpp.o
-
-Car_Classes/car_points.i: Car_Classes/car_points.cpp.i
-
-.PHONY : Car_Classes/car_points.i
-
-# target to preprocess a source file
-Car_Classes/car_points.cpp.i:
-	$(MAKE) -f CMakeFiles/DS_HW1.dir/build.make CMakeFiles/DS_HW1.dir/Car_Classes/car_points.cpp.i
-.PHONY : Car_Classes/car_points.cpp.i
-
-Car_Classes/car_points.s: Car_Classes/car_points.cpp.s
-
-.PHONY : Car_Classes/car_points.s
-
-# target to generate assembly for a file
-Car_Classes/car_points.cpp.s:
-	$(MAKE) -f CMakeFiles/DS_HW1.dir/build.make CMakeFiles/DS_HW1.dir/Car_Classes/car_points.cpp.s
-.PHONY : Car_Classes/car_points.cpp.s
-
-Car_Classes/car_sells.o: Car_Classes/car_sells.cpp.o
-
-.PHONY : Car_Classes/car_sells.o
-
-# target to build an object file
-Car_Classes/car_sells.cpp.o:
-	$(MAKE) -f CMakeFiles/DS_HW1.dir/build.make CMakeFiles/DS_HW1.dir/Car_Classes/car_sells.cpp.o
-.PHONY : Car_Classes/car_sells.cpp.o
-
-Car_Classes/car_sells.i: Car_Classes/car_sells.cpp.i
-
-.PHONY : Car_Classes/car_sells.i
-
-# target to preprocess a source file
-Car_Classes/car_sells.cpp.i:
-	$(MAKE) -f CMakeFiles/DS_HW1.dir/build.make CMakeFiles/DS_HW1.dir/Car_Classes/car_sells.cpp.i
-.PHONY : Car_Classes/car_sells.cpp.i
-
-Car_Classes/car_sells.s: Car_Classes/car_sells.cpp.s
-
-.PHONY : Car_Classes/car_sells.s
-
-# target to generate assembly for a file
-Car_Classes/car_sells.cpp.s:
-	$(MAKE) -f CMakeFiles/DS_HW1.dir/build.make CMakeFiles/DS_HW1.dir/Car_Classes/car_sells.cpp.s
-.PHONY : Car_Classes/car_sells.cpp.s
-
-Car_Classes/car_zero_points.o: Car_Classes/car_zero_points.cpp.o
-
-.PHONY : Car_Classes/car_zero_points.o
-
-# target to build an object file
-Car_Classes/car_zero_points.cpp.o:
-	$(MAKE) -f CMakeFiles/DS_HW1.dir/build.make CMakeFiles/DS_HW1.dir/Car_Classes/car_zero_points.cpp.o
-.PHONY : Car_Classes/car_zero_points.cpp.o
-
-Car_Classes/car_zero_points.i: Car_Classes/car_zero_points.cpp.i
-
-.PHONY : Car_Classes/car_zero_points.i
-
-# target to preprocess a source file
-Car_Classes/car_zero_points.cpp.i:
-	$(MAKE) -f CMakeFiles/DS_HW1.dir/build.make CMakeFiles/DS_HW1.dir/Car_Classes/car_zero_points.cpp.i
-.PHONY : Car_Classes/car_zero_points.cpp.i
-
-Car_Classes/car_zero_points.s: Car_Classes/car_zero_points.cpp.s
-
-.PHONY : Car_Classes/car_zero_points.s
-
-# target to generate assembly for a file
-Car_Classes/car_zero_points.cpp.s:
-	$(MAKE) -f CMakeFiles/DS_HW1.dir/build.make CMakeFiles/DS_HW1.dir/Car_Classes/car_zero_points.cpp.s
-.PHONY : Car_Classes/car_zero_points.cpp.s
-
-Car_manager/car_dealership.o: Car_manager/car_dealership.cpp.o
-
-.PHONY : Car_manager/car_dealership.o
-
-# target to build an object file
-Car_manager/car_dealership.cpp.o:
-	$(MAKE) -f CMakeFiles/DS_HW1.dir/build.make CMakeFiles/DS_HW1.dir/Car_manager/car_dealership.cpp.o
-.PHONY : Car_manager/car_dealership.cpp.o
-
-Car_manager/car_dealership.i: Car_manager/car_dealership.cpp.i
-
-.PHONY : Car_manager/car_dealership.i
-
-# target to preprocess a source file
-Car_manager/car_dealership.cpp.i:
-	$(MAKE) -f CMakeFiles/DS_HW1.dir/build.make CMakeFiles/DS_HW1.dir/Car_manager/car_dealership.cpp.i
-.PHONY : Car_manager/car_dealership.cpp.i
-
-Car_manager/car_dealership.s: Car_manager/car_dealership.cpp.s
-
-.PHONY : Car_manager/car_dealership.s
-
-# target to generate assembly for a file
-Car_manager/car_dealership.cpp.s:
-	$(MAKE) -f CMakeFiles/DS_HW1.dir/build.make CMakeFiles/DS_HW1.dir/Car_manager/car_dealership.cpp.s
-.PHONY : Car_manager/car_dealership.cpp.s
-
-Car_manager/library.o: Car_manager/library.cpp.o
-
-.PHONY : Car_manager/library.o
-
-# target to build an object file
-Car_manager/library.cpp.o:
-	$(MAKE) -f CMakeFiles/DS_HW1.dir/build.make CMakeFiles/DS_HW1.dir/Car_manager/library.cpp.o
-.PHONY : Car_manager/library.cpp.o
-
-Car_manager/library.i: Car_manager/library.cpp.i
-
-.PHONY : Car_manager/library.i
-
-# target to preprocess a source file
-Car_manager/library.cpp.i:
-	$(MAKE) -f CMakeFiles/DS_HW1.dir/build.make CMakeFiles/DS_HW1.dir/Car_manager/library.cpp.i
-.PHONY : Car_manager/library.cpp.i
-
-Car_manager/library.s: Car_manager/library.cpp.s
-
-.PHONY : Car_manager/library.s
-
-# target to generate assembly for a file
-Car_manager/library.cpp.s:
-	$(MAKE) -f CMakeFiles/DS_HW1.dir/build.make CMakeFiles/DS_HW1.dir/Car_manager/library.cpp.s
-.PHONY : Car_manager/library.cpp.s
-
 Main_and_Tests/main1.o: Main_and_Tests/main1.cpp.o
 
 .PHONY : Main_and_Tests/main1.o
@@ -329,6 +167,168 @@ Main_and_Tests/main1.cpp.s:
 	$(MAKE) -f CMakeFiles/DS_HW1.dir/build.make CMakeFiles/DS_HW1.dir/Main_and_Tests/main1.cpp.s
 .PHONY : Main_and_Tests/main1.cpp.s
 
+Submission/car_best_sells.o: Submission/car_best_sells.cpp.o
+
+.PHONY : Submission/car_best_sells.o
+
+# target to build an object file
+Submission/car_best_sells.cpp.o:
+	$(MAKE) -f CMakeFiles/DS_HW1.dir/build.make CMakeFiles/DS_HW1.dir/Submission/car_best_sells.cpp.o
+.PHONY : Submission/car_best_sells.cpp.o
+
+Submission/car_best_sells.i: Submission/car_best_sells.cpp.i
+
+.PHONY : Submission/car_best_sells.i
+
+# target to preprocess a source file
+Submission/car_best_sells.cpp.i:
+	$(MAKE) -f CMakeFiles/DS_HW1.dir/build.make CMakeFiles/DS_HW1.dir/Submission/car_best_sells.cpp.i
+.PHONY : Submission/car_best_sells.cpp.i
+
+Submission/car_best_sells.s: Submission/car_best_sells.cpp.s
+
+.PHONY : Submission/car_best_sells.s
+
+# target to generate assembly for a file
+Submission/car_best_sells.cpp.s:
+	$(MAKE) -f CMakeFiles/DS_HW1.dir/build.make CMakeFiles/DS_HW1.dir/Submission/car_best_sells.cpp.s
+.PHONY : Submission/car_best_sells.cpp.s
+
+Submission/car_dealership.o: Submission/car_dealership.cpp.o
+
+.PHONY : Submission/car_dealership.o
+
+# target to build an object file
+Submission/car_dealership.cpp.o:
+	$(MAKE) -f CMakeFiles/DS_HW1.dir/build.make CMakeFiles/DS_HW1.dir/Submission/car_dealership.cpp.o
+.PHONY : Submission/car_dealership.cpp.o
+
+Submission/car_dealership.i: Submission/car_dealership.cpp.i
+
+.PHONY : Submission/car_dealership.i
+
+# target to preprocess a source file
+Submission/car_dealership.cpp.i:
+	$(MAKE) -f CMakeFiles/DS_HW1.dir/build.make CMakeFiles/DS_HW1.dir/Submission/car_dealership.cpp.i
+.PHONY : Submission/car_dealership.cpp.i
+
+Submission/car_dealership.s: Submission/car_dealership.cpp.s
+
+.PHONY : Submission/car_dealership.s
+
+# target to generate assembly for a file
+Submission/car_dealership.cpp.s:
+	$(MAKE) -f CMakeFiles/DS_HW1.dir/build.make CMakeFiles/DS_HW1.dir/Submission/car_dealership.cpp.s
+.PHONY : Submission/car_dealership.cpp.s
+
+Submission/car_points.o: Submission/car_points.cpp.o
+
+.PHONY : Submission/car_points.o
+
+# target to build an object file
+Submission/car_points.cpp.o:
+	$(MAKE) -f CMakeFiles/DS_HW1.dir/build.make CMakeFiles/DS_HW1.dir/Submission/car_points.cpp.o
+.PHONY : Submission/car_points.cpp.o
+
+Submission/car_points.i: Submission/car_points.cpp.i
+
+.PHONY : Submission/car_points.i
+
+# target to preprocess a source file
+Submission/car_points.cpp.i:
+	$(MAKE) -f CMakeFiles/DS_HW1.dir/build.make CMakeFiles/DS_HW1.dir/Submission/car_points.cpp.i
+.PHONY : Submission/car_points.cpp.i
+
+Submission/car_points.s: Submission/car_points.cpp.s
+
+.PHONY : Submission/car_points.s
+
+# target to generate assembly for a file
+Submission/car_points.cpp.s:
+	$(MAKE) -f CMakeFiles/DS_HW1.dir/build.make CMakeFiles/DS_HW1.dir/Submission/car_points.cpp.s
+.PHONY : Submission/car_points.cpp.s
+
+Submission/car_sells.o: Submission/car_sells.cpp.o
+
+.PHONY : Submission/car_sells.o
+
+# target to build an object file
+Submission/car_sells.cpp.o:
+	$(MAKE) -f CMakeFiles/DS_HW1.dir/build.make CMakeFiles/DS_HW1.dir/Submission/car_sells.cpp.o
+.PHONY : Submission/car_sells.cpp.o
+
+Submission/car_sells.i: Submission/car_sells.cpp.i
+
+.PHONY : Submission/car_sells.i
+
+# target to preprocess a source file
+Submission/car_sells.cpp.i:
+	$(MAKE) -f CMakeFiles/DS_HW1.dir/build.make CMakeFiles/DS_HW1.dir/Submission/car_sells.cpp.i
+.PHONY : Submission/car_sells.cpp.i
+
+Submission/car_sells.s: Submission/car_sells.cpp.s
+
+.PHONY : Submission/car_sells.s
+
+# target to generate assembly for a file
+Submission/car_sells.cpp.s:
+	$(MAKE) -f CMakeFiles/DS_HW1.dir/build.make CMakeFiles/DS_HW1.dir/Submission/car_sells.cpp.s
+.PHONY : Submission/car_sells.cpp.s
+
+Submission/car_zero_points.o: Submission/car_zero_points.cpp.o
+
+.PHONY : Submission/car_zero_points.o
+
+# target to build an object file
+Submission/car_zero_points.cpp.o:
+	$(MAKE) -f CMakeFiles/DS_HW1.dir/build.make CMakeFiles/DS_HW1.dir/Submission/car_zero_points.cpp.o
+.PHONY : Submission/car_zero_points.cpp.o
+
+Submission/car_zero_points.i: Submission/car_zero_points.cpp.i
+
+.PHONY : Submission/car_zero_points.i
+
+# target to preprocess a source file
+Submission/car_zero_points.cpp.i:
+	$(MAKE) -f CMakeFiles/DS_HW1.dir/build.make CMakeFiles/DS_HW1.dir/Submission/car_zero_points.cpp.i
+.PHONY : Submission/car_zero_points.cpp.i
+
+Submission/car_zero_points.s: Submission/car_zero_points.cpp.s
+
+.PHONY : Submission/car_zero_points.s
+
+# target to generate assembly for a file
+Submission/car_zero_points.cpp.s:
+	$(MAKE) -f CMakeFiles/DS_HW1.dir/build.make CMakeFiles/DS_HW1.dir/Submission/car_zero_points.cpp.s
+.PHONY : Submission/car_zero_points.cpp.s
+
+Submission/library.o: Submission/library.cpp.o
+
+.PHONY : Submission/library.o
+
+# target to build an object file
+Submission/library.cpp.o:
+	$(MAKE) -f CMakeFiles/DS_HW1.dir/build.make CMakeFiles/DS_HW1.dir/Submission/library.cpp.o
+.PHONY : Submission/library.cpp.o
+
+Submission/library.i: Submission/library.cpp.i
+
+.PHONY : Submission/library.i
+
+# target to preprocess a source file
+Submission/library.cpp.i:
+	$(MAKE) -f CMakeFiles/DS_HW1.dir/build.make CMakeFiles/DS_HW1.dir/Submission/library.cpp.i
+.PHONY : Submission/library.cpp.i
+
+Submission/library.s: Submission/library.cpp.s
+
+.PHONY : Submission/library.s
+
+# target to generate assembly for a file
+Submission/library.cpp.s:
+	$(MAKE) -f CMakeFiles/DS_HW1.dir/build.make CMakeFiles/DS_HW1.dir/Submission/library.cpp.s
+.PHONY : Submission/library.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -338,27 +338,27 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... DS_HW1"
-	@echo "... Car_Classes/car_best_sells.o"
-	@echo "... Car_Classes/car_best_sells.i"
-	@echo "... Car_Classes/car_best_sells.s"
-	@echo "... Car_Classes/car_points.o"
-	@echo "... Car_Classes/car_points.i"
-	@echo "... Car_Classes/car_points.s"
-	@echo "... Car_Classes/car_sells.o"
-	@echo "... Car_Classes/car_sells.i"
-	@echo "... Car_Classes/car_sells.s"
-	@echo "... Car_Classes/car_zero_points.o"
-	@echo "... Car_Classes/car_zero_points.i"
-	@echo "... Car_Classes/car_zero_points.s"
-	@echo "... Car_manager/car_dealership.o"
-	@echo "... Car_manager/car_dealership.i"
-	@echo "... Car_manager/car_dealership.s"
-	@echo "... Car_manager/library.o"
-	@echo "... Car_manager/library.i"
-	@echo "... Car_manager/library.s"
 	@echo "... Main_and_Tests/main1.o"
 	@echo "... Main_and_Tests/main1.i"
 	@echo "... Main_and_Tests/main1.s"
+	@echo "... Submission/car_best_sells.o"
+	@echo "... Submission/car_best_sells.i"
+	@echo "... Submission/car_best_sells.s"
+	@echo "... Submission/car_dealership.o"
+	@echo "... Submission/car_dealership.i"
+	@echo "... Submission/car_dealership.s"
+	@echo "... Submission/car_points.o"
+	@echo "... Submission/car_points.i"
+	@echo "... Submission/car_points.s"
+	@echo "... Submission/car_sells.o"
+	@echo "... Submission/car_sells.i"
+	@echo "... Submission/car_sells.s"
+	@echo "... Submission/car_zero_points.o"
+	@echo "... Submission/car_zero_points.i"
+	@echo "... Submission/car_zero_points.s"
+	@echo "... Submission/library.o"
+	@echo "... Submission/library.i"
+	@echo "... Submission/library.s"
 .PHONY : help
 
 

@@ -97,14 +97,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/yant/ds/Final_hw1/DS_HW1/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/yant/ds/Final_hw1/DS_HW1/build/CMakeFiles /home/yant/ds/Final_hw1/DS_HW1/build/Tests/CMakeFiles/progress.marks
-	cd /home/yant/ds/Final_hw1/DS_HW1/build && $(MAKE) -f CMakeFiles/Makefile2 Tests/all
+	cd /home/yant/ds/Final_hw1/DS_HW1/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/yant/ds/Final_hw1/DS_HW1/build/CMakeFiles /home/yant/ds/Final_hw1/DS_HW1/build/Submission/CMakeFiles/progress.marks
+	cd /home/yant/ds/Final_hw1/DS_HW1/build && $(MAKE) -f CMakeFiles/Makefile2 Submission/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/yant/ds/Final_hw1/DS_HW1/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/yant/ds/Final_hw1/DS_HW1/build && $(MAKE) -f CMakeFiles/Makefile2 Tests/clean
+	cd /home/yant/ds/Final_hw1/DS_HW1/build && $(MAKE) -f CMakeFiles/Makefile2 Submission/clean
 .PHONY : clean
 
 # The main clean target
@@ -114,12 +114,12 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/yant/ds/Final_hw1/DS_HW1/build && $(MAKE) -f CMakeFiles/Makefile2 Tests/preinstall
+	cd /home/yant/ds/Final_hw1/DS_HW1/build && $(MAKE) -f CMakeFiles/Makefile2 Submission/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/yant/ds/Final_hw1/DS_HW1/build && $(MAKE) -f CMakeFiles/Makefile2 Tests/preinstall
+	cd /home/yant/ds/Final_hw1/DS_HW1/build && $(MAKE) -f CMakeFiles/Makefile2 Submission/preinstall
 .PHONY : preinstall/fast
 
 # clear depends

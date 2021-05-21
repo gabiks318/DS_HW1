@@ -1,4 +1,4 @@
-# Install script for directory: /home/kogabriel/ds/DS_HW1
+# Install script for directory: /home/yant/ds/Final_hw1/DS_HW1
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,27 +39,32 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/kogabriel/ds/DS_HW1/build/Tests/cmake_install.cmake")
+  include("/home/yant/ds/Final_hw1/DS_HW1/build/Tests/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/kogabriel/ds/DS_HW1/build/Car Classes/cmake_install.cmake")
+  include("/home/yant/ds/Final_hw1/DS_HW1/build/Car Classes/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/kogabriel/ds/DS_HW1/build/Car manager/cmake_install.cmake")
+  include("/home/yant/ds/Final_hw1/DS_HW1/build/Car manager/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/kogabriel/ds/DS_HW1/build/AVL Tree/cmake_install.cmake")
+  include("/home/yant/ds/Final_hw1/DS_HW1/build/AVL Tree/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/kogabriel/ds/DS_HW1/build/Main and Tests/cmake_install.cmake")
+  include("/home/yant/ds/Final_hw1/DS_HW1/build/Submission/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("/home/yant/ds/Final_hw1/DS_HW1/build/Main and Tests/cmake_install.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -70,5 +75,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/kogabriel/ds/DS_HW1/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/yant/ds/Final_hw1/DS_HW1/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

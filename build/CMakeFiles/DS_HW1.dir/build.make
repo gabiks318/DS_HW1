@@ -60,10 +60,10 @@ RM = /home/mtm/cmake-3.17.0-Linux-x86_64/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/kogabriel/ds/DS_HW1
+CMAKE_SOURCE_DIR = /home/yant/ds/Final_hw1/DS_HW1
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/kogabriel/ds/DS_HW1/build
+CMAKE_BINARY_DIR = /home/yant/ds/Final_hw1/DS_HW1/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/DS_HW1.dir/depend.make
@@ -76,118 +76,118 @@ include CMakeFiles/DS_HW1.dir/flags.make
 
 CMakeFiles/DS_HW1.dir/Main_and_Tests/main1.cpp.o: CMakeFiles/DS_HW1.dir/flags.make
 CMakeFiles/DS_HW1.dir/Main_and_Tests/main1.cpp.o: ../Main\ and\ Tests/main1.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kogabriel/ds/DS_HW1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/DS_HW1.dir/Main_and_Tests/main1.cpp.o"
-	/usr/bin/x86_64-redhat-linux-g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DS_HW1.dir/Main_and_Tests/main1.cpp.o -c "/home/kogabriel/ds/DS_HW1/Main and Tests/main1.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yant/ds/Final_hw1/DS_HW1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/DS_HW1.dir/Main_and_Tests/main1.cpp.o"
+	/usr/bin/x86_64-redhat-linux-g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DS_HW1.dir/Main_and_Tests/main1.cpp.o -c "/home/yant/ds/Final_hw1/DS_HW1/Main and Tests/main1.cpp"
 
 CMakeFiles/DS_HW1.dir/Main_and_Tests/main1.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DS_HW1.dir/Main_and_Tests/main1.cpp.i"
-	/usr/bin/x86_64-redhat-linux-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/kogabriel/ds/DS_HW1/Main and Tests/main1.cpp" > CMakeFiles/DS_HW1.dir/Main_and_Tests/main1.cpp.i
+	/usr/bin/x86_64-redhat-linux-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/yant/ds/Final_hw1/DS_HW1/Main and Tests/main1.cpp" > CMakeFiles/DS_HW1.dir/Main_and_Tests/main1.cpp.i
 
 CMakeFiles/DS_HW1.dir/Main_and_Tests/main1.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DS_HW1.dir/Main_and_Tests/main1.cpp.s"
-	/usr/bin/x86_64-redhat-linux-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/kogabriel/ds/DS_HW1/Main and Tests/main1.cpp" -o CMakeFiles/DS_HW1.dir/Main_and_Tests/main1.cpp.s
+	/usr/bin/x86_64-redhat-linux-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/yant/ds/Final_hw1/DS_HW1/Main and Tests/main1.cpp" -o CMakeFiles/DS_HW1.dir/Main_and_Tests/main1.cpp.s
 
-CMakeFiles/DS_HW1.dir/Car_manager/car_dealership.cpp.o: CMakeFiles/DS_HW1.dir/flags.make
-CMakeFiles/DS_HW1.dir/Car_manager/car_dealership.cpp.o: ../Car\ manager/car_dealership.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kogabriel/ds/DS_HW1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/DS_HW1.dir/Car_manager/car_dealership.cpp.o"
-	/usr/bin/x86_64-redhat-linux-g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DS_HW1.dir/Car_manager/car_dealership.cpp.o -c "/home/kogabriel/ds/DS_HW1/Car manager/car_dealership.cpp"
+CMakeFiles/DS_HW1.dir/Submission/car_dealership.cpp.o: CMakeFiles/DS_HW1.dir/flags.make
+CMakeFiles/DS_HW1.dir/Submission/car_dealership.cpp.o: ../Submission/car_dealership.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yant/ds/Final_hw1/DS_HW1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/DS_HW1.dir/Submission/car_dealership.cpp.o"
+	/usr/bin/x86_64-redhat-linux-g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DS_HW1.dir/Submission/car_dealership.cpp.o -c /home/yant/ds/Final_hw1/DS_HW1/Submission/car_dealership.cpp
 
-CMakeFiles/DS_HW1.dir/Car_manager/car_dealership.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DS_HW1.dir/Car_manager/car_dealership.cpp.i"
-	/usr/bin/x86_64-redhat-linux-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/kogabriel/ds/DS_HW1/Car manager/car_dealership.cpp" > CMakeFiles/DS_HW1.dir/Car_manager/car_dealership.cpp.i
+CMakeFiles/DS_HW1.dir/Submission/car_dealership.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DS_HW1.dir/Submission/car_dealership.cpp.i"
+	/usr/bin/x86_64-redhat-linux-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yant/ds/Final_hw1/DS_HW1/Submission/car_dealership.cpp > CMakeFiles/DS_HW1.dir/Submission/car_dealership.cpp.i
 
-CMakeFiles/DS_HW1.dir/Car_manager/car_dealership.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DS_HW1.dir/Car_manager/car_dealership.cpp.s"
-	/usr/bin/x86_64-redhat-linux-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/kogabriel/ds/DS_HW1/Car manager/car_dealership.cpp" -o CMakeFiles/DS_HW1.dir/Car_manager/car_dealership.cpp.s
+CMakeFiles/DS_HW1.dir/Submission/car_dealership.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DS_HW1.dir/Submission/car_dealership.cpp.s"
+	/usr/bin/x86_64-redhat-linux-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yant/ds/Final_hw1/DS_HW1/Submission/car_dealership.cpp -o CMakeFiles/DS_HW1.dir/Submission/car_dealership.cpp.s
 
-CMakeFiles/DS_HW1.dir/Car_manager/library.cpp.o: CMakeFiles/DS_HW1.dir/flags.make
-CMakeFiles/DS_HW1.dir/Car_manager/library.cpp.o: ../Car\ manager/library.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kogabriel/ds/DS_HW1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/DS_HW1.dir/Car_manager/library.cpp.o"
-	/usr/bin/x86_64-redhat-linux-g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DS_HW1.dir/Car_manager/library.cpp.o -c "/home/kogabriel/ds/DS_HW1/Car manager/library.cpp"
+CMakeFiles/DS_HW1.dir/Submission/library.cpp.o: CMakeFiles/DS_HW1.dir/flags.make
+CMakeFiles/DS_HW1.dir/Submission/library.cpp.o: ../Submission/library.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yant/ds/Final_hw1/DS_HW1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/DS_HW1.dir/Submission/library.cpp.o"
+	/usr/bin/x86_64-redhat-linux-g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DS_HW1.dir/Submission/library.cpp.o -c /home/yant/ds/Final_hw1/DS_HW1/Submission/library.cpp
 
-CMakeFiles/DS_HW1.dir/Car_manager/library.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DS_HW1.dir/Car_manager/library.cpp.i"
-	/usr/bin/x86_64-redhat-linux-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/kogabriel/ds/DS_HW1/Car manager/library.cpp" > CMakeFiles/DS_HW1.dir/Car_manager/library.cpp.i
+CMakeFiles/DS_HW1.dir/Submission/library.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DS_HW1.dir/Submission/library.cpp.i"
+	/usr/bin/x86_64-redhat-linux-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yant/ds/Final_hw1/DS_HW1/Submission/library.cpp > CMakeFiles/DS_HW1.dir/Submission/library.cpp.i
 
-CMakeFiles/DS_HW1.dir/Car_manager/library.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DS_HW1.dir/Car_manager/library.cpp.s"
-	/usr/bin/x86_64-redhat-linux-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/kogabriel/ds/DS_HW1/Car manager/library.cpp" -o CMakeFiles/DS_HW1.dir/Car_manager/library.cpp.s
+CMakeFiles/DS_HW1.dir/Submission/library.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DS_HW1.dir/Submission/library.cpp.s"
+	/usr/bin/x86_64-redhat-linux-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yant/ds/Final_hw1/DS_HW1/Submission/library.cpp -o CMakeFiles/DS_HW1.dir/Submission/library.cpp.s
 
-CMakeFiles/DS_HW1.dir/Car_Classes/car_best_sells.cpp.o: CMakeFiles/DS_HW1.dir/flags.make
-CMakeFiles/DS_HW1.dir/Car_Classes/car_best_sells.cpp.o: ../Car\ Classes/car_best_sells.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kogabriel/ds/DS_HW1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/DS_HW1.dir/Car_Classes/car_best_sells.cpp.o"
-	/usr/bin/x86_64-redhat-linux-g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DS_HW1.dir/Car_Classes/car_best_sells.cpp.o -c "/home/kogabriel/ds/DS_HW1/Car Classes/car_best_sells.cpp"
+CMakeFiles/DS_HW1.dir/Submission/car_best_sells.cpp.o: CMakeFiles/DS_HW1.dir/flags.make
+CMakeFiles/DS_HW1.dir/Submission/car_best_sells.cpp.o: ../Submission/car_best_sells.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yant/ds/Final_hw1/DS_HW1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/DS_HW1.dir/Submission/car_best_sells.cpp.o"
+	/usr/bin/x86_64-redhat-linux-g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DS_HW1.dir/Submission/car_best_sells.cpp.o -c /home/yant/ds/Final_hw1/DS_HW1/Submission/car_best_sells.cpp
 
-CMakeFiles/DS_HW1.dir/Car_Classes/car_best_sells.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DS_HW1.dir/Car_Classes/car_best_sells.cpp.i"
-	/usr/bin/x86_64-redhat-linux-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/kogabriel/ds/DS_HW1/Car Classes/car_best_sells.cpp" > CMakeFiles/DS_HW1.dir/Car_Classes/car_best_sells.cpp.i
+CMakeFiles/DS_HW1.dir/Submission/car_best_sells.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DS_HW1.dir/Submission/car_best_sells.cpp.i"
+	/usr/bin/x86_64-redhat-linux-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yant/ds/Final_hw1/DS_HW1/Submission/car_best_sells.cpp > CMakeFiles/DS_HW1.dir/Submission/car_best_sells.cpp.i
 
-CMakeFiles/DS_HW1.dir/Car_Classes/car_best_sells.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DS_HW1.dir/Car_Classes/car_best_sells.cpp.s"
-	/usr/bin/x86_64-redhat-linux-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/kogabriel/ds/DS_HW1/Car Classes/car_best_sells.cpp" -o CMakeFiles/DS_HW1.dir/Car_Classes/car_best_sells.cpp.s
+CMakeFiles/DS_HW1.dir/Submission/car_best_sells.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DS_HW1.dir/Submission/car_best_sells.cpp.s"
+	/usr/bin/x86_64-redhat-linux-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yant/ds/Final_hw1/DS_HW1/Submission/car_best_sells.cpp -o CMakeFiles/DS_HW1.dir/Submission/car_best_sells.cpp.s
 
-CMakeFiles/DS_HW1.dir/Car_Classes/car_points.cpp.o: CMakeFiles/DS_HW1.dir/flags.make
-CMakeFiles/DS_HW1.dir/Car_Classes/car_points.cpp.o: ../Car\ Classes/car_points.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kogabriel/ds/DS_HW1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/DS_HW1.dir/Car_Classes/car_points.cpp.o"
-	/usr/bin/x86_64-redhat-linux-g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DS_HW1.dir/Car_Classes/car_points.cpp.o -c "/home/kogabriel/ds/DS_HW1/Car Classes/car_points.cpp"
+CMakeFiles/DS_HW1.dir/Submission/car_points.cpp.o: CMakeFiles/DS_HW1.dir/flags.make
+CMakeFiles/DS_HW1.dir/Submission/car_points.cpp.o: ../Submission/car_points.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yant/ds/Final_hw1/DS_HW1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/DS_HW1.dir/Submission/car_points.cpp.o"
+	/usr/bin/x86_64-redhat-linux-g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DS_HW1.dir/Submission/car_points.cpp.o -c /home/yant/ds/Final_hw1/DS_HW1/Submission/car_points.cpp
 
-CMakeFiles/DS_HW1.dir/Car_Classes/car_points.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DS_HW1.dir/Car_Classes/car_points.cpp.i"
-	/usr/bin/x86_64-redhat-linux-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/kogabriel/ds/DS_HW1/Car Classes/car_points.cpp" > CMakeFiles/DS_HW1.dir/Car_Classes/car_points.cpp.i
+CMakeFiles/DS_HW1.dir/Submission/car_points.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DS_HW1.dir/Submission/car_points.cpp.i"
+	/usr/bin/x86_64-redhat-linux-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yant/ds/Final_hw1/DS_HW1/Submission/car_points.cpp > CMakeFiles/DS_HW1.dir/Submission/car_points.cpp.i
 
-CMakeFiles/DS_HW1.dir/Car_Classes/car_points.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DS_HW1.dir/Car_Classes/car_points.cpp.s"
-	/usr/bin/x86_64-redhat-linux-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/kogabriel/ds/DS_HW1/Car Classes/car_points.cpp" -o CMakeFiles/DS_HW1.dir/Car_Classes/car_points.cpp.s
+CMakeFiles/DS_HW1.dir/Submission/car_points.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DS_HW1.dir/Submission/car_points.cpp.s"
+	/usr/bin/x86_64-redhat-linux-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yant/ds/Final_hw1/DS_HW1/Submission/car_points.cpp -o CMakeFiles/DS_HW1.dir/Submission/car_points.cpp.s
 
-CMakeFiles/DS_HW1.dir/Car_Classes/car_sells.cpp.o: CMakeFiles/DS_HW1.dir/flags.make
-CMakeFiles/DS_HW1.dir/Car_Classes/car_sells.cpp.o: ../Car\ Classes/car_sells.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kogabriel/ds/DS_HW1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/DS_HW1.dir/Car_Classes/car_sells.cpp.o"
-	/usr/bin/x86_64-redhat-linux-g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DS_HW1.dir/Car_Classes/car_sells.cpp.o -c "/home/kogabriel/ds/DS_HW1/Car Classes/car_sells.cpp"
+CMakeFiles/DS_HW1.dir/Submission/car_sells.cpp.o: CMakeFiles/DS_HW1.dir/flags.make
+CMakeFiles/DS_HW1.dir/Submission/car_sells.cpp.o: ../Submission/car_sells.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yant/ds/Final_hw1/DS_HW1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/DS_HW1.dir/Submission/car_sells.cpp.o"
+	/usr/bin/x86_64-redhat-linux-g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DS_HW1.dir/Submission/car_sells.cpp.o -c /home/yant/ds/Final_hw1/DS_HW1/Submission/car_sells.cpp
 
-CMakeFiles/DS_HW1.dir/Car_Classes/car_sells.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DS_HW1.dir/Car_Classes/car_sells.cpp.i"
-	/usr/bin/x86_64-redhat-linux-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/kogabriel/ds/DS_HW1/Car Classes/car_sells.cpp" > CMakeFiles/DS_HW1.dir/Car_Classes/car_sells.cpp.i
+CMakeFiles/DS_HW1.dir/Submission/car_sells.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DS_HW1.dir/Submission/car_sells.cpp.i"
+	/usr/bin/x86_64-redhat-linux-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yant/ds/Final_hw1/DS_HW1/Submission/car_sells.cpp > CMakeFiles/DS_HW1.dir/Submission/car_sells.cpp.i
 
-CMakeFiles/DS_HW1.dir/Car_Classes/car_sells.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DS_HW1.dir/Car_Classes/car_sells.cpp.s"
-	/usr/bin/x86_64-redhat-linux-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/kogabriel/ds/DS_HW1/Car Classes/car_sells.cpp" -o CMakeFiles/DS_HW1.dir/Car_Classes/car_sells.cpp.s
+CMakeFiles/DS_HW1.dir/Submission/car_sells.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DS_HW1.dir/Submission/car_sells.cpp.s"
+	/usr/bin/x86_64-redhat-linux-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yant/ds/Final_hw1/DS_HW1/Submission/car_sells.cpp -o CMakeFiles/DS_HW1.dir/Submission/car_sells.cpp.s
 
-CMakeFiles/DS_HW1.dir/Car_Classes/car_zero_points.cpp.o: CMakeFiles/DS_HW1.dir/flags.make
-CMakeFiles/DS_HW1.dir/Car_Classes/car_zero_points.cpp.o: ../Car\ Classes/car_zero_points.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kogabriel/ds/DS_HW1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/DS_HW1.dir/Car_Classes/car_zero_points.cpp.o"
-	/usr/bin/x86_64-redhat-linux-g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DS_HW1.dir/Car_Classes/car_zero_points.cpp.o -c "/home/kogabriel/ds/DS_HW1/Car Classes/car_zero_points.cpp"
+CMakeFiles/DS_HW1.dir/Submission/car_zero_points.cpp.o: CMakeFiles/DS_HW1.dir/flags.make
+CMakeFiles/DS_HW1.dir/Submission/car_zero_points.cpp.o: ../Submission/car_zero_points.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yant/ds/Final_hw1/DS_HW1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/DS_HW1.dir/Submission/car_zero_points.cpp.o"
+	/usr/bin/x86_64-redhat-linux-g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DS_HW1.dir/Submission/car_zero_points.cpp.o -c /home/yant/ds/Final_hw1/DS_HW1/Submission/car_zero_points.cpp
 
-CMakeFiles/DS_HW1.dir/Car_Classes/car_zero_points.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DS_HW1.dir/Car_Classes/car_zero_points.cpp.i"
-	/usr/bin/x86_64-redhat-linux-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/kogabriel/ds/DS_HW1/Car Classes/car_zero_points.cpp" > CMakeFiles/DS_HW1.dir/Car_Classes/car_zero_points.cpp.i
+CMakeFiles/DS_HW1.dir/Submission/car_zero_points.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DS_HW1.dir/Submission/car_zero_points.cpp.i"
+	/usr/bin/x86_64-redhat-linux-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yant/ds/Final_hw1/DS_HW1/Submission/car_zero_points.cpp > CMakeFiles/DS_HW1.dir/Submission/car_zero_points.cpp.i
 
-CMakeFiles/DS_HW1.dir/Car_Classes/car_zero_points.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DS_HW1.dir/Car_Classes/car_zero_points.cpp.s"
-	/usr/bin/x86_64-redhat-linux-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/kogabriel/ds/DS_HW1/Car Classes/car_zero_points.cpp" -o CMakeFiles/DS_HW1.dir/Car_Classes/car_zero_points.cpp.s
+CMakeFiles/DS_HW1.dir/Submission/car_zero_points.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DS_HW1.dir/Submission/car_zero_points.cpp.s"
+	/usr/bin/x86_64-redhat-linux-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yant/ds/Final_hw1/DS_HW1/Submission/car_zero_points.cpp -o CMakeFiles/DS_HW1.dir/Submission/car_zero_points.cpp.s
 
 # Object files for target DS_HW1
 DS_HW1_OBJECTS = \
 "CMakeFiles/DS_HW1.dir/Main_and_Tests/main1.cpp.o" \
-"CMakeFiles/DS_HW1.dir/Car_manager/car_dealership.cpp.o" \
-"CMakeFiles/DS_HW1.dir/Car_manager/library.cpp.o" \
-"CMakeFiles/DS_HW1.dir/Car_Classes/car_best_sells.cpp.o" \
-"CMakeFiles/DS_HW1.dir/Car_Classes/car_points.cpp.o" \
-"CMakeFiles/DS_HW1.dir/Car_Classes/car_sells.cpp.o" \
-"CMakeFiles/DS_HW1.dir/Car_Classes/car_zero_points.cpp.o"
+"CMakeFiles/DS_HW1.dir/Submission/car_dealership.cpp.o" \
+"CMakeFiles/DS_HW1.dir/Submission/library.cpp.o" \
+"CMakeFiles/DS_HW1.dir/Submission/car_best_sells.cpp.o" \
+"CMakeFiles/DS_HW1.dir/Submission/car_points.cpp.o" \
+"CMakeFiles/DS_HW1.dir/Submission/car_sells.cpp.o" \
+"CMakeFiles/DS_HW1.dir/Submission/car_zero_points.cpp.o"
 
 # External object files for target DS_HW1
 DS_HW1_EXTERNAL_OBJECTS =
 
 DS_HW1: CMakeFiles/DS_HW1.dir/Main_and_Tests/main1.cpp.o
-DS_HW1: CMakeFiles/DS_HW1.dir/Car_manager/car_dealership.cpp.o
-DS_HW1: CMakeFiles/DS_HW1.dir/Car_manager/library.cpp.o
-DS_HW1: CMakeFiles/DS_HW1.dir/Car_Classes/car_best_sells.cpp.o
-DS_HW1: CMakeFiles/DS_HW1.dir/Car_Classes/car_points.cpp.o
-DS_HW1: CMakeFiles/DS_HW1.dir/Car_Classes/car_sells.cpp.o
-DS_HW1: CMakeFiles/DS_HW1.dir/Car_Classes/car_zero_points.cpp.o
+DS_HW1: CMakeFiles/DS_HW1.dir/Submission/car_dealership.cpp.o
+DS_HW1: CMakeFiles/DS_HW1.dir/Submission/library.cpp.o
+DS_HW1: CMakeFiles/DS_HW1.dir/Submission/car_best_sells.cpp.o
+DS_HW1: CMakeFiles/DS_HW1.dir/Submission/car_points.cpp.o
+DS_HW1: CMakeFiles/DS_HW1.dir/Submission/car_sells.cpp.o
+DS_HW1: CMakeFiles/DS_HW1.dir/Submission/car_zero_points.cpp.o
 DS_HW1: CMakeFiles/DS_HW1.dir/build.make
 DS_HW1: CMakeFiles/DS_HW1.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/kogabriel/ds/DS_HW1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable DS_HW1"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/yant/ds/Final_hw1/DS_HW1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable DS_HW1"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/DS_HW1.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -200,6 +200,6 @@ CMakeFiles/DS_HW1.dir/clean:
 .PHONY : CMakeFiles/DS_HW1.dir/clean
 
 CMakeFiles/DS_HW1.dir/depend:
-	cd /home/kogabriel/ds/DS_HW1/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/kogabriel/ds/DS_HW1 /home/kogabriel/ds/DS_HW1 /home/kogabriel/ds/DS_HW1/build /home/kogabriel/ds/DS_HW1/build /home/kogabriel/ds/DS_HW1/build/CMakeFiles/DS_HW1.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/yant/ds/Final_hw1/DS_HW1/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/yant/ds/Final_hw1/DS_HW1 /home/yant/ds/Final_hw1/DS_HW1 /home/yant/ds/Final_hw1/DS_HW1/build /home/yant/ds/Final_hw1/DS_HW1/build /home/yant/ds/Final_hw1/DS_HW1/build/CMakeFiles/DS_HW1.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/DS_HW1.dir/depend
 

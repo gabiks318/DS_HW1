@@ -6,5 +6,5 @@ CXX_FLAGS = -g   -std=gnu++1y
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/kogabriel/ds/DS_HW1/. 
+CXX_INCLUDES = -I/home/yant/ds/Final_hw1/DS_HW1/. 
 

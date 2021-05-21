@@ -1,1616 +1,1600 @@
 1.txt
 
-==31459== Memcheck, a memory error detector
-==31459== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==31459== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
-==31459== Command: ./Submission/ds
-==31459== 
-==31459== 
-==31459== HEAP SUMMARY:
-==31459==     in use at exit: 0 bytes in 0 blocks
-==31459==   total heap usage: 38,973 allocs, 38,973 frees, 3,057,148 bytes allocated
-==31459== 
-==31459== All heap blocks were freed -- no leaks are possible
-==31459== 
-==31459== For lists of detected and suppressed errors, rerun with: -s
-==31459== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==16494== Memcheck, a memory error detector
+==16494== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==16494== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==16494== Command: ./Submission/ds
+==16494== 
+==16494== 
+==16494== HEAP SUMMARY:
+==16494==     in use at exit: 0 bytes in 0 blocks
+==16494==   total heap usage: 38,973 allocs, 38,973 frees, 3,057,148 bytes allocated
+==16494== 
+==16494== All heap blocks were freed -- no leaks are possible
+==16494== 
+==16494== For lists of detected and suppressed errors, rerun with: -s
+==16494== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 10.txt
 
-==31604== Memcheck, a memory error detector
-==31604== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==31604== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
-==31604== Command: ./Submission/ds
-==31604== 
-==31604== 
-==31604== HEAP SUMMARY:
-==31604==     in use at exit: 0 bytes in 0 blocks
-==31604==   total heap usage: 5,496 allocs, 5,496 frees, 164,296 bytes allocated
-==31604== 
-==31604== All heap blocks were freed -- no leaks are possible
-==31604== 
-==31604== For lists of detected and suppressed errors, rerun with: -s
-==31604== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==17522== Memcheck, a memory error detector
+==17522== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==17522== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==17522== Command: ./Submission/ds
+==17522== 
+==17522== 
+==17522== HEAP SUMMARY:
+==17522==     in use at exit: 0 bytes in 0 blocks
+==17522==   total heap usage: 5,496 allocs, 5,496 frees, 164,296 bytes allocated
+==17522== 
+==17522== All heap blocks were freed -- no leaks are possible
+==17522== 
+==17522== For lists of detected and suppressed errors, rerun with: -s
+==17522== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 100.txt
 
-==31670== Memcheck, a memory error detector
-==31670== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==31670== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
-==31670== Command: ./Submission/ds
-==31670== 
-==31670== 
-==31670== HEAP SUMMARY:
-==31670==     in use at exit: 0 bytes in 0 blocks
-==31670==   total heap usage: 21,561 allocs, 21,561 frees, 1,193,660 bytes allocated
-==31670== 
-==31670== All heap blocks were freed -- no leaks are possible
-==31670== 
-==31670== For lists of detected and suppressed errors, rerun with: -s
-==31670== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==17550== Memcheck, a memory error detector
+==17550== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==17550== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==17550== Command: ./Submission/ds
+==17550== 
+==17550== 
+==17550== HEAP SUMMARY:
+==17550==     in use at exit: 0 bytes in 0 blocks
+==17550==   total heap usage: 21,561 allocs, 21,561 frees, 1,193,660 bytes allocated
+==17550== 
+==17550== All heap blocks were freed -- no leaks are possible
+==17550== 
+==17550== For lists of detected and suppressed errors, rerun with: -s
+==17550== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 11.txt
 
-==31768== Memcheck, a memory error detector
-==31768== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==31768== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
-==31768== Command: ./Submission/ds
-==31768== 
-==31768== 
-==31768== HEAP SUMMARY:
-==31768==     in use at exit: 0 bytes in 0 blocks
-==31768==   total heap usage: 1,301 allocs, 1,301 frees, 32,824 bytes allocated
-==31768== 
-==31768== All heap blocks were freed -- no leaks are possible
-==31768== 
-==31768== For lists of detected and suppressed errors, rerun with: -s
-==31768== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==17651== Memcheck, a memory error detector
+==17651== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==17651== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==17651== Command: ./Submission/ds
+==17651== 
+==17651== 
+==17651== HEAP SUMMARY:
+==17651==     in use at exit: 0 bytes in 0 blocks
+==17651==   total heap usage: 1,301 allocs, 1,301 frees, 32,824 bytes allocated
+==17651== 
+==17651== All heap blocks were freed -- no leaks are possible
+==17651== 
+==17651== For lists of detected and suppressed errors, rerun with: -s
+==17651== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 12.txt
 
-==31787== Memcheck, a memory error detector
-==31787== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==31787== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
-==31787== Command: ./Submission/ds
-==31787== 
-==31787== 
-==31787== HEAP SUMMARY:
-==31787==     in use at exit: 0 bytes in 0 blocks
-==31787==   total heap usage: 1,227 allocs, 1,227 frees, 28,664 bytes allocated
-==31787== 
-==31787== All heap blocks were freed -- no leaks are possible
-==31787== 
-==31787== For lists of detected and suppressed errors, rerun with: -s
-==31787== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==17742== Memcheck, a memory error detector
+==17742== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==17742== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==17742== Command: ./Submission/ds
+==17742== 
+==17742== 
+==17742== HEAP SUMMARY:
+==17742==     in use at exit: 0 bytes in 0 blocks
+==17742==   total heap usage: 1,227 allocs, 1,227 frees, 28,664 bytes allocated
+==17742== 
+==17742== All heap blocks were freed -- no leaks are possible
+==17742== 
+==17742== For lists of detected and suppressed errors, rerun with: -s
+==17742== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 13.txt
 
-==31948== Memcheck, a memory error detector
-==31948== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==31948== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
-==31948== Command: ./Submission/ds
-==31948== 
-==31948== 
-==31948== HEAP SUMMARY:
-==31948==     in use at exit: 0 bytes in 0 blocks
-==31948==   total heap usage: 12,430 allocs, 12,430 frees, 434,000 bytes allocated
-==31948== 
-==31948== All heap blocks were freed -- no leaks are possible
-==31948== 
-==31948== For lists of detected and suppressed errors, rerun with: -s
-==31948== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==17767== Memcheck, a memory error detector
+==17767== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==17767== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==17767== Command: ./Submission/ds
+==17767== 
+==17767== 
+==17767== HEAP SUMMARY:
+==17767==     in use at exit: 0 bytes in 0 blocks
+==17767==   total heap usage: 12,430 allocs, 12,430 frees, 434,000 bytes allocated
+==17767== 
+==17767== All heap blocks were freed -- no leaks are possible
+==17767== 
+==17767== For lists of detected and suppressed errors, rerun with: -s
+==17767== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 14.txt
 
-==32026== Memcheck, a memory error detector
-==32026== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==32026== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
-==32026== Command: ./Submission/ds
-==32026== 
-==32026== 
-==32026== HEAP SUMMARY:
-==32026==     in use at exit: 0 bytes in 0 blocks
-==32026==   total heap usage: 4,712 allocs, 4,712 frees, 139,384 bytes allocated
-==32026== 
-==32026== All heap blocks were freed -- no leaks are possible
-==32026== 
-==32026== For lists of detected and suppressed errors, rerun with: -s
-==32026== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==17844== Memcheck, a memory error detector
+==17844== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==17844== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==17844== Command: ./Submission/ds
+==17844== 
+==17844== 
+==17844== HEAP SUMMARY:
+==17844==     in use at exit: 0 bytes in 0 blocks
+==17844==   total heap usage: 4,712 allocs, 4,712 frees, 139,384 bytes allocated
+==17844== 
+==17844== All heap blocks were freed -- no leaks are possible
+==17844== 
+==17844== For lists of detected and suppressed errors, rerun with: -s
+==17844== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 15.txt
 
-==32050== Memcheck, a memory error detector
-==32050== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==32050== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
-==32050== Command: ./Submission/ds
-==32050== 
-==32050== 
-==32050== HEAP SUMMARY:
-==32050==     in use at exit: 0 bytes in 0 blocks
-==32050==   total heap usage: 10,423 allocs, 10,423 frees, 417,224 bytes allocated
-==32050== 
-==32050== All heap blocks were freed -- no leaks are possible
-==32050== 
-==32050== For lists of detected and suppressed errors, rerun with: -s
-==32050== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==17929== Memcheck, a memory error detector
+==17929== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==17929== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==17929== Command: ./Submission/ds
+==17929== 
+==17929== 
+==17929== HEAP SUMMARY:
+==17929==     in use at exit: 0 bytes in 0 blocks
+==17929==   total heap usage: 10,423 allocs, 10,423 frees, 417,224 bytes allocated
+==17929== 
+==17929== All heap blocks were freed -- no leaks are possible
+==17929== 
+==17929== For lists of detected and suppressed errors, rerun with: -s
+==17929== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 16.txt
 
-==32109== Memcheck, a memory error detector
-==32109== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==32109== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
-==32109== Command: ./Submission/ds
-==32109== 
-==32109== 
-==32109== HEAP SUMMARY:
-==32109==     in use at exit: 0 bytes in 0 blocks
-==32109==   total heap usage: 11,461 allocs, 11,461 frees, 418,700 bytes allocated
-==32109== 
-==32109== All heap blocks were freed -- no leaks are possible
-==32109== 
-==32109== For lists of detected and suppressed errors, rerun with: -s
-==32109== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==18154== Memcheck, a memory error detector
+==18154== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==18154== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==18154== Command: ./Submission/ds
+==18154== 
+==18154== 
+==18154== HEAP SUMMARY:
+==18154==     in use at exit: 0 bytes in 0 blocks
+==18154==   total heap usage: 11,461 allocs, 11,461 frees, 418,700 bytes allocated
+==18154== 
+==18154== All heap blocks were freed -- no leaks are possible
+==18154== 
+==18154== For lists of detected and suppressed errors, rerun with: -s
+==18154== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 17.txt
 
-==32315== Memcheck, a memory error detector
-==32315== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==32315== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
-==32315== Command: ./Submission/ds
-==32315== 
-==32315== 
-==32315== HEAP SUMMARY:
-==32315==     in use at exit: 0 bytes in 0 blocks
-==32315==   total heap usage: 30,496 allocs, 30,496 frees, 1,937,480 bytes allocated
-==32315== 
-==32315== All heap blocks were freed -- no leaks are possible
-==32315== 
-==32315== For lists of detected and suppressed errors, rerun with: -s
-==32315== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==18207== Memcheck, a memory error detector
+==18207== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==18207== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==18207== Command: ./Submission/ds
+==18207== 
+==18207== 
+==18207== HEAP SUMMARY:
+==18207==     in use at exit: 0 bytes in 0 blocks
+==18207==   total heap usage: 30,496 allocs, 30,496 frees, 1,937,480 bytes allocated
+==18207== 
+==18207== All heap blocks were freed -- no leaks are possible
+==18207== 
+==18207== For lists of detected and suppressed errors, rerun with: -s
+==18207== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 18.txt
 
-==32735== Memcheck, a memory error detector
-==32735== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==32735== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
-==32735== Command: ./Submission/ds
-==32735== 
-==32735== 
-==32735== HEAP SUMMARY:
-==32735==     in use at exit: 0 bytes in 0 blocks
-==32735==   total heap usage: 3,226 allocs, 3,226 frees, 96,580 bytes allocated
-==32735== 
-==32735== All heap blocks were freed -- no leaks are possible
-==32735== 
-==32735== For lists of detected and suppressed errors, rerun with: -s
-==32735== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==18272== Memcheck, a memory error detector
+==18272== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==18272== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==18272== Command: ./Submission/ds
+==18272== 
+==18272== 
+==18272== HEAP SUMMARY:
+==18272==     in use at exit: 0 bytes in 0 blocks
+==18272==   total heap usage: 3,226 allocs, 3,226 frees, 96,580 bytes allocated
+==18272== 
+==18272== All heap blocks were freed -- no leaks are possible
+==18272== 
+==18272== For lists of detected and suppressed errors, rerun with: -s
+==18272== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 19.txt
 
-==567== Memcheck, a memory error detector
-==567== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==567== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
-==567== Command: ./Submission/ds
-==567== 
-==567== 
-==567== HEAP SUMMARY:
-==567==     in use at exit: 0 bytes in 0 blocks
-==567==   total heap usage: 4,741 allocs, 4,741 frees, 131,232 bytes allocated
-==567== 
-==567== All heap blocks were freed -- no leaks are possible
-==567== 
-==567== For lists of detected and suppressed errors, rerun with: -s
-==567== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==18293== Memcheck, a memory error detector
+==18293== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==18293== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==18293== Command: ./Submission/ds
+==18293== 
+==18293== 
+==18293== HEAP SUMMARY:
+==18293==     in use at exit: 0 bytes in 0 blocks
+==18293==   total heap usage: 4,741 allocs, 4,741 frees, 131,232 bytes allocated
+==18293== 
+==18293== All heap blocks were freed -- no leaks are possible
+==18293== 
+==18293== For lists of detected and suppressed errors, rerun with: -s
+==18293== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 2.txt
 
-==703== Memcheck, a memory error detector
-==703== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==703== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
-==703== Command: ./Submission/ds
-==703== 
-==703== 
-==703== HEAP SUMMARY:
-==703==     in use at exit: 0 bytes in 0 blocks
-==703==   total heap usage: 8,293 allocs, 8,293 frees, 297,364 bytes allocated
-==703== 
-==703== All heap blocks were freed -- no leaks are possible
-==703== 
-==703== For lists of detected and suppressed errors, rerun with: -s
-==703== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==18338== Memcheck, a memory error detector
+==18338== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==18338== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==18338== Command: ./Submission/ds
+==18338== 
+==18338== 
+==18338== HEAP SUMMARY:
+==18338==     in use at exit: 0 bytes in 0 blocks
+==18338==   total heap usage: 8,293 allocs, 8,293 frees, 297,364 bytes allocated
+==18338== 
+==18338== All heap blocks were freed -- no leaks are possible
+==18338== 
+==18338== For lists of detected and suppressed errors, rerun with: -s
+==18338== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 20.txt
 
-==826== Memcheck, a memory error detector
-==826== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==826== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
-==826== Command: ./Submission/ds
-==826== 
-==826== 
-==826== HEAP SUMMARY:
-==826==     in use at exit: 0 bytes in 0 blocks
-==826==   total heap usage: 995 allocs, 995 frees, 24,840 bytes allocated
-==826== 
-==826== All heap blocks were freed -- no leaks are possible
-==826== 
-==826== For lists of detected and suppressed errors, rerun with: -s
-==826== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==18392== Memcheck, a memory error detector
+==18392== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==18392== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==18392== Command: ./Submission/ds
+==18392== 
+==18392== 
+==18392== HEAP SUMMARY:
+==18392==     in use at exit: 0 bytes in 0 blocks
+==18392==   total heap usage: 995 allocs, 995 frees, 24,840 bytes allocated
+==18392== 
+==18392== All heap blocks were freed -- no leaks are possible
+==18392== 
+==18392== For lists of detected and suppressed errors, rerun with: -s
+==18392== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 21.txt
 
-==1068== Memcheck, a memory error detector
-==1068== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==1068== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
-==1068== Command: ./Submission/ds
-==1068== 
-==1068== 
-==1068== HEAP SUMMARY:
-==1068==     in use at exit: 0 bytes in 0 blocks
-==1068==   total heap usage: 2,024 allocs, 2,024 frees, 51,376 bytes allocated
-==1068== 
-==1068== All heap blocks were freed -- no leaks are possible
-==1068== 
-==1068== For lists of detected and suppressed errors, rerun with: -s
-==1068== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==18538== Memcheck, a memory error detector
+==18538== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==18538== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==18538== Command: ./Submission/ds
+==18538== 
+==18538== 
+==18538== HEAP SUMMARY:
+==18538==     in use at exit: 0 bytes in 0 blocks
+==18538==   total heap usage: 2,024 allocs, 2,024 frees, 51,376 bytes allocated
+==18538== 
+==18538== All heap blocks were freed -- no leaks are possible
+==18538== 
+==18538== For lists of detected and suppressed errors, rerun with: -s
+==18538== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 22.txt
 
-==1286== Memcheck, a memory error detector
-==1286== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==1286== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
-==1286== Command: ./Submission/ds
-==1286== 
-==1286== 
-==1286== HEAP SUMMARY:
-==1286==     in use at exit: 0 bytes in 0 blocks
-==1286==   total heap usage: 4,186 allocs, 4,186 frees, 127,364 bytes allocated
-==1286== 
-==1286== All heap blocks were freed -- no leaks are possible
-==1286== 
-==1286== For lists of detected and suppressed errors, rerun with: -s
-==1286== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==18613== Memcheck, a memory error detector
+==18613== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==18613== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==18613== Command: ./Submission/ds
+==18613== 
+==18613== 
+==18613== HEAP SUMMARY:
+==18613==     in use at exit: 0 bytes in 0 blocks
+==18613==   total heap usage: 4,186 allocs, 4,186 frees, 127,364 bytes allocated
+==18613== 
+==18613== All heap blocks were freed -- no leaks are possible
+==18613== 
+==18613== For lists of detected and suppressed errors, rerun with: -s
+==18613== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 23.txt
 
-==1299== Memcheck, a memory error detector
-==1299== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==1299== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
-==1299== Command: ./Submission/ds
-==1299== 
-==1299== 
-==1299== HEAP SUMMARY:
-==1299==     in use at exit: 0 bytes in 0 blocks
-==1299==   total heap usage: 10,354 allocs, 10,354 frees, 317,416 bytes allocated
-==1299== 
-==1299== All heap blocks were freed -- no leaks are possible
-==1299== 
-==1299== For lists of detected and suppressed errors, rerun with: -s
-==1299== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==18664== Memcheck, a memory error detector
+==18664== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==18664== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==18664== Command: ./Submission/ds
+==18664== 
+==18664== 
+==18664== HEAP SUMMARY:
+==18664==     in use at exit: 0 bytes in 0 blocks
+==18664==   total heap usage: 10,354 allocs, 10,354 frees, 317,416 bytes allocated
+==18664== 
+==18664== All heap blocks were freed -- no leaks are possible
+==18664== 
+==18664== For lists of detected and suppressed errors, rerun with: -s
+==18664== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 24.txt
 
-==1343== Memcheck, a memory error detector
-==1343== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==1343== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
-==1343== Command: ./Submission/ds
-==1343== 
-==1343== 
-==1343== HEAP SUMMARY:
-==1343==     in use at exit: 0 bytes in 0 blocks
-==1343==   total heap usage: 3,831 allocs, 3,831 frees, 95,824 bytes allocated
-==1343== 
-==1343== All heap blocks were freed -- no leaks are possible
-==1343== 
-==1343== For lists of detected and suppressed errors, rerun with: -s
-==1343== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==18816== Memcheck, a memory error detector
+==18816== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==18816== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==18816== Command: ./Submission/ds
+==18816== 
+==18816== 
+==18816== HEAP SUMMARY:
+==18816==     in use at exit: 0 bytes in 0 blocks
+==18816==   total heap usage: 3,831 allocs, 3,831 frees, 95,824 bytes allocated
+==18816== 
+==18816== All heap blocks were freed -- no leaks are possible
+==18816== 
+==18816== For lists of detected and suppressed errors, rerun with: -s
+==18816== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 25.txt
 
-==1807== Memcheck, a memory error detector
-==1807== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==1807== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
-==1807== Command: ./Submission/ds
-==1807== 
-==1807== 
-==1807== HEAP SUMMARY:
-==1807==     in use at exit: 0 bytes in 0 blocks
-==1807==   total heap usage: 28,394 allocs, 28,394 frees, 1,664,308 bytes allocated
-==1807== 
-==1807== All heap blocks were freed -- no leaks are possible
-==1807== 
-==1807== For lists of detected and suppressed errors, rerun with: -s
-==1807== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==18829== Memcheck, a memory error detector
+==18829== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==18829== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==18829== Command: ./Submission/ds
+==18829== 
+==18829== 
+==18829== HEAP SUMMARY:
+==18829==     in use at exit: 0 bytes in 0 blocks
+==18829==   total heap usage: 28,394 allocs, 28,394 frees, 1,664,308 bytes allocated
+==18829== 
+==18829== All heap blocks were freed -- no leaks are possible
+==18829== 
+==18829== For lists of detected and suppressed errors, rerun with: -s
+==18829== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 26.txt
 
-==2155== Memcheck, a memory error detector
-==2155== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==2155== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
-==2155== Command: ./Submission/ds
-==2155== 
-==2155== 
-==2155== HEAP SUMMARY:
-==2155==     in use at exit: 0 bytes in 0 blocks
-==2155==   total heap usage: 32,263 allocs, 32,263 frees, 2,020,364 bytes allocated
-==2155== 
-==2155== All heap blocks were freed -- no leaks are possible
-==2155== 
-==2155== For lists of detected and suppressed errors, rerun with: -s
-==2155== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==18875== Memcheck, a memory error detector
+==18875== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==18875== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==18875== Command: ./Submission/ds
+==18875== 
+==18875== 
+==18875== HEAP SUMMARY:
+==18875==     in use at exit: 0 bytes in 0 blocks
+==18875==   total heap usage: 32,263 allocs, 32,263 frees, 2,020,364 bytes allocated
+==18875== 
+==18875== All heap blocks were freed -- no leaks are possible
+==18875== 
+==18875== For lists of detected and suppressed errors, rerun with: -s
+==18875== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 27.txt
 
-==2735== Memcheck, a memory error detector
-==2735== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==2735== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
-==2735== Command: ./Submission/ds
-==2735== 
-==2735== 
-==2735== HEAP SUMMARY:
-==2735==     in use at exit: 0 bytes in 0 blocks
-==2735==   total heap usage: 15,684 allocs, 15,684 frees, 622,084 bytes allocated
-==2735== 
-==2735== All heap blocks were freed -- no leaks are possible
-==2735== 
-==2735== For lists of detected and suppressed errors, rerun with: -s
-==2735== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==19376== Memcheck, a memory error detector
+==19376== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==19376== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==19376== Command: ./Submission/ds
+==19376== 
+==19376== 
+==19376== HEAP SUMMARY:
+==19376==     in use at exit: 0 bytes in 0 blocks
+==19376==   total heap usage: 15,684 allocs, 15,684 frees, 622,084 bytes allocated
+==19376== 
+==19376== All heap blocks were freed -- no leaks are possible
+==19376== 
+==19376== For lists of detected and suppressed errors, rerun with: -s
+==19376== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 28.txt
 
-==2773== Memcheck, a memory error detector
-==2773== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==2773== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
-==2773== Command: ./Submission/ds
-==2773== 
-==2773== 
-==2773== HEAP SUMMARY:
-==2773==     in use at exit: 0 bytes in 0 blocks
-==2773==   total heap usage: 9,436 allocs, 9,436 frees, 303,048 bytes allocated
-==2773== 
-==2773== All heap blocks were freed -- no leaks are possible
-==2773== 
-==2773== For lists of detected and suppressed errors, rerun with: -s
-==2773== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==19430== Memcheck, a memory error detector
+==19430== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==19430== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==19430== Command: ./Submission/ds
+==19430== 
+==19430== 
+==19430== HEAP SUMMARY:
+==19430==     in use at exit: 0 bytes in 0 blocks
+==19430==   total heap usage: 9,436 allocs, 9,436 frees, 303,048 bytes allocated
+==19430== 
+==19430== All heap blocks were freed -- no leaks are possible
+==19430== 
+==19430== For lists of detected and suppressed errors, rerun with: -s
+==19430== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 29.txt
 
-==3030== Memcheck, a memory error detector
-==3030== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==3030== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
-==3030== Command: ./Submission/ds
-==3030== 
-==3030== 
-==3030== HEAP SUMMARY:
-==3030==     in use at exit: 0 bytes in 0 blocks
-==3030==   total heap usage: 21,999 allocs, 21,999 frees, 1,098,824 bytes allocated
-==3030== 
-==3030== All heap blocks were freed -- no leaks are possible
-==3030== 
-==3030== For lists of detected and suppressed errors, rerun with: -s
-==3030== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==19494== Memcheck, a memory error detector
+==19494== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==19494== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==19494== Command: ./Submission/ds
+==19494== 
+==19494== 
+==19494== HEAP SUMMARY:
+==19494==     in use at exit: 0 bytes in 0 blocks
+==19494==   total heap usage: 21,999 allocs, 21,999 frees, 1,098,824 bytes allocated
+==19494== 
+==19494== All heap blocks were freed -- no leaks are possible
+==19494== 
+==19494== For lists of detected and suppressed errors, rerun with: -s
+==19494== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 3.txt
 
-==3118== Memcheck, a memory error detector
-==3118== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==3118== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
-==3118== Command: ./Submission/ds
-==3118== 
-==3118== 
-==3118== HEAP SUMMARY:
-==3118==     in use at exit: 0 bytes in 0 blocks
-==3118==   total heap usage: 18,803 allocs, 18,803 frees, 973,176 bytes allocated
-==3118== 
-==3118== All heap blocks were freed -- no leaks are possible
-==3118== 
-==3118== For lists of detected and suppressed errors, rerun with: -s
-==3118== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==19760== Memcheck, a memory error detector
+==19760== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==19760== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==19760== Command: ./Submission/ds
+==19760== 
+==19760== 
+==19760== HEAP SUMMARY:
+==19760==     in use at exit: 0 bytes in 0 blocks
+==19760==   total heap usage: 18,803 allocs, 18,803 frees, 973,176 bytes allocated
+==19760== 
+==19760== All heap blocks were freed -- no leaks are possible
+==19760== 
+==19760== For lists of detected and suppressed errors, rerun with: -s
+==19760== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 30.txt
 
-==3214== Memcheck, a memory error detector
-==3214== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==3214== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
-==3214== Command: ./Submission/ds
-==3214== 
-==3214== 
-==3214== HEAP SUMMARY:
-==3214==     in use at exit: 0 bytes in 0 blocks
-==3214==   total heap usage: 63,272 allocs, 63,272 frees, 7,008,592 bytes allocated
-==3214== 
-==3214== All heap blocks were freed -- no leaks are possible
-==3214== 
-==3214== For lists of detected and suppressed errors, rerun with: -s
-==3214== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==19945== Memcheck, a memory error detector
+==19945== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==19945== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==19945== Command: ./Submission/ds
+==19945== 
+==19945== 
+==19945== HEAP SUMMARY:
+==19945==     in use at exit: 0 bytes in 0 blocks
+==19945==   total heap usage: 63,272 allocs, 63,272 frees, 7,008,592 bytes allocated
+==19945== 
+==19945== All heap blocks were freed -- no leaks are possible
+==19945== 
+==19945== For lists of detected and suppressed errors, rerun with: -s
+==19945== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 31.txt
 
-==4174== Memcheck, a memory error detector
-==4174== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==4174== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
-==4174== Command: ./Submission/ds
-==4174== 
-==4174== 
-==4174== HEAP SUMMARY:
-==4174==     in use at exit: 0 bytes in 0 blocks
-==4174==   total heap usage: 12,651 allocs, 12,651 frees, 533,932 bytes allocated
-==4174== 
-==4174== All heap blocks were freed -- no leaks are possible
-==4174== 
-==4174== For lists of detected and suppressed errors, rerun with: -s
-==4174== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==20206== Memcheck, a memory error detector
+==20206== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==20206== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==20206== Command: ./Submission/ds
+==20206== 
+==20206== 
+==20206== HEAP SUMMARY:
+==20206==     in use at exit: 0 bytes in 0 blocks
+==20206==   total heap usage: 12,651 allocs, 12,651 frees, 533,932 bytes allocated
+==20206== 
+==20206== All heap blocks were freed -- no leaks are possible
+==20206== 
+==20206== For lists of detected and suppressed errors, rerun with: -s
+==20206== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 32.txt
 
-==4288== Memcheck, a memory error detector
-==4288== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==4288== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
-==4288== Command: ./Submission/ds
-==4288== 
-==4288== 
-==4288== HEAP SUMMARY:
-==4288==     in use at exit: 0 bytes in 0 blocks
-==4288==   total heap usage: 28,746 allocs, 28,746 frees, 1,474,188 bytes allocated
-==4288== 
-==4288== All heap blocks were freed -- no leaks are possible
-==4288== 
-==4288== For lists of detected and suppressed errors, rerun with: -s
-==4288== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==20248== Memcheck, a memory error detector
+==20248== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==20248== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==20248== Command: ./Submission/ds
+==20248== 
+==20248== 
+==20248== HEAP SUMMARY:
+==20248==     in use at exit: 0 bytes in 0 blocks
+==20248==   total heap usage: 28,746 allocs, 28,746 frees, 1,474,188 bytes allocated
+==20248== 
+==20248== All heap blocks were freed -- no leaks are possible
+==20248== 
+==20248== For lists of detected and suppressed errors, rerun with: -s
+==20248== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 33.txt
 
-==4361== Memcheck, a memory error detector
-==4361== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==4361== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
-==4361== Command: ./Submission/ds
-==4361== 
-==4361== 
-==4361== HEAP SUMMARY:
-==4361==     in use at exit: 0 bytes in 0 blocks
-==4361==   total heap usage: 56,562 allocs, 56,562 frees, 5,626,936 bytes allocated
-==4361== 
-==4361== All heap blocks were freed -- no leaks are possible
-==4361== 
-==4361== For lists of detected and suppressed errors, rerun with: -s
-==4361== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==20418== Memcheck, a memory error detector
+==20418== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==20418== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==20418== Command: ./Submission/ds
+==20418== 
+==20418== 
+==20418== HEAP SUMMARY:
+==20418==     in use at exit: 0 bytes in 0 blocks
+==20418==   total heap usage: 56,562 allocs, 56,562 frees, 5,626,936 bytes allocated
+==20418== 
+==20418== All heap blocks were freed -- no leaks are possible
+==20418== 
+==20418== For lists of detected and suppressed errors, rerun with: -s
+==20418== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 34.txt
 
-==4597== Memcheck, a memory error detector
-==4597== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==4597== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
-==4597== Command: ./Submission/ds
-==4597== 
-==4597== 
-==4597== HEAP SUMMARY:
-==4597==     in use at exit: 0 bytes in 0 blocks
-==4597==   total heap usage: 981 allocs, 981 frees, 23,524 bytes allocated
-==4597== 
-==4597== All heap blocks were freed -- no leaks are possible
-==4597== 
-==4597== For lists of detected and suppressed errors, rerun with: -s
-==4597== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==20945== Memcheck, a memory error detector
+==20945== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==20945== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==20945== Command: ./Submission/ds
+==20945== 
+==20945== 
+==20945== HEAP SUMMARY:
+==20945==     in use at exit: 0 bytes in 0 blocks
+==20945==   total heap usage: 981 allocs, 981 frees, 23,524 bytes allocated
+==20945== 
+==20945== All heap blocks were freed -- no leaks are possible
+==20945== 
+==20945== For lists of detected and suppressed errors, rerun with: -s
+==20945== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 35.txt
 
-==4611== Memcheck, a memory error detector
-==4611== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==4611== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
-==4611== Command: ./Submission/ds
-==4611== 
-==4611== 
-==4611== HEAP SUMMARY:
-==4611==     in use at exit: 0 bytes in 0 blocks
-==4611==   total heap usage: 21,004 allocs, 21,004 frees, 1,109,612 bytes allocated
-==4611== 
-==4611== All heap blocks were freed -- no leaks are possible
-==4611== 
-==4611== For lists of detected and suppressed errors, rerun with: -s
-==4611== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==20997== Memcheck, a memory error detector
+==20997== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==20997== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==20997== Command: ./Submission/ds
+==20997== 
+==20997== 
+==20997== HEAP SUMMARY:
+==20997==     in use at exit: 0 bytes in 0 blocks
+==20997==   total heap usage: 21,004 allocs, 21,004 frees, 1,109,612 bytes allocated
+==20997== 
+==20997== All heap blocks were freed -- no leaks are possible
+==20997== 
+==20997== For lists of detected and suppressed errors, rerun with: -s
+==20997== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 36.txt
 
-==4626== Memcheck, a memory error detector
-==4626== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==4626== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
-==4626== Command: ./Submission/ds
-==4626== 
-==4626== 
-==4626== HEAP SUMMARY:
-==4626==     in use at exit: 0 bytes in 0 blocks
-==4626==   total heap usage: 13,318 allocs, 13,318 frees, 588,240 bytes allocated
-==4626== 
-==4626== All heap blocks were freed -- no leaks are possible
-==4626== 
-==4626== For lists of detected and suppressed errors, rerun with: -s
-==4626== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==21099== Memcheck, a memory error detector
+==21099== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==21099== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==21099== Command: ./Submission/ds
+==21099== 
+==21099== 
+==21099== HEAP SUMMARY:
+==21099==     in use at exit: 0 bytes in 0 blocks
+==21099==   total heap usage: 13,318 allocs, 13,318 frees, 588,240 bytes allocated
+==21099== 
+==21099== All heap blocks were freed -- no leaks are possible
+==21099== 
+==21099== For lists of detected and suppressed errors, rerun with: -s
+==21099== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 37.txt
 
-==4848== Memcheck, a memory error detector
-==4848== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==4848== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
-==4848== Command: ./Submission/ds
-==4848== 
-==4848== 
-==4848== HEAP SUMMARY:
-==4848==     in use at exit: 0 bytes in 0 blocks
-==4848==   total heap usage: 4 allocs, 4 frees, 272 bytes allocated
-==4848== 
-==4848== All heap blocks were freed -- no leaks are possible
-==4848== 
-==4848== For lists of detected and suppressed errors, rerun with: -s
-==4848== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==21229== Memcheck, a memory error detector
+==21229== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==21229== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==21229== Command: ./Submission/ds
+==21229== 
+==21229== 
+==21229== HEAP SUMMARY:
+==21229==     in use at exit: 0 bytes in 0 blocks
+==21229==   total heap usage: 4 allocs, 4 frees, 272 bytes allocated
+==21229== 
+==21229== All heap blocks were freed -- no leaks are possible
+==21229== 
+==21229== For lists of detected and suppressed errors, rerun with: -s
+==21229== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 38.txt
 
-==5731== Memcheck, a memory error detector
-==5731== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==5731== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
-==5731== Command: ./Submission/ds
-==5731== 
-==5731== 
-==5731== HEAP SUMMARY:
-==5731==     in use at exit: 0 bytes in 0 blocks
-==5731==   total heap usage: 1,128 allocs, 1,128 frees, 28,600 bytes allocated
-==5731== 
-==5731== All heap blocks were freed -- no leaks are possible
-==5731== 
-==5731== For lists of detected and suppressed errors, rerun with: -s
-==5731== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==21309== Memcheck, a memory error detector
+==21309== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==21309== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==21309== Command: ./Submission/ds
+==21309== 
+==21309== 
+==21309== HEAP SUMMARY:
+==21309==     in use at exit: 0 bytes in 0 blocks
+==21309==   total heap usage: 1,128 allocs, 1,128 frees, 28,600 bytes allocated
+==21309== 
+==21309== All heap blocks were freed -- no leaks are possible
+==21309== 
+==21309== For lists of detected and suppressed errors, rerun with: -s
+==21309== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 39.txt
 
-==7279== Memcheck, a memory error detector
-==7279== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==7279== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
-==7279== Command: ./Submission/ds
-==7279== 
-==7279== 
-==7279== HEAP SUMMARY:
-==7279==     in use at exit: 0 bytes in 0 blocks
-==7279==   total heap usage: 4,679 allocs, 4,679 frees, 127,688 bytes allocated
-==7279== 
-==7279== All heap blocks were freed -- no leaks are possible
-==7279== 
-==7279== For lists of detected and suppressed errors, rerun with: -s
-==7279== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==21783== Memcheck, a memory error detector
+==21783== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==21783== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==21783== Command: ./Submission/ds
+==21783== 
+==21783== 
+==21783== HEAP SUMMARY:
+==21783==     in use at exit: 0 bytes in 0 blocks
+==21783==   total heap usage: 4,679 allocs, 4,679 frees, 127,688 bytes allocated
+==21783== 
+==21783== All heap blocks were freed -- no leaks are possible
+==21783== 
+==21783== For lists of detected and suppressed errors, rerun with: -s
+==21783== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 4.txt
 
-==7395== Memcheck, a memory error detector
-==7395== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==7395== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
-==7395== Command: ./Submission/ds
-==7395== 
-==7395== 
-==7395== HEAP SUMMARY:
-==7395==     in use at exit: 0 bytes in 0 blocks
-==7395==   total heap usage: 11,705 allocs, 11,705 frees, 466,540 bytes allocated
-==7395== 
-==7395== All heap blocks were freed -- no leaks are possible
-==7395== 
-==7395== For lists of detected and suppressed errors, rerun with: -s
-==7395== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==21924== Memcheck, a memory error detector
+==21924== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==21924== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==21924== Command: ./Submission/ds
+==21924== 
+==21924== 
+==21924== HEAP SUMMARY:
+==21924==     in use at exit: 0 bytes in 0 blocks
+==21924==   total heap usage: 11,705 allocs, 11,705 frees, 466,540 bytes allocated
+==21924== 
+==21924== All heap blocks were freed -- no leaks are possible
+==21924== 
+==21924== For lists of detected and suppressed errors, rerun with: -s
+==21924== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 40.txt
 
-==7726== Memcheck, a memory error detector
-==7726== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==7726== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
-==7726== Command: ./Submission/ds
-==7726== 
-==7726== 
-==7726== HEAP SUMMARY:
-==7726==     in use at exit: 0 bytes in 0 blocks
-==7726==   total heap usage: 11,465 allocs, 11,465 frees, 374,892 bytes allocated
-==7726== 
-==7726== All heap blocks were freed -- no leaks are possible
-==7726== 
-==7726== For lists of detected and suppressed errors, rerun with: -s
-==7726== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==22021== Memcheck, a memory error detector
+==22021== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==22021== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==22021== Command: ./Submission/ds
+==22021== 
+==22021== 
+==22021== HEAP SUMMARY:
+==22021==     in use at exit: 0 bytes in 0 blocks
+==22021==   total heap usage: 11,465 allocs, 11,465 frees, 374,892 bytes allocated
+==22021== 
+==22021== All heap blocks were freed -- no leaks are possible
+==22021== 
+==22021== For lists of detected and suppressed errors, rerun with: -s
+==22021== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 41.txt
 
-==7739== Memcheck, a memory error detector
-==7739== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==7739== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
-==7739== Command: ./Submission/ds
-==7739== 
-==7739== 
-==7739== HEAP SUMMARY:
-==7739==     in use at exit: 0 bytes in 0 blocks
-==7739==   total heap usage: 3,066 allocs, 3,066 frees, 86,676 bytes allocated
-==7739== 
-==7739== All heap blocks were freed -- no leaks are possible
-==7739== 
-==7739== For lists of detected and suppressed errors, rerun with: -s
-==7739== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==22319== Memcheck, a memory error detector
+==22319== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==22319== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==22319== Command: ./Submission/ds
+==22319== 
+==22319== 
+==22319== HEAP SUMMARY:
+==22319==     in use at exit: 0 bytes in 0 blocks
+==22319==   total heap usage: 3,066 allocs, 3,066 frees, 86,676 bytes allocated
+==22319== 
+==22319== All heap blocks were freed -- no leaks are possible
+==22319== 
+==22319== For lists of detected and suppressed errors, rerun with: -s
+==22319== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 42.txt
 
-==7754== Memcheck, a memory error detector
-==7754== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==7754== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
-==7754== Command: ./Submission/ds
-==7754== 
-==7754== 
-==7754== HEAP SUMMARY:
-==7754==     in use at exit: 0 bytes in 0 blocks
-==7754==   total heap usage: 4,754 allocs, 4,754 frees, 131,476 bytes allocated
-==7754== 
-==7754== All heap blocks were freed -- no leaks are possible
-==7754== 
-==7754== For lists of detected and suppressed errors, rerun with: -s
-==7754== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==22507== Memcheck, a memory error detector
+==22507== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==22507== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==22507== Command: ./Submission/ds
+==22507== 
+==22507== 
+==22507== HEAP SUMMARY:
+==22507==     in use at exit: 0 bytes in 0 blocks
+==22507==   total heap usage: 4,754 allocs, 4,754 frees, 131,476 bytes allocated
+==22507== 
+==22507== All heap blocks were freed -- no leaks are possible
+==22507== 
+==22507== For lists of detected and suppressed errors, rerun with: -s
+==22507== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 43.txt
 
-==7807== Memcheck, a memory error detector
-==7807== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==7807== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
-==7807== Command: ./Submission/ds
-==7807== 
-==7807== 
-==7807== HEAP SUMMARY:
-==7807==     in use at exit: 0 bytes in 0 blocks
-==7807==   total heap usage: 8,221 allocs, 8,221 frees, 262,952 bytes allocated
-==7807== 
-==7807== All heap blocks were freed -- no leaks are possible
-==7807== 
-==7807== For lists of detected and suppressed errors, rerun with: -s
-==7807== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==22651== Memcheck, a memory error detector
+==22651== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==22651== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==22651== Command: ./Submission/ds
+==22651== 
+==22651== 
+==22651== HEAP SUMMARY:
+==22651==     in use at exit: 0 bytes in 0 blocks
+==22651==   total heap usage: 8,221 allocs, 8,221 frees, 262,952 bytes allocated
+==22651== 
+==22651== All heap blocks were freed -- no leaks are possible
+==22651== 
+==22651== For lists of detected and suppressed errors, rerun with: -s
+==22651== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 44.txt
 
-==7830== Memcheck, a memory error detector
-==7830== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==7830== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
-==7830== Command: ./Submission/ds
-==7830== 
-==7830== 
-==7830== HEAP SUMMARY:
-==7830==     in use at exit: 0 bytes in 0 blocks
-==7830==   total heap usage: 8,457 allocs, 8,457 frees, 281,068 bytes allocated
-==7830== 
-==7830== All heap blocks were freed -- no leaks are possible
-==7830== 
-==7830== For lists of detected and suppressed errors, rerun with: -s
-==7830== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==22884== Memcheck, a memory error detector
+==22884== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==22884== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==22884== Command: ./Submission/ds
+==22884== 
+==22884== 
+==22884== HEAP SUMMARY:
+==22884==     in use at exit: 0 bytes in 0 blocks
+==22884==   total heap usage: 8,457 allocs, 8,457 frees, 281,068 bytes allocated
+==22884== 
+==22884== All heap blocks were freed -- no leaks are possible
+==22884== 
+==22884== For lists of detected and suppressed errors, rerun with: -s
+==22884== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 45.txt
 
-==7851== Memcheck, a memory error detector
-==7851== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==7851== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
-==7851== Command: ./Submission/ds
-==7851== 
-==7851== 
-==7851== HEAP SUMMARY:
-==7851==     in use at exit: 0 bytes in 0 blocks
-==7851==   total heap usage: 493 allocs, 493 frees, 12,744 bytes allocated
-==7851== 
-==7851== All heap blocks were freed -- no leaks are possible
-==7851== 
-==7851== For lists of detected and suppressed errors, rerun with: -s
-==7851== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==23085== Memcheck, a memory error detector
+==23085== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==23085== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==23085== Command: ./Submission/ds
+==23085== 
+==23085== 
+==23085== HEAP SUMMARY:
+==23085==     in use at exit: 0 bytes in 0 blocks
+==23085==   total heap usage: 493 allocs, 493 frees, 12,744 bytes allocated
+==23085== 
+==23085== All heap blocks were freed -- no leaks are possible
+==23085== 
+==23085== For lists of detected and suppressed errors, rerun with: -s
+==23085== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 46.txt
 
-==7888== Memcheck, a memory error detector
-==7888== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==7888== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
-==7888== Command: ./Submission/ds
-==7888== 
-==7888== 
-==7888== HEAP SUMMARY:
-==7888==     in use at exit: 0 bytes in 0 blocks
-==7888==   total heap usage: 42,385 allocs, 42,385 frees, 4,040,108 bytes allocated
-==7888== 
-==7888== All heap blocks were freed -- no leaks are possible
-==7888== 
-==7888== For lists of detected and suppressed errors, rerun with: -s
-==7888== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==23116== Memcheck, a memory error detector
+==23116== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==23116== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==23116== Command: ./Submission/ds
+==23116== 
+==23116== 
+==23116== HEAP SUMMARY:
+==23116==     in use at exit: 0 bytes in 0 blocks
+==23116==   total heap usage: 42,385 allocs, 42,385 frees, 4,040,108 bytes allocated
+==23116== 
+==23116== All heap blocks were freed -- no leaks are possible
+==23116== 
+==23116== For lists of detected and suppressed errors, rerun with: -s
+==23116== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 47.txt
 
-==8028== Memcheck, a memory error detector
-==8028== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==8028== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
-==8028== Command: ./Submission/ds
-==8028== 
-==8028== 
-==8028== HEAP SUMMARY:
-==8028==     in use at exit: 0 bytes in 0 blocks
-==8028==   total heap usage: 28,226 allocs, 28,226 frees, 1,731,668 bytes allocated
-==8028== 
-==8028== All heap blocks were freed -- no leaks are possible
-==8028== 
-==8028== For lists of detected and suppressed errors, rerun with: -s
-==8028== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==23246== Memcheck, a memory error detector
+==23246== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==23246== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==23246== Command: ./Submission/ds
+==23246== 
+==23246== 
+==23246== HEAP SUMMARY:
+==23246==     in use at exit: 0 bytes in 0 blocks
+==23246==   total heap usage: 28,226 allocs, 28,226 frees, 1,731,668 bytes allocated
+==23246== 
+==23246== All heap blocks were freed -- no leaks are possible
+==23246== 
+==23246== For lists of detected and suppressed errors, rerun with: -s
+==23246== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 48.txt
 
-==8238== Memcheck, a memory error detector
-==8238== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==8238== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
-==8238== Command: ./Submission/ds
-==8238== 
-==8238== 
-==8238== HEAP SUMMARY:
-==8238==     in use at exit: 0 bytes in 0 blocks
-==8238==   total heap usage: 13,552 allocs, 13,552 frees, 606,624 bytes allocated
-==8238== 
-==8238== All heap blocks were freed -- no leaks are possible
-==8238== 
-==8238== For lists of detected and suppressed errors, rerun with: -s
-==8238== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==23328== Memcheck, a memory error detector
+==23328== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==23328== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==23328== Command: ./Submission/ds
+==23328== 
+==23328== 
+==23328== HEAP SUMMARY:
+==23328==     in use at exit: 0 bytes in 0 blocks
+==23328==   total heap usage: 13,552 allocs, 13,552 frees, 606,624 bytes allocated
+==23328== 
+==23328== All heap blocks were freed -- no leaks are possible
+==23328== 
+==23328== For lists of detected and suppressed errors, rerun with: -s
+==23328== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 49.txt
 
-==9020== Memcheck, a memory error detector
-==9020== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==9020== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
-==9020== Command: ./Submission/ds
-==9020== 
-==9020== 
-==9020== HEAP SUMMARY:
-==9020==     in use at exit: 0 bytes in 0 blocks
-==9020==   total heap usage: 35,633 allocs, 35,633 frees, 2,786,388 bytes allocated
-==9020== 
-==9020== All heap blocks were freed -- no leaks are possible
-==9020== 
-==9020== For lists of detected and suppressed errors, rerun with: -s
-==9020== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==23355== Memcheck, a memory error detector
+==23355== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==23355== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==23355== Command: ./Submission/ds
+==23355== 
+==23355== 
+==23355== HEAP SUMMARY:
+==23355==     in use at exit: 0 bytes in 0 blocks
+==23355==   total heap usage: 35,633 allocs, 35,633 frees, 2,786,388 bytes allocated
+==23355== 
+==23355== All heap blocks were freed -- no leaks are possible
+==23355== 
+==23355== For lists of detected and suppressed errors, rerun with: -s
+==23355== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 5.txt
 
-==9117== Memcheck, a memory error detector
-==9117== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==9117== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
-==9117== Command: ./Submission/ds
-==9117== 
-==9117== 
-==9117== HEAP SUMMARY:
-==9117==     in use at exit: 0 bytes in 0 blocks
-==9117==   total heap usage: 7,260 allocs, 7,260 frees, 230,392 bytes allocated
-==9117== 
-==9117== All heap blocks were freed -- no leaks are possible
-==9117== 
-==9117== For lists of detected and suppressed errors, rerun with: -s
-==9117== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==23432== Memcheck, a memory error detector
+==23432== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==23432== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==23432== Command: ./Submission/ds
+==23432== 
+==23432== 
+==23432== HEAP SUMMARY:
+==23432==     in use at exit: 0 bytes in 0 blocks
+==23432==   total heap usage: 7,260 allocs, 7,260 frees, 230,392 bytes allocated
+==23432== 
+==23432== All heap blocks were freed -- no leaks are possible
+==23432== 
+==23432== For lists of detected and suppressed errors, rerun with: -s
+==23432== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 50.txt
 
-==9139== Memcheck, a memory error detector
-==9139== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==9139== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
-==9139== Command: ./Submission/ds
-==9139== 
-==9139== 
-==9139== HEAP SUMMARY:
-==9139==     in use at exit: 0 bytes in 0 blocks
-==9139==   total heap usage: 20,347 allocs, 20,347 frees, 954,544 bytes allocated
-==9139== 
-==9139== All heap blocks were freed -- no leaks are possible
-==9139== 
-==9139== For lists of detected and suppressed errors, rerun with: -s
-==9139== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==23763== Memcheck, a memory error detector
+==23763== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==23763== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==23763== Command: ./Submission/ds
+==23763== 
+==23763== 
+==23763== HEAP SUMMARY:
+==23763==     in use at exit: 0 bytes in 0 blocks
+==23763==   total heap usage: 20,347 allocs, 20,347 frees, 954,544 bytes allocated
+==23763== 
+==23763== All heap blocks were freed -- no leaks are possible
+==23763== 
+==23763== For lists of detected and suppressed errors, rerun with: -s
+==23763== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 51.txt
 
-==9356== Memcheck, a memory error detector
-==9356== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==9356== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
-==9356== Command: ./Submission/ds
-==9356== 
-==9356== 
-==9356== HEAP SUMMARY:
-==9356==     in use at exit: 0 bytes in 0 blocks
-==9356==   total heap usage: 11,850 allocs, 11,850 frees, 465,720 bytes allocated
-==9356== 
-==9356== All heap blocks were freed -- no leaks are possible
-==9356== 
-==9356== For lists of detected and suppressed errors, rerun with: -s
-==9356== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==23900== Memcheck, a memory error detector
+==23900== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==23900== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==23900== Command: ./Submission/ds
+==23900== 
+==23900== 
+==23900== HEAP SUMMARY:
+==23900==     in use at exit: 0 bytes in 0 blocks
+==23900==   total heap usage: 11,850 allocs, 11,850 frees, 465,720 bytes allocated
+==23900== 
+==23900== All heap blocks were freed -- no leaks are possible
+==23900== 
+==23900== For lists of detected and suppressed errors, rerun with: -s
+==23900== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 52.txt
 
-==9510== Memcheck, a memory error detector
-==9510== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==9510== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
-==9510== Command: ./Submission/ds
-==9510== 
-==9510== 
-==9510== HEAP SUMMARY:
-==9510==     in use at exit: 0 bytes in 0 blocks
-==9510==   total heap usage: 20,889 allocs, 20,889 frees, 1,114,316 bytes allocated
-==9510== 
-==9510== All heap blocks were freed -- no leaks are possible
-==9510== 
-==9510== For lists of detected and suppressed errors, rerun with: -s
-==9510== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==23992== Memcheck, a memory error detector
+==23992== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==23992== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==23992== Command: ./Submission/ds
+==23992== 
+==23992== 
+==23992== HEAP SUMMARY:
+==23992==     in use at exit: 0 bytes in 0 blocks
+==23992==   total heap usage: 20,889 allocs, 20,889 frees, 1,114,316 bytes allocated
+==23992== 
+==23992== All heap blocks were freed -- no leaks are possible
+==23992== 
+==23992== For lists of detected and suppressed errors, rerun with: -s
+==23992== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 53.txt
 
-==9979== Memcheck, a memory error detector
-==9979== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==9979== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
-==9979== Command: ./Submission/ds
-==9979== 
-==9979== 
-==9979== HEAP SUMMARY:
-==9979==     in use at exit: 0 bytes in 0 blocks
-==9979==   total heap usage: 9,449 allocs, 9,449 frees, 311,672 bytes allocated
-==9979== 
-==9979== All heap blocks were freed -- no leaks are possible
-==9979== 
-==9979== For lists of detected and suppressed errors, rerun with: -s
-==9979== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==24122== Memcheck, a memory error detector
+==24122== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==24122== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==24122== Command: ./Submission/ds
+==24122== 
+==24122== 
+==24122== HEAP SUMMARY:
+==24122==     in use at exit: 0 bytes in 0 blocks
+==24122==   total heap usage: 9,449 allocs, 9,449 frees, 311,672 bytes allocated
+==24122== 
+==24122== All heap blocks were freed -- no leaks are possible
+==24122== 
+==24122== For lists of detected and suppressed errors, rerun with: -s
+==24122== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 54.txt
 
-==10560== Memcheck, a memory error detector
-==10560== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==10560== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
-==10560== Command: ./Submission/ds
-==10560== 
-==10560== 
-==10560== HEAP SUMMARY:
-==10560==     in use at exit: 0 bytes in 0 blocks
-==10560==   total heap usage: 10,097 allocs, 10,097 frees, 368,024 bytes allocated
-==10560== 
-==10560== All heap blocks were freed -- no leaks are possible
-==10560== 
-==10560== For lists of detected and suppressed errors, rerun with: -s
-==10560== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==24329== Memcheck, a memory error detector
+==24329== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==24329== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==24329== Command: ./Submission/ds
+==24329== 
+==24329== 
+==24329== HEAP SUMMARY:
+==24329==     in use at exit: 0 bytes in 0 blocks
+==24329==   total heap usage: 10,097 allocs, 10,097 frees, 368,024 bytes allocated
+==24329== 
+==24329== All heap blocks were freed -- no leaks are possible
+==24329== 
+==24329== For lists of detected and suppressed errors, rerun with: -s
+==24329== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 55.txt
 
-==10748== Memcheck, a memory error detector
-==10748== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==10748== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
-==10748== Command: ./Submission/ds
-==10748== 
-==10748== 
-==10748== HEAP SUMMARY:
-==10748==     in use at exit: 0 bytes in 0 blocks
-==10748==   total heap usage: 51,223 allocs, 51,223 frees, 4,585,452 bytes allocated
-==10748== 
-==10748== All heap blocks were freed -- no leaks are possible
-==10748== 
-==10748== For lists of detected and suppressed errors, rerun with: -s
-==10748== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==24420== Memcheck, a memory error detector
+==24420== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==24420== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==24420== Command: ./Submission/ds
+==24420== 
+==24420== 
+==24420== HEAP SUMMARY:
+==24420==     in use at exit: 0 bytes in 0 blocks
+==24420==   total heap usage: 51,223 allocs, 51,223 frees, 4,585,452 bytes allocated
+==24420== 
+==24420== All heap blocks were freed -- no leaks are possible
+==24420== 
+==24420== For lists of detected and suppressed errors, rerun with: -s
+==24420== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 56.txt
 
-==11324== Memcheck, a memory error detector
-==11324== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==11324== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
-==11324== Command: ./Submission/ds
-==11324== 
-==11324== 
-==11324== HEAP SUMMARY:
-==11324==     in use at exit: 0 bytes in 0 blocks
-==11324==   total heap usage: 12,508 allocs, 12,508 frees, 465,940 bytes allocated
-==11324== 
-==11324== All heap blocks were freed -- no leaks are possible
-==11324== 
-==11324== For lists of detected and suppressed errors, rerun with: -s
-==11324== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==25119== Memcheck, a memory error detector
+==25119== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==25119== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==25119== Command: ./Submission/ds
+==25119== 
+==25119== 
+==25119== HEAP SUMMARY:
+==25119==     in use at exit: 0 bytes in 0 blocks
+==25119==   total heap usage: 12,508 allocs, 12,508 frees, 465,940 bytes allocated
+==25119== 
+==25119== All heap blocks were freed -- no leaks are possible
+==25119== 
+==25119== For lists of detected and suppressed errors, rerun with: -s
+==25119== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 57.txt
 
-==11394== Memcheck, a memory error detector
-==11394== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==11394== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
-==11394== Command: ./Submission/ds
-==11394== 
-==11394== 
-==11394== HEAP SUMMARY:
-==11394==     in use at exit: 0 bytes in 0 blocks
-==11394==   total heap usage: 919 allocs, 919 frees, 23,160 bytes allocated
-==11394== 
-==11394== All heap blocks were freed -- no leaks are possible
-==11394== 
-==11394== For lists of detected and suppressed errors, rerun with: -s
-==11394== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==25151== Memcheck, a memory error detector
+==25151== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==25151== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==25151== Command: ./Submission/ds
+==25151== 
+==25151== 
+==25151== HEAP SUMMARY:
+==25151==     in use at exit: 0 bytes in 0 blocks
+==25151==   total heap usage: 919 allocs, 919 frees, 23,160 bytes allocated
+==25151== 
+==25151== All heap blocks were freed -- no leaks are possible
+==25151== 
+==25151== For lists of detected and suppressed errors, rerun with: -s
+==25151== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 58.txt
 
-==11446== Memcheck, a memory error detector
-==11446== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==11446== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
-==11446== Command: ./Submission/ds
-==11446== 
-==11446== 
-==11446== HEAP SUMMARY:
-==11446==     in use at exit: 0 bytes in 0 blocks
-==11446==   total heap usage: 2,370 allocs, 2,370 frees, 63,612 bytes allocated
-==11446== 
-==11446== All heap blocks were freed -- no leaks are possible
-==11446== 
-==11446== For lists of detected and suppressed errors, rerun with: -s
-==11446== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==25160== Memcheck, a memory error detector
+==25160== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==25160== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==25160== Command: ./Submission/ds
+==25160== 
+==25160== 
+==25160== HEAP SUMMARY:
+==25160==     in use at exit: 0 bytes in 0 blocks
+==25160==   total heap usage: 2,370 allocs, 2,370 frees, 63,612 bytes allocated
+==25160== 
+==25160== All heap blocks were freed -- no leaks are possible
+==25160== 
+==25160== For lists of detected and suppressed errors, rerun with: -s
+==25160== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 59.txt
 
-==11770== Memcheck, a memory error detector
-==11770== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==11770== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
-==11770== Command: ./Submission/ds
-==11770== 
-==11770== 
-==11770== HEAP SUMMARY:
-==11770==     in use at exit: 0 bytes in 0 blocks
-==11770==   total heap usage: 642 allocs, 642 frees, 15,500 bytes allocated
-==11770== 
-==11770== All heap blocks were freed -- no leaks are possible
-==11770== 
-==11770== For lists of detected and suppressed errors, rerun with: -s
-==11770== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==25183== Memcheck, a memory error detector
+==25183== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==25183== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==25183== Command: ./Submission/ds
+==25183== 
+==25183== 
+==25183== HEAP SUMMARY:
+==25183==     in use at exit: 0 bytes in 0 blocks
+==25183==   total heap usage: 642 allocs, 642 frees, 15,500 bytes allocated
+==25183== 
+==25183== All heap blocks were freed -- no leaks are possible
+==25183== 
+==25183== For lists of detected and suppressed errors, rerun with: -s
+==25183== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 6.txt
 
-==12172== Memcheck, a memory error detector
-==12172== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==12172== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
-==12172== Command: ./Submission/ds
-==12172== 
-==12172== 
-==12172== HEAP SUMMARY:
-==12172==     in use at exit: 0 bytes in 0 blocks
-==12172==   total heap usage: 18,478 allocs, 18,478 frees, 931,744 bytes allocated
-==12172== 
-==12172== All heap blocks were freed -- no leaks are possible
-==12172== 
-==12172== For lists of detected and suppressed errors, rerun with: -s
-==12172== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==25203== Memcheck, a memory error detector
+==25203== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==25203== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==25203== Command: ./Submission/ds
+==25203== 
+==25203== 
+==25203== HEAP SUMMARY:
+==25203==     in use at exit: 0 bytes in 0 blocks
+==25203==   total heap usage: 18,478 allocs, 18,478 frees, 931,744 bytes allocated
+==25203== 
+==25203== All heap blocks were freed -- no leaks are possible
+==25203== 
+==25203== For lists of detected and suppressed errors, rerun with: -s
+==25203== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 60.txt
 
-==12520== Memcheck, a memory error detector
-==12520== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==12520== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
-==12520== Command: ./Submission/ds
-==12520== 
-==12520== 
-==12520== HEAP SUMMARY:
-==12520==     in use at exit: 0 bytes in 0 blocks
-==12520==   total heap usage: 28,464 allocs, 28,464 frees, 1,808,832 bytes allocated
-==12520== 
-==12520== All heap blocks were freed -- no leaks are possible
-==12520== 
-==12520== For lists of detected and suppressed errors, rerun with: -s
-==12520== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==25379== Memcheck, a memory error detector
+==25379== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==25379== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==25379== Command: ./Submission/ds
+==25379== 
+==25379== 
+==25379== HEAP SUMMARY:
+==25379==     in use at exit: 0 bytes in 0 blocks
+==25379==   total heap usage: 28,464 allocs, 28,464 frees, 1,808,832 bytes allocated
+==25379== 
+==25379== All heap blocks were freed -- no leaks are possible
+==25379== 
+==25379== For lists of detected and suppressed errors, rerun with: -s
+==25379== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 61.txt
 
-==13238== Memcheck, a memory error detector
-==13238== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==13238== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
-==13238== Command: ./Submission/ds
-==13238== 
-==13238== 
-==13238== HEAP SUMMARY:
-==13238==     in use at exit: 0 bytes in 0 blocks
-==13238==   total heap usage: 10,305 allocs, 10,305 frees, 409,944 bytes allocated
-==13238== 
-==13238== All heap blocks were freed -- no leaks are possible
-==13238== 
-==13238== For lists of detected and suppressed errors, rerun with: -s
-==13238== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==25474== Memcheck, a memory error detector
+==25474== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==25474== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==25474== Command: ./Submission/ds
+==25474== 
+==25474== 
+==25474== HEAP SUMMARY:
+==25474==     in use at exit: 0 bytes in 0 blocks
+==25474==   total heap usage: 10,305 allocs, 10,305 frees, 409,944 bytes allocated
+==25474== 
+==25474== All heap blocks were freed -- no leaks are possible
+==25474== 
+==25474== For lists of detected and suppressed errors, rerun with: -s
+==25474== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 62.txt
 
-==13614== Memcheck, a memory error detector
-==13614== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==13614== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
-==13614== Command: ./Submission/ds
-==13614== 
-==13614== 
-==13614== HEAP SUMMARY:
-==13614==     in use at exit: 0 bytes in 0 blocks
-==13614==   total heap usage: 9,142 allocs, 9,142 frees, 339,860 bytes allocated
-==13614== 
-==13614== All heap blocks were freed -- no leaks are possible
-==13614== 
-==13614== For lists of detected and suppressed errors, rerun with: -s
-==13614== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==25666== Memcheck, a memory error detector
+==25666== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==25666== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==25666== Command: ./Submission/ds
+==25666== 
+==25666== 
+==25666== HEAP SUMMARY:
+==25666==     in use at exit: 0 bytes in 0 blocks
+==25666==   total heap usage: 9,142 allocs, 9,142 frees, 339,860 bytes allocated
+==25666== 
+==25666== All heap blocks were freed -- no leaks are possible
+==25666== 
+==25666== For lists of detected and suppressed errors, rerun with: -s
+==25666== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 63.txt
 
-==14256== Memcheck, a memory error detector
-==14256== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==14256== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
-==14256== Command: ./Submission/ds
-==14256== 
-==14256== 
-==14256== HEAP SUMMARY:
-==14256==     in use at exit: 0 bytes in 0 blocks
-==14256==   total heap usage: 4,704 allocs, 4,704 frees, 132,972 bytes allocated
-==14256== 
-==14256== All heap blocks were freed -- no leaks are possible
-==14256== 
-==14256== For lists of detected and suppressed errors, rerun with: -s
-==14256== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==25824== Memcheck, a memory error detector
+==25824== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==25824== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==25824== Command: ./Submission/ds
+==25824== 
+==25824== 
+==25824== HEAP SUMMARY:
+==25824==     in use at exit: 0 bytes in 0 blocks
+==25824==   total heap usage: 4,704 allocs, 4,704 frees, 132,972 bytes allocated
+==25824== 
+==25824== All heap blocks were freed -- no leaks are possible
+==25824== 
+==25824== For lists of detected and suppressed errors, rerun with: -s
+==25824== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 64.txt
 
-==14385== Memcheck, a memory error detector
-==14385== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==14385== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
-==14385== Command: ./Submission/ds
-==14385== 
-==14385== 
-==14385== HEAP SUMMARY:
-==14385==     in use at exit: 0 bytes in 0 blocks
-==14385==   total heap usage: 6,398 allocs, 6,398 frees, 196,312 bytes allocated
-==14385== 
-==14385== All heap blocks were freed -- no leaks are possible
-==14385== 
-==14385== For lists of detected and suppressed errors, rerun with: -s
-==14385== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==25844== Memcheck, a memory error detector
+==25844== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==25844== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==25844== Command: ./Submission/ds
+==25844== 
+==25844== 
+==25844== HEAP SUMMARY:
+==25844==     in use at exit: 0 bytes in 0 blocks
+==25844==   total heap usage: 6,398 allocs, 6,398 frees, 196,312 bytes allocated
+==25844== 
+==25844== All heap blocks were freed -- no leaks are possible
+==25844== 
+==25844== For lists of detected and suppressed errors, rerun with: -s
+==25844== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 65.txt
 
-==14757== Memcheck, a memory error detector
-==14757== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==14757== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
-==14757== Command: ./Submission/ds
-==14757== 
-==14757== 
-==14757== HEAP SUMMARY:
-==14757==     in use at exit: 0 bytes in 0 blocks
-==14757==   total heap usage: 18,114 allocs, 18,114 frees, 832,096 bytes allocated
-==14757== 
-==14757== All heap blocks were freed -- no leaks are possible
-==14757== 
-==14757== For lists of detected and suppressed errors, rerun with: -s
-==14757== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==25901== Memcheck, a memory error detector
+==25901== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==25901== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==25901== Command: ./Submission/ds
+==25901== 
+==25901== 
+==25901== HEAP SUMMARY:
+==25901==     in use at exit: 0 bytes in 0 blocks
+==25901==   total heap usage: 18,114 allocs, 18,114 frees, 832,096 bytes allocated
+==25901== 
+==25901== All heap blocks were freed -- no leaks are possible
+==25901== 
+==25901== For lists of detected and suppressed errors, rerun with: -s
+==25901== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 66.txt
 
-==15356== Memcheck, a memory error detector
-==15356== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==15356== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
-==15356== Command: ./Submission/ds
-==15356== 
-==15356== 
-==15356== HEAP SUMMARY:
-==15356==     in use at exit: 0 bytes in 0 blocks
-==15356==   total heap usage: 1,591 allocs, 1,591 frees, 36,956 bytes allocated
-==15356== 
-==15356== All heap blocks were freed -- no leaks are possible
-==15356== 
-==15356== For lists of detected and suppressed errors, rerun with: -s
-==15356== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==26310== Memcheck, a memory error detector
+==26310== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==26310== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==26310== Command: ./Submission/ds
+==26310== 
+==26310== 
+==26310== HEAP SUMMARY:
+==26310==     in use at exit: 0 bytes in 0 blocks
+==26310==   total heap usage: 1,591 allocs, 1,591 frees, 36,956 bytes allocated
+==26310== 
+==26310== All heap blocks were freed -- no leaks are possible
+==26310== 
+==26310== For lists of detected and suppressed errors, rerun with: -s
+==26310== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 67.txt
 
-==15562== Memcheck, a memory error detector
-==15562== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==15562== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
-==15562== Command: ./Submission/ds
-==15562== 
-==15562== 
-==15562== HEAP SUMMARY:
-==15562==     in use at exit: 0 bytes in 0 blocks
-==15562==   total heap usage: 6,197 allocs, 6,197 frees, 189,364 bytes allocated
-==15562== 
-==15562== All heap blocks were freed -- no leaks are possible
-==15562== 
-==15562== For lists of detected and suppressed errors, rerun with: -s
-==15562== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==26389== Memcheck, a memory error detector
+==26389== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==26389== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==26389== Command: ./Submission/ds
+==26389== 
+==26389== 
+==26389== HEAP SUMMARY:
+==26389==     in use at exit: 0 bytes in 0 blocks
+==26389==   total heap usage: 6,197 allocs, 6,197 frees, 189,364 bytes allocated
+==26389== 
+==26389== All heap blocks were freed -- no leaks are possible
+==26389== 
+==26389== For lists of detected and suppressed errors, rerun with: -s
+==26389== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 68.txt
 
-==15674== Memcheck, a memory error detector
-==15674== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==15674== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
-==15674== Command: ./Submission/ds
-==15674== 
-==15674== 
-==15674== HEAP SUMMARY:
-==15674==     in use at exit: 0 bytes in 0 blocks
-==15674==   total heap usage: 13,213 allocs, 13,213 frees, 545,028 bytes allocated
-==15674== 
-==15674== All heap blocks were freed -- no leaks are possible
-==15674== 
-==15674== For lists of detected and suppressed errors, rerun with: -s
-==15674== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==26508== Memcheck, a memory error detector
+==26508== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==26508== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==26508== Command: ./Submission/ds
+==26508== 
+==26508== 
+==26508== HEAP SUMMARY:
+==26508==     in use at exit: 0 bytes in 0 blocks
+==26508==   total heap usage: 13,213 allocs, 13,213 frees, 545,028 bytes allocated
+==26508== 
+==26508== All heap blocks were freed -- no leaks are possible
+==26508== 
+==26508== For lists of detected and suppressed errors, rerun with: -s
+==26508== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 69.txt
 
-==15955== Memcheck, a memory error detector
-==15955== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==15955== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
-==15955== Command: ./Submission/ds
-==15955== 
-==15955== 
-==15955== HEAP SUMMARY:
-==15955==     in use at exit: 0 bytes in 0 blocks
-==15955==   total heap usage: 9,596 allocs, 9,596 frees, 339,692 bytes allocated
-==15955== 
-==15955== All heap blocks were freed -- no leaks are possible
-==15955== 
-==15955== For lists of detected and suppressed errors, rerun with: -s
-==15955== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==26556== Memcheck, a memory error detector
+==26556== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==26556== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==26556== Command: ./Submission/ds
+==26556== 
+==26556== 
+==26556== HEAP SUMMARY:
+==26556==     in use at exit: 0 bytes in 0 blocks
+==26556==   total heap usage: 9,596 allocs, 9,596 frees, 339,692 bytes allocated
+==26556== 
+==26556== All heap blocks were freed -- no leaks are possible
+==26556== 
+==26556== For lists of detected and suppressed errors, rerun with: -s
+==26556== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 7.txt
 
-==15973== Memcheck, a memory error detector
-==15973== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==15973== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
-==15973== Command: ./Submission/ds
-==15973== 
-==15973== 
-==15973== HEAP SUMMARY:
-==15973==     in use at exit: 0 bytes in 0 blocks
-==15973==   total heap usage: 28,776 allocs, 28,776 frees, 2,002,292 bytes allocated
-==15973== 
-==15973== All heap blocks were freed -- no leaks are possible
-==15973== 
-==15973== For lists of detected and suppressed errors, rerun with: -s
-==15973== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==26617== Memcheck, a memory error detector
+==26617== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==26617== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==26617== Command: ./Submission/ds
+==26617== 
+==26617== 
+==26617== HEAP SUMMARY:
+==26617==     in use at exit: 0 bytes in 0 blocks
+==26617==   total heap usage: 28,776 allocs, 28,776 frees, 2,002,292 bytes allocated
+==26617== 
+==26617== All heap blocks were freed -- no leaks are possible
+==26617== 
+==26617== For lists of detected and suppressed errors, rerun with: -s
+==26617== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 70.txt
 
-==16661== Memcheck, a memory error detector
-==16661== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==16661== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
-==16661== Command: ./Submission/ds
-==16661== 
-==16661== 
-==16661== HEAP SUMMARY:
-==16661==     in use at exit: 0 bytes in 0 blocks
-==16661==   total heap usage: 72,548 allocs, 72,548 frees, 9,988,236 bytes allocated
-==16661== 
-==16661== All heap blocks were freed -- no leaks are possible
-==16661== 
-==16661== For lists of detected and suppressed errors, rerun with: -s
-==16661== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==26709== Memcheck, a memory error detector
+==26709== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==26709== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==26709== Command: ./Submission/ds
+==26709== 
+==26709== 
+==26709== HEAP SUMMARY:
+==26709==     in use at exit: 0 bytes in 0 blocks
+==26709==   total heap usage: 72,548 allocs, 72,548 frees, 9,988,236 bytes allocated
+==26709== 
+==26709== All heap blocks were freed -- no leaks are possible
+==26709== 
+==26709== For lists of detected and suppressed errors, rerun with: -s
+==26709== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 71.txt
 
-==17348== Memcheck, a memory error detector
-==17348== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==17348== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
-==17348== Command: ./Submission/ds
-==17348== 
-==17348== 
-==17348== HEAP SUMMARY:
-==17348==     in use at exit: 0 bytes in 0 blocks
-==17348==   total heap usage: 30,850 allocs, 30,850 frees, 1,995,196 bytes allocated
-==17348== 
-==17348== All heap blocks were freed -- no leaks are possible
-==17348== 
-==17348== For lists of detected and suppressed errors, rerun with: -s
-==17348== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==27030== Memcheck, a memory error detector
+==27030== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==27030== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==27030== Command: ./Submission/ds
+==27030== 
+==27030== 
+==27030== HEAP SUMMARY:
+==27030==     in use at exit: 0 bytes in 0 blocks
+==27030==   total heap usage: 30,850 allocs, 30,850 frees, 1,995,196 bytes allocated
+==27030== 
+==27030== All heap blocks were freed -- no leaks are possible
+==27030== 
+==27030== For lists of detected and suppressed errors, rerun with: -s
+==27030== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 72.txt
 
-==17605== Memcheck, a memory error detector
-==17605== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==17605== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
-==17605== Command: ./Submission/ds
-==17605== 
-==17605== 
-==17605== HEAP SUMMARY:
-==17605==     in use at exit: 0 bytes in 0 blocks
-==17605==   total heap usage: 4,683 allocs, 4,683 frees, 157,956 bytes allocated
-==17605== 
-==17605== All heap blocks were freed -- no leaks are possible
-==17605== 
-==17605== For lists of detected and suppressed errors, rerun with: -s
-==17605== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==27079== Memcheck, a memory error detector
+==27079== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==27079== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==27079== Command: ./Submission/ds
+==27079== 
+==27079== 
+==27079== HEAP SUMMARY:
+==27079==     in use at exit: 0 bytes in 0 blocks
+==27079==   total heap usage: 4,683 allocs, 4,683 frees, 157,956 bytes allocated
+==27079== 
+==27079== All heap blocks were freed -- no leaks are possible
+==27079== 
+==27079== For lists of detected and suppressed errors, rerun with: -s
+==27079== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 73.txt
 
-==17652== Memcheck, a memory error detector
-==17652== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==17652== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
-==17652== Command: ./Submission/ds
-==17652== 
-==17652== 
-==17652== HEAP SUMMARY:
-==17652==     in use at exit: 0 bytes in 0 blocks
-==17652==   total heap usage: 2,199 allocs, 2,199 frees, 61,004 bytes allocated
-==17652== 
-==17652== All heap blocks were freed -- no leaks are possible
-==17652== 
-==17652== For lists of detected and suppressed errors, rerun with: -s
-==17652== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==27128== Memcheck, a memory error detector
+==27128== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==27128== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==27128== Command: ./Submission/ds
+==27128== 
+==27128== 
+==27128== HEAP SUMMARY:
+==27128==     in use at exit: 0 bytes in 0 blocks
+==27128==   total heap usage: 2,199 allocs, 2,199 frees, 61,004 bytes allocated
+==27128== 
+==27128== All heap blocks were freed -- no leaks are possible
+==27128== 
+==27128== For lists of detected and suppressed errors, rerun with: -s
+==27128== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 74.txt
 
-==17679== Memcheck, a memory error detector
-==17679== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==17679== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
-==17679== Command: ./Submission/ds
-==17679== 
-==17679== 
-==17679== HEAP SUMMARY:
-==17679==     in use at exit: 0 bytes in 0 blocks
-==17679==   total heap usage: 10,020 allocs, 10,020 frees, 362,388 bytes allocated
-==17679== 
-==17679== All heap blocks were freed -- no leaks are possible
-==17679== 
-==17679== For lists of detected and suppressed errors, rerun with: -s
-==17679== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==27188== Memcheck, a memory error detector
+==27188== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==27188== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==27188== Command: ./Submission/ds
+==27188== 
+==27188== 
+==27188== HEAP SUMMARY:
+==27188==     in use at exit: 0 bytes in 0 blocks
+==27188==   total heap usage: 10,020 allocs, 10,020 frees, 362,388 bytes allocated
+==27188== 
+==27188== All heap blocks were freed -- no leaks are possible
+==27188== 
+==27188== For lists of detected and suppressed errors, rerun with: -s
+==27188== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 75.txt
 
-==17968== Memcheck, a memory error detector
-==17968== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==17968== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
-==17968== Command: ./Submission/ds
-==17968== 
-==17968== 
-==17968== HEAP SUMMARY:
-==17968==     in use at exit: 0 bytes in 0 blocks
-==17968==   total heap usage: 8,088 allocs, 8,088 frees, 301,972 bytes allocated
-==17968== 
-==17968== All heap blocks were freed -- no leaks are possible
-==17968== 
-==17968== For lists of detected and suppressed errors, rerun with: -s
-==17968== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==27211== Memcheck, a memory error detector
+==27211== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==27211== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==27211== Command: ./Submission/ds
+==27211== 
+==27211== 
+==27211== HEAP SUMMARY:
+==27211==     in use at exit: 0 bytes in 0 blocks
+==27211==   total heap usage: 8,088 allocs, 8,088 frees, 301,972 bytes allocated
+==27211== 
+==27211== All heap blocks were freed -- no leaks are possible
+==27211== 
+==27211== For lists of detected and suppressed errors, rerun with: -s
+==27211== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 76.txt
 
-==17991== Memcheck, a memory error detector
-==17991== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==17991== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
-==17991== Command: ./Submission/ds
-==17991== 
-==17991== 
-==17991== HEAP SUMMARY:
-==17991==     in use at exit: 0 bytes in 0 blocks
-==17991==   total heap usage: 2,551 allocs, 2,551 frees, 73,204 bytes allocated
-==17991== 
-==17991== All heap blocks were freed -- no leaks are possible
-==17991== 
-==17991== For lists of detected and suppressed errors, rerun with: -s
-==17991== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==27323== Memcheck, a memory error detector
+==27323== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==27323== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==27323== Command: ./Submission/ds
+==27323== 
+==27323== 
+==27323== HEAP SUMMARY:
+==27323==     in use at exit: 0 bytes in 0 blocks
+==27323==   total heap usage: 2,551 allocs, 2,551 frees, 73,204 bytes allocated
+==27323== 
+==27323== All heap blocks were freed -- no leaks are possible
+==27323== 
+==27323== For lists of detected and suppressed errors, rerun with: -s
+==27323== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 77.txt
 
-==18082== Memcheck, a memory error detector
-==18082== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==18082== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
-==18082== Command: ./Submission/ds
-==18082== 
-==18082== 
-==18082== HEAP SUMMARY:
-==18082==     in use at exit: 0 bytes in 0 blocks
-==18082==   total heap usage: 13,794 allocs, 13,794 frees, 524,364 bytes allocated
-==18082== 
-==18082== All heap blocks were freed -- no leaks are possible
-==18082== 
-==18082== For lists of detected and suppressed errors, rerun with: -s
-==18082== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==27343== Memcheck, a memory error detector
+==27343== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==27343== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==27343== Command: ./Submission/ds
+==27343== 
+==27343== 
+==27343== HEAP SUMMARY:
+==27343==     in use at exit: 0 bytes in 0 blocks
+==27343==   total heap usage: 13,794 allocs, 13,794 frees, 524,364 bytes allocated
+==27343== 
+==27343== All heap blocks were freed -- no leaks are possible
+==27343== 
+==27343== For lists of detected and suppressed errors, rerun with: -s
+==27343== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 78.txt
 
-==18713== Memcheck, a memory error detector
-==18713== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==18713== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
-==18713== Command: ./Submission/ds
-==18713== 
-==18713== 
-==18713== HEAP SUMMARY:
-==18713==     in use at exit: 0 bytes in 0 blocks
-==18713==   total heap usage: 14,600 allocs, 14,600 frees, 701,732 bytes allocated
-==18713== 
-==18713== All heap blocks were freed -- no leaks are possible
-==18713== 
-==18713== For lists of detected and suppressed errors, rerun with: -s
-==18713== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==27376== Memcheck, a memory error detector
+==27376== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==27376== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==27376== Command: ./Submission/ds
+==27376== 
+==27376== 
+==27376== HEAP SUMMARY:
+==27376==     in use at exit: 0 bytes in 0 blocks
+==27376==   total heap usage: 14,600 allocs, 14,600 frees, 701,732 bytes allocated
+==27376== 
+==27376== All heap blocks were freed -- no leaks are possible
+==27376== 
+==27376== For lists of detected and suppressed errors, rerun with: -s
+==27376== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 79.txt
 
-==18880== Memcheck, a memory error detector
-==18880== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==18880== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
-==18880== Command: ./Submission/ds
-==18880== 
-==18880== 
-==18880== HEAP SUMMARY:
-==18880==     in use at exit: 0 bytes in 0 blocks
-==18880==   total heap usage: 11,674 allocs, 11,674 frees, 523,108 bytes allocated
-==18880== 
-==18880== All heap blocks were freed -- no leaks are possible
-==18880== 
-==18880== For lists of detected and suppressed errors, rerun with: -s
-==18880== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==27576== Memcheck, a memory error detector
+==27576== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==27576== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==27576== Command: ./Submission/ds
+==27576== 
+==27576== 
+==27576== HEAP SUMMARY:
+==27576==     in use at exit: 0 bytes in 0 blocks
+==27576==   total heap usage: 11,674 allocs, 11,674 frees, 523,108 bytes allocated
+==27576== 
+==27576== All heap blocks were freed -- no leaks are possible
+==27576== 
+==27576== For lists of detected and suppressed errors, rerun with: -s
+==27576== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 8.txt
 
-==19193== Memcheck, a memory error detector
-==19193== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==19193== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
-==19193== Command: ./Submission/ds
-==19193== 
-==19193== 
-==19193== HEAP SUMMARY:
-==19193==     in use at exit: 0 bytes in 0 blocks
-==19193==   total heap usage: 23,346 allocs, 23,346 frees, 1,256,948 bytes allocated
-==19193== 
-==19193== All heap blocks were freed -- no leaks are possible
-==19193== 
-==19193== For lists of detected and suppressed errors, rerun with: -s
-==19193== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==27687== Memcheck, a memory error detector
+==27687== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==27687== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==27687== Command: ./Submission/ds
+==27687== 
+==27687== 
+==27687== HEAP SUMMARY:
+==27687==     in use at exit: 0 bytes in 0 blocks
+==27687==   total heap usage: 23,346 allocs, 23,346 frees, 1,256,948 bytes allocated
+==27687== 
+==27687== All heap blocks were freed -- no leaks are possible
+==27687== 
+==27687== For lists of detected and suppressed errors, rerun with: -s
+==27687== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 80.txt
 
-==19416== Memcheck, a memory error detector
-==19416== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==19416== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
-==19416== Command: ./Submission/ds
-==19416== 
-==19416== 
-==19416== HEAP SUMMARY:
-==19416==     in use at exit: 0 bytes in 0 blocks
-==19416==   total heap usage: 32,208 allocs, 32,208 frees, 1,858,248 bytes allocated
-==19416== 
-==19416== All heap blocks were freed -- no leaks are possible
-==19416== 
-==19416== For lists of detected and suppressed errors, rerun with: -s
-==19416== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==27758== Memcheck, a memory error detector
+==27758== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==27758== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==27758== Command: ./Submission/ds
+==27758== 
+==27758== 
+==27758== HEAP SUMMARY:
+==27758==     in use at exit: 0 bytes in 0 blocks
+==27758==   total heap usage: 32,208 allocs, 32,208 frees, 1,858,248 bytes allocated
+==27758== 
+==27758== All heap blocks were freed -- no leaks are possible
+==27758== 
+==27758== For lists of detected and suppressed errors, rerun with: -s
+==27758== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 81.txt
 
-==19518== Memcheck, a memory error detector
-==19518== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==19518== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
-==19518== Command: ./Submission/ds
-==19518== 
-==19518== 
-==19518== HEAP SUMMARY:
-==19518==     in use at exit: 0 bytes in 0 blocks
-==19518==   total heap usage: 5,272 allocs, 5,272 frees, 185,964 bytes allocated
-==19518== 
-==19518== All heap blocks were freed -- no leaks are possible
-==19518== 
-==19518== For lists of detected and suppressed errors, rerun with: -s
-==19518== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==28209== Memcheck, a memory error detector
+==28209== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==28209== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==28209== Command: ./Submission/ds
+==28209== 
+==28209== 
+==28209== HEAP SUMMARY:
+==28209==     in use at exit: 0 bytes in 0 blocks
+==28209==   total heap usage: 5,272 allocs, 5,272 frees, 185,964 bytes allocated
+==28209== 
+==28209== All heap blocks were freed -- no leaks are possible
+==28209== 
+==28209== For lists of detected and suppressed errors, rerun with: -s
+==28209== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 82.txt
 
-==19643== Memcheck, a memory error detector
-==19643== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==19643== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
-==19643== Command: ./Submission/ds
-==19643== 
-==19643== 
-==19643== HEAP SUMMARY:
-==19643==     in use at exit: 0 bytes in 0 blocks
-==19643==   total heap usage: 3,296 allocs, 3,296 frees, 116,176 bytes allocated
-==19643== 
-==19643== All heap blocks were freed -- no leaks are possible
-==19643== 
-==19643== For lists of detected and suppressed errors, rerun with: -s
-==19643== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==28587== Memcheck, a memory error detector
+==28587== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==28587== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==28587== Command: ./Submission/ds
+==28587== 
+==28587== 
+==28587== HEAP SUMMARY:
+==28587==     in use at exit: 0 bytes in 0 blocks
+==28587==   total heap usage: 3,296 allocs, 3,296 frees, 116,176 bytes allocated
+==28587== 
+==28587== All heap blocks were freed -- no leaks are possible
+==28587== 
+==28587== For lists of detected and suppressed errors, rerun with: -s
+==28587== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 83.txt
 
-==19810== Memcheck, a memory error detector
-==19810== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==19810== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
-==19810== Command: ./Submission/ds
-==19810== 
-==19810== 
-==19810== HEAP SUMMARY:
-==19810==     in use at exit: 0 bytes in 0 blocks
-==19810==   total heap usage: 10,046 allocs, 10,046 frees, 432,488 bytes allocated
-==19810== 
-==19810== All heap blocks were freed -- no leaks are possible
-==19810== 
-==19810== For lists of detected and suppressed errors, rerun with: -s
-==19810== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==28670== Memcheck, a memory error detector
+==28670== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==28670== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==28670== Command: ./Submission/ds
+==28670== 
+==28670== 
+==28670== HEAP SUMMARY:
+==28670==     in use at exit: 0 bytes in 0 blocks
+==28670==   total heap usage: 10,046 allocs, 10,046 frees, 432,488 bytes allocated
+==28670== 
+==28670== All heap blocks were freed -- no leaks are possible
+==28670== 
+==28670== For lists of detected and suppressed errors, rerun with: -s
+==28670== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 84.txt
 
-==19842== Memcheck, a memory error detector
-==19842== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==19842== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
-==19842== Command: ./Submission/ds
-==19842== 
-==19842== 
-==19842== HEAP SUMMARY:
-==19842==     in use at exit: 0 bytes in 0 blocks
-==19842==   total heap usage: 37,474 allocs, 37,474 frees, 2,843,808 bytes allocated
-==19842== 
-==19842== All heap blocks were freed -- no leaks are possible
-==19842== 
-==19842== For lists of detected and suppressed errors, rerun with: -s
-==19842== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==28769== Memcheck, a memory error detector
+==28769== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==28769== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==28769== Command: ./Submission/ds
+==28769== 
+==28769== 
+==28769== HEAP SUMMARY:
+==28769==     in use at exit: 0 bytes in 0 blocks
+==28769==   total heap usage: 37,474 allocs, 37,474 frees, 2,843,808 bytes allocated
+==28769== 
+==28769== All heap blocks were freed -- no leaks are possible
+==28769== 
+==28769== For lists of detected and suppressed errors, rerun with: -s
+==28769== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 85.txt
 
-==20161== Memcheck, a memory error detector
-==20161== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==20161== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
-==20161== Command: ./Submission/ds
-==20161== 
-==20161== 
-==20161== HEAP SUMMARY:
-==20161==     in use at exit: 0 bytes in 0 blocks
-==20161==   total heap usage: 6,493 allocs, 6,493 frees, 194,268 bytes allocated
-==20161== 
-==20161== All heap blocks were freed -- no leaks are possible
-==20161== 
-==20161== For lists of detected and suppressed errors, rerun with: -s
-==20161== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==28942== Memcheck, a memory error detector
+==28942== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==28942== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==28942== Command: ./Submission/ds
+==28942== 
+==28942== 
+==28942== HEAP SUMMARY:
+==28942==     in use at exit: 0 bytes in 0 blocks
+==28942==   total heap usage: 6,493 allocs, 6,493 frees, 194,268 bytes allocated
+==28942== 
+==28942== All heap blocks were freed -- no leaks are possible
+==28942== 
+==28942== For lists of detected and suppressed errors, rerun with: -s
+==28942== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 86.txt
 
-==20194== Memcheck, a memory error detector
-==20194== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==20194== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
-==20194== Command: ./Submission/ds
-==20194== 
-==20194== 
-==20194== HEAP SUMMARY:
-==20194==     in use at exit: 0 bytes in 0 blocks
-==20194==   total heap usage: 408 allocs, 408 frees, 10,976 bytes allocated
-==20194== 
-==20194== All heap blocks were freed -- no leaks are possible
-==20194== 
-==20194== For lists of detected and suppressed errors, rerun with: -s
-==20194== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==29092== Memcheck, a memory error detector
+==29092== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==29092== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==29092== Command: ./Submission/ds
+==29092== 
+==29092== 
+==29092== HEAP SUMMARY:
+==29092==     in use at exit: 0 bytes in 0 blocks
+==29092==   total heap usage: 408 allocs, 408 frees, 10,976 bytes allocated
+==29092== 
+==29092== All heap blocks were freed -- no leaks are possible
+==29092== 
+==29092== For lists of detected and suppressed errors, rerun with: -s
+==29092== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 87.txt
 
-==20214== Memcheck, a memory error detector
-==20214== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==20214== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
-==20214== Command: ./Submission/ds
-==20214== 
-==20214== 
-==20214== HEAP SUMMARY:
-==20214==     in use at exit: 0 bytes in 0 blocks
-==20214==   total heap usage: 35,453 allocs, 35,453 frees, 2,466,908 bytes allocated
-==20214== 
-==20214== All heap blocks were freed -- no leaks are possible
-==20214== 
-==20214== For lists of detected and suppressed errors, rerun with: -s
-==20214== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==29118== Memcheck, a memory error detector
+==29118== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==29118== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==29118== Command: ./Submission/ds
+==29118== 
+==29118== 
+==29118== HEAP SUMMARY:
+==29118==     in use at exit: 0 bytes in 0 blocks
+==29118==   total heap usage: 35,453 allocs, 35,453 frees, 2,466,908 bytes allocated
+==29118== 
+==29118== All heap blocks were freed -- no leaks are possible
+==29118== 
+==29118== For lists of detected and suppressed errors, rerun with: -s
+==29118== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 88.txt
 
-==20782== Memcheck, a memory error detector
-==20782== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==20782== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
-==20782== Command: ./Submission/ds
-==20782== 
-==20782== 
-==20782== HEAP SUMMARY:
-==20782==     in use at exit: 0 bytes in 0 blocks
-==20782==   total heap usage: 17,880 allocs, 17,880 frees, 848,112 bytes allocated
-==20782== 
-==20782== All heap blocks were freed -- no leaks are possible
-==20782== 
-==20782== For lists of detected and suppressed errors, rerun with: -s
-==20782== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==29456== Memcheck, a memory error detector
+==29456== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==29456== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==29456== Command: ./Submission/ds
+==29456== 
+==29456== 
+==29456== HEAP SUMMARY:
+==29456==     in use at exit: 0 bytes in 0 blocks
+==29456==   total heap usage: 17,880 allocs, 17,880 frees, 848,112 bytes allocated
+==29456== 
+==29456== All heap blocks were freed -- no leaks are possible
+==29456== 
+==29456== For lists of detected and suppressed errors, rerun with: -s
+==29456== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 89.txt
 
-==21090== Memcheck, a memory error detector
-==21090== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==21090== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
-==21090== Command: ./Submission/ds
-==21090== 
-==21090== 
-==21090== HEAP SUMMARY:
-==21090==     in use at exit: 0 bytes in 0 blocks
-==21090==   total heap usage: 3,188 allocs, 3,188 frees, 108,720 bytes allocated
-==21090== 
-==21090== All heap blocks were freed -- no leaks are possible
-==21090== 
-==21090== For lists of detected and suppressed errors, rerun with: -s
-==21090== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==29681== Memcheck, a memory error detector
+==29681== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==29681== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==29681== Command: ./Submission/ds
+==29681== 
+==29681== 
+==29681== HEAP SUMMARY:
+==29681==     in use at exit: 0 bytes in 0 blocks
+==29681==   total heap usage: 3,188 allocs, 3,188 frees, 108,720 bytes allocated
+==29681== 
+==29681== All heap blocks were freed -- no leaks are possible
+==29681== 
+==29681== For lists of detected and suppressed errors, rerun with: -s
+==29681== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 9.txt
 
-==21210== Memcheck, a memory error detector
-==21210== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==21210== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
-==21210== Command: ./Submission/ds
-==21210== 
-==21210== 
-==21210== HEAP SUMMARY:
-==21210==     in use at exit: 0 bytes in 0 blocks
-==21210==   total heap usage: 19,593 allocs, 19,593 frees, 1,015,228 bytes allocated
-==21210== 
-==21210== All heap blocks were freed -- no leaks are possible
-==21210== 
-==21210== For lists of detected and suppressed errors, rerun with: -s
-==21210== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==29861== Memcheck, a memory error detector
+==29861== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==29861== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==29861== Command: ./Submission/ds
+==29861== 
+==29861== 
+==29861== HEAP SUMMARY:
+==29861==     in use at exit: 0 bytes in 0 blocks
+==29861==   total heap usage: 19,593 allocs, 19,593 frees, 1,015,228 bytes allocated
+==29861== 
+==29861== All heap blocks were freed -- no leaks are possible
+==29861== 
+==29861== For lists of detected and suppressed errors, rerun with: -s
+==29861== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 90.txt
 
-==21389== Memcheck, a memory error detector
-==21389== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==21389== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
-==21389== Command: ./Submission/ds
-==21389== 
-==21389== 
-==21389== HEAP SUMMARY:
-==21389==     in use at exit: 0 bytes in 0 blocks
-==21389==   total heap usage: 21,196 allocs, 21,196 frees, 1,031,208 bytes allocated
-==21389== 
-==21389== All heap blocks were freed -- no leaks are possible
-==21389== 
-==21389== For lists of detected and suppressed errors, rerun with: -s
-==21389== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==29902== Memcheck, a memory error detector
+==29902== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==29902== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==29902== Command: ./Submission/ds
+==29902== 
+==29902== 
+==29902== HEAP SUMMARY:
+==29902==     in use at exit: 0 bytes in 0 blocks
+==29902==   total heap usage: 21,196 allocs, 21,196 frees, 1,031,208 bytes allocated
+==29902== 
+==29902== All heap blocks were freed -- no leaks are possible
+==29902== 
+==29902== For lists of detected and suppressed errors, rerun with: -s
+==29902== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 91.txt
 
-==21502== Memcheck, a memory error detector
-==21502== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==21502== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
-==21502== Command: ./Submission/ds
-==21502== 
-==21502== 
-==21502== HEAP SUMMARY:
-==21502==     in use at exit: 0 bytes in 0 blocks
-==21502==   total heap usage: 7,955 allocs, 7,955 frees, 253,272 bytes allocated
-==21502== 
-==21502== All heap blocks were freed -- no leaks are possible
-==21502== 
-==21502== For lists of detected and suppressed errors, rerun with: -s
-==21502== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==29920== Memcheck, a memory error detector
+==29920== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==29920== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==29920== Command: ./Submission/ds
+==29920== 
+==29920== 
+==29920== HEAP SUMMARY:
+==29920==     in use at exit: 0 bytes in 0 blocks
+==29920==   total heap usage: 7,955 allocs, 7,955 frees, 253,272 bytes allocated
+==29920== 
+==29920== All heap blocks were freed -- no leaks are possible
+==29920== 
+==29920== For lists of detected and suppressed errors, rerun with: -s
+==29920== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 92.txt
 
-==21547== Memcheck, a memory error detector
-==21547== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==21547== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
-==21547== Command: ./Submission/ds
-==21547== 
-==21547== 
-==21547== HEAP SUMMARY:
-==21547==     in use at exit: 0 bytes in 0 blocks
-==21547==   total heap usage: 54,406 allocs, 54,406 frees, 5,013,200 bytes allocated
-==21547== 
-==21547== All heap blocks were freed -- no leaks are possible
-==21547== 
-==21547== For lists of detected and suppressed errors, rerun with: -s
-==21547== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==29945== Memcheck, a memory error detector
+==29945== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==29945== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==29945== Command: ./Submission/ds
+==29945== 
+==29945== 
+==29945== HEAP SUMMARY:
+==29945==     in use at exit: 0 bytes in 0 blocks
+==29945==   total heap usage: 54,406 allocs, 54,406 frees, 5,013,200 bytes allocated
+==29945== 
+==29945== All heap blocks were freed -- no leaks are possible
+==29945== 
+==29945== For lists of detected and suppressed errors, rerun with: -s
+==29945== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 93.txt
 
-==23386== Memcheck, a memory error detector
-==23386== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==23386== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
-==23386== Command: ./Submission/ds
-==23386== 
-==23386== 
-==23386== HEAP SUMMARY:
-==23386==     in use at exit: 0 bytes in 0 blocks
-==23386==   total heap usage: 19,254 allocs, 19,254 frees, 1,021,048 bytes allocated
-==23386== 
-==23386== All heap blocks were freed -- no leaks are possible
-==23386== 
-==23386== For lists of detected and suppressed errors, rerun with: -s
-==23386== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==30398== Memcheck, a memory error detector
+==30398== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==30398== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==30398== Command: ./Submission/ds
+==30398== 
+==30398== 
+==30398== HEAP SUMMARY:
+==30398==     in use at exit: 0 bytes in 0 blocks
+==30398==   total heap usage: 19,254 allocs, 19,254 frees, 1,021,048 bytes allocated
+==30398== 
+==30398== All heap blocks were freed -- no leaks are possible
+==30398== 
+==30398== For lists of detected and suppressed errors, rerun with: -s
+==30398== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 94.txt
 
-==24847== Memcheck, a memory error detector
-==24847== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==24847== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
-==24847== Command: ./Submission/ds
-==24847== 
-==24847== 
-==24847== HEAP SUMMARY:
-==24847==     in use at exit: 0 bytes in 0 blocks
-==24847==   total heap usage: 2,978 allocs, 2,978 frees, 77,216 bytes allocated
-==24847== 
-==24847== All heap blocks were freed -- no leaks are possible
-==24847== 
-==24847== For lists of detected and suppressed errors, rerun with: -s
-==24847== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==30524== Memcheck, a memory error detector
+==30524== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==30524== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==30524== Command: ./Submission/ds
+==30524== 
+==30524== 
+==30524== HEAP SUMMARY:
+==30524==     in use at exit: 0 bytes in 0 blocks
+==30524==   total heap usage: 2,978 allocs, 2,978 frees, 77,216 bytes allocated
+==30524== 
+==30524== All heap blocks were freed -- no leaks are possible
+==30524== 
+==30524== For lists of detected and suppressed errors, rerun with: -s
+==30524== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 95.txt
 
-==25186== Memcheck, a memory error detector
-==25186== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==25186== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
-==25186== Command: ./Submission/ds
-==25186== 
-==25186== 
-==25186== HEAP SUMMARY:
-==25186==     in use at exit: 0 bytes in 0 blocks
-==25186==   total heap usage: 1,300 allocs, 1,300 frees, 32,944 bytes allocated
-==25186== 
-==25186== All heap blocks were freed -- no leaks are possible
-==25186== 
-==25186== For lists of detected and suppressed errors, rerun with: -s
-==25186== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==30658== Memcheck, a memory error detector
+==30658== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==30658== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==30658== Command: ./Submission/ds
+==30658== 
+==30658== 
+==30658== HEAP SUMMARY:
+==30658==     in use at exit: 0 bytes in 0 blocks
+==30658==   total heap usage: 1,300 allocs, 1,300 frees, 32,944 bytes allocated
+==30658== 
+==30658== All heap blocks were freed -- no leaks are possible
+==30658== 
+==30658== For lists of detected and suppressed errors, rerun with: -s
+==30658== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 96.txt
 
-==25435== Memcheck, a memory error detector
-==25435== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==25435== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
-==25435== Command: ./Submission/ds
-==25435== 
-==25435== 
-==25435== HEAP SUMMARY:
-==25435==     in use at exit: 0 bytes in 0 blocks
-==25435==   total heap usage: 17,736 allocs, 17,736 frees, 699,240 bytes allocated
-==25435== 
-==25435== All heap blocks were freed -- no leaks are possible
-==25435== 
-==25435== For lists of detected and suppressed errors, rerun with: -s
-==25435== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==30779== Memcheck, a memory error detector
+==30779== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==30779== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==30779== Command: ./Submission/ds
+==30779== 
+==30779== 
+==30779== HEAP SUMMARY:
+==30779==     in use at exit: 0 bytes in 0 blocks
+==30779==   total heap usage: 17,736 allocs, 17,736 frees, 699,240 bytes allocated
+==30779== 
+==30779== All heap blocks were freed -- no leaks are possible
+==30779== 
+==30779== For lists of detected and suppressed errors, rerun with: -s
+==30779== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 97.txt
 
-==26299== Memcheck, a memory error detector
-==26299== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==26299== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
-==26299== Command: ./Submission/ds
-==26299== 
-==26299== 
-==26299== HEAP SUMMARY:
-==26299==     in use at exit: 0 bytes in 0 blocks
-==26299==   total heap usage: 53,491 allocs, 53,491 frees, 5,086,352 bytes allocated
-==26299== 
-==26299== All heap blocks were freed -- no leaks are possible
-==26299== 
-==26299== For lists of detected and suppressed errors, rerun with: -s
-==26299== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==30932== Memcheck, a memory error detector
+==30932== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==30932== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==30932== Command: ./Submission/ds
+==30932== 
+==30932== 
+==30932== HEAP SUMMARY:
+==30932==     in use at exit: 0 bytes in 0 blocks
+==30932==   total heap usage: 53,491 allocs, 53,491 frees, 5,086,352 bytes allocated
+==30932== 
+==30932== All heap blocks were freed -- no leaks are possible
+==30932== 
+==30932== For lists of detected and suppressed errors, rerun with: -s
+==30932== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 98.txt
 
-==27875== Memcheck, a memory error detector
-==27875== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==27875== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
-==27875== Command: ./Submission/ds
-==27875== 
-==27875== 
-==27875== HEAP SUMMARY:
-==27875==     in use at exit: 0 bytes in 0 blocks
-==27875==   total heap usage: 28,152 allocs, 28,152 frees, 1,743,164 bytes allocated
-==27875== 
-==27875== All heap blocks were freed -- no leaks are possible
-==27875== 
-==27875== For lists of detected and suppressed errors, rerun with: -s
-==27875== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==31444== Memcheck, a memory error detector
+==31444== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==31444== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==31444== Command: ./Submission/ds
+==31444== 
+==31444== 
+==31444== HEAP SUMMARY:
+==31444==     in use at exit: 0 bytes in 0 blocks
+==31444==   total heap usage: 28,152 allocs, 28,152 frees, 1,743,164 bytes allocated
+==31444== 
+==31444== All heap blocks were freed -- no leaks are possible
+==31444== 
+==31444== For lists of detected and suppressed errors, rerun with: -s
+==31444== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 99.txt
 
-==28663== Memcheck, a memory error detector
-==28663== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==28663== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
-==28663== Command: ./Submission/ds
-==28663== 
-==28663== 
-==28663== HEAP SUMMARY:
-==28663==     in use at exit: 0 bytes in 0 blocks
-==28663==   total heap usage: 3,037 allocs, 3,037 frees, 89,348 bytes allocated
-==28663== 
-==28663== All heap blocks were freed -- no leaks are possible
-==28663== 
-==28663== For lists of detected and suppressed errors, rerun with: -s
-==28663== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
-test1check.txt
-
-==28682== Memcheck, a memory error detector
-==28682== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==28682== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
-==28682== Command: ./Submission/ds
-==28682== 
-==28682== 
-==28682== HEAP SUMMARY:
-==28682==     in use at exit: 0 bytes in 0 blocks
-==28682==   total heap usage: 3,395 allocs, 3,395 frees, 88,080 bytes allocated
-==28682== 
-==28682== All heap blocks were freed -- no leaks are possible
-==28682== 
-==28682== For lists of detected and suppressed errors, rerun with: -s
-==28682== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==31639== Memcheck, a memory error detector
+==31639== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==31639== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==31639== Command: ./Submission/ds
+==31639== 
+==31639== 
+==31639== HEAP SUMMARY:
+==31639==     in use at exit: 0 bytes in 0 blocks
+==31639==   total heap usage: 3,037 allocs, 3,037 frees, 89,348 bytes allocated
+==31639== 
+==31639== All heap blocks were freed -- no leaks are possible
+==31639== 
+==31639== For lists of detected and suppressed errors, rerun with: -s
+==31639== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)

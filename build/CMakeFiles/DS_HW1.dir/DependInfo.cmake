@@ -4,13 +4,13 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/kogabriel/ds/DS_HW1/Car Classes/car_best_sells.cpp" "/home/kogabriel/ds/DS_HW1/build/CMakeFiles/DS_HW1.dir/Car_Classes/car_best_sells.cpp.o"
-  "/home/kogabriel/ds/DS_HW1/Car Classes/car_points.cpp" "/home/kogabriel/ds/DS_HW1/build/CMakeFiles/DS_HW1.dir/Car_Classes/car_points.cpp.o"
-  "/home/kogabriel/ds/DS_HW1/Car Classes/car_sells.cpp" "/home/kogabriel/ds/DS_HW1/build/CMakeFiles/DS_HW1.dir/Car_Classes/car_sells.cpp.o"
-  "/home/kogabriel/ds/DS_HW1/Car Classes/car_zero_points.cpp" "/home/kogabriel/ds/DS_HW1/build/CMakeFiles/DS_HW1.dir/Car_Classes/car_zero_points.cpp.o"
-  "/home/kogabriel/ds/DS_HW1/Car manager/car_dealership.cpp" "/home/kogabriel/ds/DS_HW1/build/CMakeFiles/DS_HW1.dir/Car_manager/car_dealership.cpp.o"
-  "/home/kogabriel/ds/DS_HW1/Car manager/library.cpp" "/home/kogabriel/ds/DS_HW1/build/CMakeFiles/DS_HW1.dir/Car_manager/library.cpp.o"
-  "/home/kogabriel/ds/DS_HW1/Main and Tests/main1.cpp" "/home/kogabriel/ds/DS_HW1/build/CMakeFiles/DS_HW1.dir/Main_and_Tests/main1.cpp.o"
+  "/home/yant/ds/Final_hw1/DS_HW1/Main and Tests/main1.cpp" "/home/yant/ds/Final_hw1/DS_HW1/build/CMakeFiles/DS_HW1.dir/Main_and_Tests/main1.cpp.o"
+  "/home/yant/ds/Final_hw1/DS_HW1/Submission/car_best_sells.cpp" "/home/yant/ds/Final_hw1/DS_HW1/build/CMakeFiles/DS_HW1.dir/Submission/car_best_sells.cpp.o"
+  "/home/yant/ds/Final_hw1/DS_HW1/Submission/car_dealership.cpp" "/home/yant/ds/Final_hw1/DS_HW1/build/CMakeFiles/DS_HW1.dir/Submission/car_dealership.cpp.o"
+  "/home/yant/ds/Final_hw1/DS_HW1/Submission/car_points.cpp" "/home/yant/ds/Final_hw1/DS_HW1/build/CMakeFiles/DS_HW1.dir/Submission/car_points.cpp.o"
+  "/home/yant/ds/Final_hw1/DS_HW1/Submission/car_sells.cpp" "/home/yant/ds/Final_hw1/DS_HW1/build/CMakeFiles/DS_HW1.dir/Submission/car_sells.cpp.o"
+  "/home/yant/ds/Final_hw1/DS_HW1/Submission/car_zero_points.cpp" "/home/yant/ds/Final_hw1/DS_HW1/build/CMakeFiles/DS_HW1.dir/Submission/car_zero_points.cpp.o"
+  "/home/yant/ds/Final_hw1/DS_HW1/Submission/library.cpp" "/home/yant/ds/Final_hw1/DS_HW1/build/CMakeFiles/DS_HW1.dir/Submission/library.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

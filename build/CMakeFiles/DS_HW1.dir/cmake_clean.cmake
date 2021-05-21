@@ -1,11 +1,11 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/DS_HW1.dir/Car_Classes/car_best_sells.cpp.o"
-  "CMakeFiles/DS_HW1.dir/Car_Classes/car_points.cpp.o"
-  "CMakeFiles/DS_HW1.dir/Car_Classes/car_sells.cpp.o"
-  "CMakeFiles/DS_HW1.dir/Car_Classes/car_zero_points.cpp.o"
-  "CMakeFiles/DS_HW1.dir/Car_manager/car_dealership.cpp.o"
-  "CMakeFiles/DS_HW1.dir/Car_manager/library.cpp.o"
   "CMakeFiles/DS_HW1.dir/Main_and_Tests/main1.cpp.o"
+  "CMakeFiles/DS_HW1.dir/Submission/car_best_sells.cpp.o"
+  "CMakeFiles/DS_HW1.dir/Submission/car_dealership.cpp.o"
+  "CMakeFiles/DS_HW1.dir/Submission/car_points.cpp.o"
+  "CMakeFiles/DS_HW1.dir/Submission/car_sells.cpp.o"
+  "CMakeFiles/DS_HW1.dir/Submission/car_zero_points.cpp.o"
+  "CMakeFiles/DS_HW1.dir/Submission/library.cpp.o"
   "DS_HW1"
   "DS_HW1.pdb"
 )

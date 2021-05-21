@@ -1,4 +1,4 @@
-# Install script for directory: /home/kogabriel/ds/DS_HW1/Tests
+# Install script for directory: /home/yant/ds/Final_hw1/DS_HW1/Tests
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

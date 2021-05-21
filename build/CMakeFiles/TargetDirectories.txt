@@ -1,13 +1,15 @@
-/home/kogabriel/ds/DS_HW1/build/CMakeFiles/rebuild_cache.dir
-/home/kogabriel/ds/DS_HW1/build/CMakeFiles/edit_cache.dir
-/home/kogabriel/ds/DS_HW1/build/CMakeFiles/DS_HW1.dir
-/home/kogabriel/ds/DS_HW1/build/Tests/CMakeFiles/rebuild_cache.dir
-/home/kogabriel/ds/DS_HW1/build/Tests/CMakeFiles/edit_cache.dir
-/home/kogabriel/ds/DS_HW1/build/Car Classes/CMakeFiles/rebuild_cache.dir
-/home/kogabriel/ds/DS_HW1/build/Car Classes/CMakeFiles/edit_cache.dir
-/home/kogabriel/ds/DS_HW1/build/Car manager/CMakeFiles/rebuild_cache.dir
-/home/kogabriel/ds/DS_HW1/build/Car manager/CMakeFiles/edit_cache.dir
-/home/kogabriel/ds/DS_HW1/build/AVL Tree/CMakeFiles/rebuild_cache.dir
-/home/kogabriel/ds/DS_HW1/build/AVL Tree/CMakeFiles/edit_cache.dir
-/home/kogabriel/ds/DS_HW1/build/Main and Tests/CMakeFiles/rebuild_cache.dir
-/home/kogabriel/ds/DS_HW1/build/Main and Tests/CMakeFiles/edit_cache.dir
+/home/yant/ds/Final_hw1/DS_HW1/build/CMakeFiles/rebuild_cache.dir
+/home/yant/ds/Final_hw1/DS_HW1/build/CMakeFiles/edit_cache.dir
+/home/yant/ds/Final_hw1/DS_HW1/build/CMakeFiles/DS_HW1.dir
+/home/yant/ds/Final_hw1/DS_HW1/build/Tests/CMakeFiles/rebuild_cache.dir
+/home/yant/ds/Final_hw1/DS_HW1/build/Tests/CMakeFiles/edit_cache.dir
+/home/yant/ds/Final_hw1/DS_HW1/build/Car Classes/CMakeFiles/rebuild_cache.dir
+/home/yant/ds/Final_hw1/DS_HW1/build/Car Classes/CMakeFiles/edit_cache.dir
+/home/yant/ds/Final_hw1/DS_HW1/build/Car manager/CMakeFiles/rebuild_cache.dir
+/home/yant/ds/Final_hw1/DS_HW1/build/Car manager/CMakeFiles/edit_cache.dir
+/home/yant/ds/Final_hw1/DS_HW1/build/AVL Tree/CMakeFiles/rebuild_cache.dir
+/home/yant/ds/Final_hw1/DS_HW1/build/AVL Tree/CMakeFiles/edit_cache.dir
+/home/yant/ds/Final_hw1/DS_HW1/build/Submission/CMakeFiles/rebuild_cache.dir
+/home/yant/ds/Final_hw1/DS_HW1/build/Submission/CMakeFiles/edit_cache.dir
+/home/yant/ds/Final_hw1/DS_HW1/build/Main and Tests/CMakeFiles/rebuild_cache.dir
+/home/yant/ds/Final_hw1/DS_HW1/build/Main and Tests/CMakeFiles/edit_cache.dir

@@ -65,10 +65,10 @@ RM = /home/mtm/cmake-3.17.0-Linux-x86_64/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/kogabriel/ds/DS_HW1
+CMAKE_SOURCE_DIR = /home/yant/ds/Final_hw1/DS_HW1
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/kogabriel/ds/DS_HW1/build
+CMAKE_BINARY_DIR = /home/yant/ds/Final_hw1/DS_HW1/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -97,14 +97,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/kogabriel/ds/DS_HW1/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/kogabriel/ds/DS_HW1/build/CMakeFiles "/home/kogabriel/ds/DS_HW1/build/Main and Tests/CMakeFiles/progress.marks"
-	cd /home/kogabriel/ds/DS_HW1/build && $(MAKE) -f CMakeFiles/Makefile2 "Main and Tests/all"
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/kogabriel/ds/DS_HW1/build/CMakeFiles 0
+	cd /home/yant/ds/Final_hw1/DS_HW1/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/yant/ds/Final_hw1/DS_HW1/build/CMakeFiles "/home/yant/ds/Final_hw1/DS_HW1/build/Main and Tests/CMakeFiles/progress.marks"
+	cd /home/yant/ds/Final_hw1/DS_HW1/build && $(MAKE) -f CMakeFiles/Makefile2 "Main and Tests/all"
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/yant/ds/Final_hw1/DS_HW1/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/kogabriel/ds/DS_HW1/build && $(MAKE) -f CMakeFiles/Makefile2 "Main and Tests/clean"
+	cd /home/yant/ds/Final_hw1/DS_HW1/build && $(MAKE) -f CMakeFiles/Makefile2 "Main and Tests/clean"
 .PHONY : clean
 
 # The main clean target
@@ -114,17 +114,17 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/kogabriel/ds/DS_HW1/build && $(MAKE) -f CMakeFiles/Makefile2 "Main and Tests/preinstall"
+	cd /home/yant/ds/Final_hw1/DS_HW1/build && $(MAKE) -f CMakeFiles/Makefile2 "Main and Tests/preinstall"
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/kogabriel/ds/DS_HW1/build && $(MAKE) -f CMakeFiles/Makefile2 "Main and Tests/preinstall"
+	cd /home/yant/ds/Final_hw1/DS_HW1/build && $(MAKE) -f CMakeFiles/Makefile2 "Main and Tests/preinstall"
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/kogabriel/ds/DS_HW1/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/yant/ds/Final_hw1/DS_HW1/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Help Target
@@ -146,6 +146,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/kogabriel/ds/DS_HW1/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/yant/ds/Final_hw1/DS_HW1/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

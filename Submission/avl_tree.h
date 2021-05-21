@@ -232,7 +232,7 @@ AVLTree<T>::insertNode(AVLTree<T>::Node *node, AVLTree<T>::Node *target, AVLTree
 
     //Balancing the tree
     if (balanceFactor(target) > 1) {
-        if (balanceFactor(target->left) == 1) {
+        if (balanceFactor(target->left) >= 0) {
             return rollLeftLeft(target); //LL
         } else {
             return rollLeftRight(target);//LR
@@ -291,7 +291,7 @@ typename AVLTree<T>::Node* AVLTree<T>::removeNode(AVLTree<T>::Node *node, AVLTre
 
     // Balancing the tree
     if (balanceFactor(target) > 1) {
-        if (balanceFactor(target->left) == 1) {
+        if (balanceFactor(target->left) >= 0) {
             return rollLeftLeft(target); //LL
         } else {
             return rollLeftRight(target);//LR
@@ -386,6 +386,8 @@ typename AVLTree<T>::Node *AVLTree<T>::rollRightRight(AVLTree<T>::Node *node) {
     node->right->father = node->father;
     node->father = temp;
     node->right = node->father->left;
+    if(node->right)
+        node->right->father = node;
     node->father->left = node;
 
     node->height = maxInt(height(node->right), height(node->left)) + 1;

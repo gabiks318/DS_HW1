@@ -27,7 +27,7 @@ RUN_DIFF = True
 BASE_INPUT_DIR = "./tests_eithan/rand_tests/in"
 BASE_DESIRED_OUTPUT_DIR = "./tests_eithan/rand_tests/py_out"
 BASE_MY_OUTPUT_DIR = "./tests_eithan/rand_tests/cpp_out"
-MY_EXEC = "./cmake-build-debug/DS_HW1"
+MY_EXEC = "./Submission/ds"
 
 if __name__ == '__main__':
     os.system("> valgrind_log.txt")

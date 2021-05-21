@@ -52,9 +52,7 @@ StatusType CarDealerShip::RemoveCarType(int type_id) { // 2mlogM + 3logn
     }
     return SUCCESS;
 }
-int sell_check = 0;////
 StatusType CarDealerShip::sellCar(int typeID, int modelID) { //7log + 4logM(m<M)
-    sell_check++;///////
     if (typeID <= 0 || modelID < 0)
         return INVALID_INPUT;
     try {
@@ -77,10 +75,9 @@ StatusType CarDealerShip::sellCar(int typeID, int modelID) { //7log + 4logM(m<M)
     }
     return SUCCESS;
 }
-int check = 0;/////////
+
 
 StatusType CarDealerShip::makeComplaint(int typeID, int modelID, int t) {
-    check++;/////////
     if (typeID <= 0 || modelID < 0)
         return INVALID_INPUT;
     try{
@@ -98,12 +95,6 @@ StatusType CarDealerShip::makeComplaint(int typeID, int modelID, int t) {
     return SUCCESS;
 }
 void CarDealerShip::updatePoints(int typeID, int modelID, int add_points){
-   // if(check == 26){/////////
-    //    CarPoints *temp = points.find(CarPoints(5223,6,4));
-  //  }///////
-   // if(sell_check == 42) {
-     //   CarPoints *temp = points.find(CarPoints(5223, 6, 4));
-   // }///////////
 
     CarSells *car_to_update = sells.find(CarSells(typeID, 0)); //logn
     CarZeroPoints *car_zero_ptr;
@@ -138,9 +129,6 @@ void CarDealerShip::updatePoints(int typeID, int modelID, int add_points){
 
 
         points.remove(car_points_copy);
-        //if(check == 26){/////////
-         //   CarPoints *temp = points.find(CarPoints(5223,6,4));
-       // }///////
         car_points_copy.updatePoints(add_points);
 
         // If new score is 0, insert to zero tree
@@ -159,12 +147,6 @@ void CarDealerShip::updatePoints(int typeID, int modelID, int add_points){
             car_to_update->setPoints(modelID, car_points_copy.getPoints());
         }
     }
-   // if(check == 26){/////////
-  //      CarPoints *temp = points.find(CarPoints(5223,6,4));
- //   }///////
- //   if(sell_check == 42) {
- //       CarPoints *temp = points.find(CarPoints(5223, 6, 4));
- //   }///////////
 }
 
 
